@@ -1,7 +1,7 @@
  (function () {
    const THEME_KEY = "capsla-theme";
    const LANGUAGE_KEY = "capsla-language";
-   const SUPPORTED_LANGUAGES = ["en", "ru"];
+   const SUPPORTED_LANGUAGES = ["en", "ru", "de"];
 
    function getSavedTheme() {
      return localStorage.getItem(THEME_KEY) || "system";
@@ -42,17 +42,21 @@
 
    function detectPreferredLanguage() {
      const saved = localStorage.getItem(LANGUAGE_KEY);
+
      if (saved && SUPPORTED_LANGUAGES.includes(saved)) {
        return saved;
      }
 
-     const browserLanguages = navigator.languages && navigator.languages.length
-       ? navigator.languages
-       : [navigator.language || "en"];
+     const browserLanguages =
+       navigator.languages && navigator.languages.length
+         ? navigator.languages
+         : [navigator.language || "en"];
 
      for (const lang of browserLanguages) {
        const normalized = lang.toLowerCase();
+
        if (normalized.startsWith("ru")) return "ru";
+       if (normalized.startsWith("de")) return "de";
        if (normalized.startsWith("en")) return "en";
      }
 
@@ -61,6 +65,7 @@
 
    function markActiveLanguage() {
      const pageLang = document.body.dataset.pageLang;
+
      if (!pageLang) return;
 
      localStorage.setItem(LANGUAGE_KEY, pageLang);
@@ -72,20 +77,30 @@
 
    function redirectFromRootIfNeeded() {
      const path = window.location.pathname;
-     const isRootIndex =
-       path.endsWith("/docs/") ||
-       path.endsWith("/docs/index.html") ||
-       path.endsWith("/") ||
-       path.endsWith("/index.html");
 
      const isLanguagePage =
-       path.includes("/en/") || path.includes("/ru/");
+       path.includes("/en/") ||
+       path.includes("/ru/") ||
+       path.includes("/de/");
 
      if (isLanguagePage) return;
+
+     const isRootIndex =
+       path.endsWith("/") ||
+       path.endsWith("/index.html") ||
+       path.endsWith("/docs/") ||
+       path.endsWith("/docs/index.html");
+
      if (!isRootIndex) return;
 
      const preferredLanguage = detectPreferredLanguage();
-     const target = preferredLanguage === "ru" ? "./ru/" : "./en/";
+
+     const target =
+       preferredLanguage === "ru"
+         ? "./ru/"
+         : preferredLanguage === "de"
+           ? "./de/"
+           : "./en/";
 
      window.location.replace(target);
    }
