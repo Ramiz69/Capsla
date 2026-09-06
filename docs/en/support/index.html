@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Capsla Support — answers to common questions</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+        <meta name="description" content="Answers to common questions about Capsla: sound in silent mode, notifications, app blocking, iCloud sync, clearing history. And where to write.">
+        <meta name="color-scheme" content="light dark">
+        <meta name="theme-color" content="#F5F5F5" media="(prefers-color-scheme: light)">
+        <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+        <meta name="apple-itunes-app" content="app-id=6760552635">
+        <link rel="apple-touch-icon" href="/favicon.png">
+        <link rel="icon" href="/favicon.png" type="image/png">
+        <link rel="canonical" href="https://capsla.app/en/support/">
+        <link rel="alternate" hreflang="ru" href="https://capsla.app/ru/support/">
+        <link rel="alternate" hreflang="en" href="https://capsla.app/en/support/">
+        <link rel="alternate" hreflang="de" href="https://capsla.app/de/support/">
+        <link rel="alternate" hreflang="x-default" href="https://capsla.app/">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Capsla">
+        <meta property="og:url" content="https://capsla.app/en/support/">
+        <meta property="og:title" content="Capsla Support">
+        <meta property="og:description" content="Answers to common questions about Capsla, and where to write.">
+        <meta property="og:image" content="https://capsla.app/og-image.png">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+        <meta property="og:image:alt" content="Экран таймера Capsla: кольцо обратного отсчёта на чёрном фоне">
+        <meta property="og:locale" content="en_US">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Capsla Support">
+        <meta name="twitter:description" content="Answers to common questions about Capsla, and where to write.">
+        <meta name="twitter:image" content="https://capsla.app/og-image.png">
+        <style>
+        :root{
+          color-scheme: light dark;
+          --bg:#F5F5F5; --surface:#FFFFFF; --ink:#0D0D0A; --ink-2:#6E6E73;
+          --hairline:rgba(0,0,0,0.08); --on-ink:#FFFFFF; --logo-filter:none;
+          --t7:clamp(36px, calc(26.9px + 2.43vw), 58px);
+          --t6:clamp(28px, calc(19.7px + 2.21vw), 48px);
+          --t5:clamp(22px, calc(18.7px + 0.88vw), 30px);
+          --t4:clamp(19px, calc(17.8px + 0.33vw), 22px);
+          --t3:17px; --t2:15px; --t1:13px;
+          --lh-d:1.05; --lh-s:1.3; --lh-b:1.55;
+          --r-s:12px; --r-m:20px; --r-f:999px;
+          --sp-in:clamp(28px,3vw,40px); --sp-sec:clamp(64px,7vw,88px); --sp-fin:clamp(104px,12vw,160px);
+          --pad:clamp(20px,3vw,32px);
+          --text:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",system-ui,sans-serif;
+          --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+        }
+        @media (prefers-color-scheme: dark){
+          :root{ --bg:#000000; --surface:#1C1C1E; --ink:#FFFFFF; --ink-2:#A1A1A6;
+            --hairline:rgba(255,255,255,0.10); --on-ink:#000000; --logo-filter:invert(1); }
+        }
+        [data-theme="light"]{ --bg:#F5F5F5; --surface:#FFFFFF; --ink:#0D0D0A; --ink-2:#6E6E73;
+          --hairline:rgba(0,0,0,0.08); --on-ink:#FFFFFF; --logo-filter:none; color-scheme:light }
+        [data-theme="dark"]{ --bg:#000000; --surface:#1C1C1E; --ink:#FFFFFF; --ink-2:#A1A1A6;
+          --hairline:rgba(255,255,255,0.10); --on-ink:#000000; --logo-filter:invert(1); color-scheme:dark }
+        *,*::before,*::after{box-sizing:border-box}
+        html{-webkit-text-size-adjust:100%}
+        body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--text);font-size:var(--t3);line-height:var(--lh-b);-webkit-font-smoothing:antialiased;overflow-wrap:break-word}
+        h1,h2,h3,p,ul,li{margin:0;padding:0}
+        h1,h2,h3{overflow-wrap:normal;word-break:normal;hyphens:auto;hyphenate-limit-chars:11 5 4;-webkit-hyphenate-limit-before:5;-webkit-hyphenate-limit-after:4}
+        ul{list-style:none}
+        img{display:block;max-width:100%;height:auto}
+        a{color:inherit;text-decoration:none}
+        a:hover{text-decoration:underline;text-underline-offset:3px}
+        a:focus-visible{outline:2px solid var(--ink);outline-offset:3px;border-radius:4px}
+        [data-logo]{filter:var(--logo-filter)}
+        [data-footer-grid]{display:grid;grid-template-columns:1fr;gap:24px}
+        [data-three]{display:grid;grid-template-columns:1fr;gap:clamp(16px,2vw,24px)}
+        @media (min-width:900px){[data-three]{grid-template-columns:repeat(3,1fr)}}
+        @media (min-width:568px){[data-footer-grid]{grid-template-columns:repeat(3,1fr)}}
+        @media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+        </style>
+    </head>
+    <body>
+        <div>
+        
+          <header style="border-bottom:1px solid var(--hairline)">
+            <div style="max-width:1080px;margin:0 auto;padding:8px max(20px,env(safe-area-inset-right,0px)) 8px max(20px,env(safe-area-inset-left,0px));min-height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px">
+              <a href="/en/" style="display:flex;align-items:center;gap:9px;min-height:44px;padding-right:8px">
+                <img data-logo="true" src="/favicon.png" width="28" height="28" alt="" style="width:28px;height:28px">
+                <span style="font-size:21px;font-weight:600;letter-spacing:-0.02em">Capsla</span>
+              </a>
+              <a href="https://apps.apple.com/app/id6760552635" style="display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 18px;border-radius:var(--r-f);background:var(--ink);color:var(--on-ink);font-size:var(--t2);font-weight:600" style-hover="opacity:0.9;text-decoration:none">App&#160;Store</a>
+            </div>
+          </header>
+        
+          <main>
+        
+            <section style="max-width:1080px;margin:0 auto;padding:clamp(28px,5vw,64px) max(20px,env(safe-area-inset-right,0px)) var(--sp-sec) max(20px,env(safe-area-inset-left,0px));display:flex;flex-direction:column;gap:16px">
+              <h1 style="font-size:var(--t7);font-weight:700;line-height:var(--lh-d);letter-spacing:-0.03em;text-wrap:balance">Support</h1>
+              <p style="font-size:var(--t5);line-height:var(--lh-s);color:var(--ink-2);max-width:44ch">Answers to common questions first; below, where to write if the answer isn’t here.</p>
+            </section>
+        
+            <section style="max-width:1080px;margin:0 auto;padding:0 max(20px,env(safe-area-inset-right,0px)) var(--sp-sec) max(20px,env(safe-area-inset-left,0px));display:flex;flex-direction:column;gap:var(--sp-in)">
+              <h2 style="font-size:var(--t6);font-weight:700;line-height:var(--lh-d);letter-spacing:-0.025em;max-width:20ch">Common questions</h2>
+              <ul style="display:flex;flex-direction:column;max-width:68ch">
+                <li style="border-top:1px solid var(--hairline);padding:22px 0;display:flex;flex-direction:column;gap:8px">
+                  <h3 style="font-size:var(--t4);font-weight:600;line-height:var(--lh-s);letter-spacing:-0.015em">The sound plays while the phone is in silent mode. Is that a bug?</h3>
+                  <p style="color:var(--ink-2)">No, it is intentional. The end-of-phase sound plays in silent mode too — otherwise the switch is easy to miss, and a timer is meant to stay out of your attention. The sound preview in settings stays quiet in silent mode, and that is normal: it only helps you choose.</p>
+                </li>
+                <li style="border-top:1px solid var(--hairline);padding:22px 0;display:flex;flex-direction:column;gap:8px">
+                  <h3 style="font-size:var(--t4);font-weight:600;line-height:var(--lh-s);letter-spacing:-0.015em">Does the timer keep running if I close the app?</h3>
+                  <p style="color:var(--ink-2)">Yes. The phase counts down even when the app is closed. The card on the Lock Screen and in the Dynamic Island shows the time, and a notification arrives when the phase ends.</p>
+                </li>
+                <li style="border-top:1px solid var(--hairline);padding:22px 0;display:flex;flex-direction:column;gap:8px">
+                  <h3 style="font-size:var(--t4);font-weight:600;line-height:var(--lh-s);letter-spacing:-0.015em">The background isn’t moving</h3>
+                  <p style="color:var(--ink-2)">Three reasons, most common first. Appearance has a Motion switch that stops the animation of any background. The system setting Reduce Motion does the same: the background stays visible but still. And the power-saving settings choose the animation style of the counter.</p>
+                </li>
+                <li style="border-top:1px solid var(--hairline);padding:22px 0;display:flex;flex-direction:column;gap:8px">
+                  <h3 style="font-size:var(--t4);font-weight:600;line-height:var(--lh-s);letter-spacing:-0.015em">Notifications don’t arrive</h3>
+                  <p style="color:var(--ink-2)">Notification permission is required. If it wasn’t granted at first launch, you can turn it on in system settings, under Capsla’s notifications.</p>
+                </li>
+                <li style="border-top:1px solid var(--hairline);padding:22px 0;display:flex;flex-direction:column;gap:8px">
+                  <h3 style="font-size:var(--t4);font-weight:600;line-height:var(--lh-s);letter-spacing:-0.015em">Blocking apps during a focus doesn’t work</h3>
+                  <p style="color:var(--ink-2)">This needs Screen Time access — Capsla asks for it the moment you turn blocking on. If access wasn’t granted or was revoked, you can grant it again in system settings, under Screen Time.</p>
+                </li>
+                <li style="border-top:1px solid var(--hairline);padding:22px 0;display:flex;flex-direction:column;gap:8px">
+                  <h3 style="font-size:var(--t4);font-weight:600;line-height:var(--lh-s);letter-spacing:-0.015em">History doesn’t show up on my second device</h3>
+                  <p style="color:var(--ink-2)">Syncing goes through your own iCloud: both devices must be signed in to the same Apple Account with iCloud on. Phase history and tags are synced. Timer settings stay on the device and do not travel — that is intentional.</p>
+                </li>
+                <li style="border-top:1px solid var(--hairline);padding:22px 0;display:flex;flex-direction:column;gap:8px">
+                  <h3 style="font-size:var(--t4);font-weight:600;line-height:var(--lh-s);letter-spacing:-0.015em">How do I clear the history?</h3>
+                  <p style="color:var(--ink-2)">The statistics screen has Clear history. The app warns you in as many words: records of finished phases will be deleted from this device and from your iCloud, and the action cannot be undone.</p>
+                </li>
+                <li style="border-top:1px solid var(--hairline);padding:22px 0;display:flex;flex-direction:column;gap:8px">
+                  <h3 style="font-size:var(--t4);font-weight:600;line-height:var(--lh-s);letter-spacing:-0.015em">Why can a break be skipped but a focus can’t?</h3>
+                  <p style="color:var(--ink-2)">That is intentional. Skipping exists only for a break — in the app, on the Lock Screen card and in the Siri commands.</p>
+                </li>
+                <li style="border-top:1px solid var(--hairline);padding:22px 0;display:flex;flex-direction:column;gap:8px">
+                  <h3 style="font-size:var(--t4);font-weight:600;line-height:var(--lh-s);letter-spacing:-0.015em">A tag doesn’t show up in search on the phone</h3>
+                  <p style="color:var(--ink-2)">Tags are handed to search when the app launches. If a tag was just created, opening Capsla once more is enough.</p>
+                </li>
+                <li style="border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline);padding:22px 0;display:flex;flex-direction:column;gap:8px">
+                  <h3 style="font-size:var(--t4);font-weight:600;line-height:var(--lh-s);letter-spacing:-0.015em">Do I need an account?</h3>
+                  <p style="color:var(--ink-2)">No. There is no Capsla account: everything is kept on your device and in your iCloud.</p>
+                </li>
+              </ul>
+            </section>
+        
+            <section style="max-width:1080px;margin:0 auto;padding:0 max(20px,env(safe-area-inset-right,0px)) var(--sp-sec) max(20px,env(safe-area-inset-left,0px));display:flex;flex-direction:column;gap:var(--sp-in)">
+              <div style="display:flex;flex-direction:column;gap:14px;max-width:52ch">
+                <h2 style="font-size:var(--t6);font-weight:700;line-height:var(--lh-d);letter-spacing:-0.025em;max-width:20ch">Where to write</h2>
+                <p style="color:var(--ink-2)">One developer answers, so a reply doesn’t come instantly. Email always gets through.</p>
+              </div>
+              <ul data-three="true">
+                <li style="min-width:0;border:1px solid var(--hairline);border-radius:var(--r-m);background:var(--surface);padding:var(--pad);display:flex;flex-direction:column;gap:8px;align-items:flex-start">
+                  <a href="mailto:support@capsla.app" style="display:inline-flex;align-items:center;min-height:44px;font-size:var(--t4);font-weight:600;letter-spacing:-0.015em">support@capsla.app</a>
+                  <span style="color:var(--ink-2);font-size:var(--t2)">Questions about the app, bugs, suggestions.</span>
+                </li>
+                <li style="min-width:0;border:1px solid var(--hairline);border-radius:var(--r-m);background:var(--surface);padding:var(--pad);display:flex;flex-direction:column;gap:8px;align-items:flex-start">
+                  <a href="mailto:privacy@capsla.app" style="display:inline-flex;align-items:center;min-height:44px;font-size:var(--t4);font-weight:600;letter-spacing:-0.015em">privacy@capsla.app</a>
+                  <span style="color:var(--ink-2);font-size:var(--t2)">Questions about the privacy policy.</span>
+                </li>
+                <li style="min-width:0;border:1px solid var(--hairline);border-radius:var(--r-m);background:var(--surface);padding:var(--pad);display:flex;flex-direction:column;gap:8px;align-items:flex-start">
+                  <a href="https://apps.apple.com/app/id6760552635" style="display:inline-flex;align-items:center;min-height:44px;font-size:var(--t4);font-weight:600;letter-spacing:-0.015em">The App Store page</a>
+                  <span style="color:var(--ink-2);font-size:var(--t2)">That is where reviews and ratings go.</span>
+                </li>
+              </ul>
+            </section>
+          </main>
+        
+          <footer style="border-top:1px solid var(--hairline)">
+            <div data-footer-grid="true" style="max-width:1080px;margin:0 auto;padding:32px max(20px,env(safe-area-inset-right,0px)) 40px max(20px,env(safe-area-inset-left,0px));align-items:start">
+              <div style="display:flex;flex-direction:column;gap:8px">
+                <span style="display:flex;align-items:center;gap:9px;font-size:var(--t4);font-weight:600;letter-spacing:-0.02em">
+                  <img data-logo="true" src="/favicon.png" width="24" height="24" alt="" style="width:24px;height:24px">Capsla
+                </span>
+                <span style="color:var(--ink-2);font-size:var(--t2)">A timer for focus and breaks. iPhone only.</span>
+                <span style="color:var(--ink-2);font-size:var(--t2)">© 2026 Ramiz Kichibekov</span>
+              </div>
+              <nav aria-label="Site sections" style="display:flex;flex-direction:column;gap:4px;align-items:flex-start">
+                <a href="/en/" style="display:inline-flex;align-items:center;min-height:44px;font-size:var(--t2)">Home</a>
+                <a href="/ru/#features" style="display:inline-flex;align-items:center;min-height:44px;font-size:var(--t2)">Features</a>
+                <a href="/en/privacy/" style="display:inline-flex;align-items:center;min-height:44px;font-size:var(--t2)">Privacy</a>
+                <a href="https://apps.apple.com/app/id6760552635" style="display:inline-flex;align-items:center;min-height:44px;font-size:var(--t2)">App&#160;Store</a>
+              </nav>
+              <nav aria-label="Page language" style="display:flex;flex-direction:column;gap:4px;align-items:flex-start">
+                <a href="/ru/support/" style="display:inline-flex;align-items:center;min-height:44px;font-size:var(--t2);font-weight:600">Русский</a>
+                <a aria-current="page" href="/en/support/" style="display:inline-flex;align-items:center;min-height:44px;font-size:var(--t2)">English</a>
+                <a href="/de/support/" style="display:inline-flex;align-items:center;min-height:44px;font-size:var(--t2)">Deutsch</a>
+              </nav>
+            </div>
+          </footer>
+        </div>
+    </body>
+</html>

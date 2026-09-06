@@ -2,326 +2,227 @@
 <html lang="de">
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-        <title>Capsla — Datenschutzrichtlinie</title>
-        <meta name="description" content="Datenschutzrichtlinie für die Pomodoro-Timer-App Capsla." />
-        <link rel="canonical" href="https://capsla.app/de/privacy/" />
-        <link rel="alternate" hreflang="en" href="https://capsla.app/en/privacy/" />
-        <link rel="alternate" hreflang="ru" href="https://capsla.app/ru/privacy/" />
-        <link rel="alternate" hreflang="de" href="https://capsla.app/de/privacy/" />
-        <link rel="alternate" hreflang="x-default" href="https://capsla.app/en/privacy/" />
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Capsla" />
-        <meta property="og:title" content="Capsla — Pomodoro-Timer" />
-        <meta property="og:description" content="Ein ruhiger Fokus-Timer für Apple-Geräte." />
-        <meta property="og:url" content="https://capsla.app/de/" />
-        <meta property="og:locale" content="de_DE" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Capsla — Pomodoro-Timer" />
-        <meta name="twitter:description" content="Ein ruhiger Fokus-Timer für Apple-Geräte." />
-        <meta property="og:image" content="https://capsla.app/og-image-de.png" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="Capsla — ruhiger Fokus-Timer" />
-        <meta name="twitter:image" content="https://capsla.app/og-image-de.png" />
-        <meta name="apple-itunes-app" content="app-id=6760552635"/>
-        <link rel="icon" href="/favicon.png" />
-        <link rel="apple-touch-icon" href="/favicon.png" />
-        <meta name="theme-color" content="#f5f5f5" media="(prefers-color-scheme: light)" />
-        <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
-        <script>
-            // Выбранная тема применяется до первой отрисовки. Основной скрипт
-            // отложен, и с ним страница успевала показаться в системной теме,
-            // а потом переключиться — заметное мигание при каждом заходе.
-            (function () {
-                try {
-                    var saved = localStorage.getItem("capsla-theme");
-
-                    if (saved === "light" || saved === "dark") {
-                        document.documentElement.setAttribute("data-theme", saved);
-                    }
-                } catch (error) {}
-            })();
-        </script>
-        <link rel="stylesheet" href="../styles.css" />
-        <script defer src="../app.js"></script>
-        <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "MobileApplication",
-          "name": "Capsla",
-          "applicationCategory": "ProductivityApplication",
-          "operatingSystem": "iOS",
-          "url": "https://capsla.app",
-          "applicationSubCategory": "Pomodoro Timer",
-          "inLanguage": "de",
-          "publisher": {
-            "@type": "Organization",
-            "name": "Capsla"
-          }
+        <title>Capsla — ein ruhiger Timer für Fokus und Pausen fürs iPhone</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+        <meta name="description" content="Capsla — ein Timer für Fokus und Pausen fürs iPhone: beliebige Phasenlängen, Live Activity, Widgets, Mitteilungen, Siri, Tags, Statistik. Ohne Werbung.">
+        <meta name="color-scheme" content="light dark">
+        <meta name="theme-color" content="#F5F5F5" media="(prefers-color-scheme: light)">
+        <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+        <meta name="apple-itunes-app" content="app-id=6760552635">
+        <link rel="apple-touch-icon" href="/favicon.png">
+        <link rel="icon" href="/favicon.png" type="image/png">
+        <link rel="canonical" href="https://capsla.app/de/">
+        <link rel="alternate" hreflang="ru" href="https://capsla.app/ru/">
+        <link rel="alternate" hreflang="en" href="https://capsla.app/en/">
+        <link rel="alternate" hreflang="de" href="https://capsla.app/de/">
+        <link rel="alternate" hreflang="x-default" href="https://capsla.app/">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Capsla">
+        <meta property="og:url" content="https://capsla.app/de/">
+        <meta property="og:title" content="Capsla — ein ruhiger Timer für Fokus und Pausen">
+        <meta property="og:description" content="Ein Timer für Fokus und Pausen fürs iPhone. Beliebige Phasenlängen, Live Activity, Widgets, Mitteilungen, Siri, Tags, Statistik. Ohne Werbung.">
+        <meta property="og:image" content="https://capsla.app/og-image-de.png">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+        <meta property="og:image:alt" content="Der Capsla-Timer auf schwarzem Hintergrund">
+        <meta property="og:locale" content="de_DE">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Capsla — ein ruhiger Timer für Fokus und Pausen">
+        <meta name="twitter:description" content="Ein Timer für Fokus und Pausen fürs iPhone. Ohne Werbung.">
+        <meta name="twitter:image" content="https://capsla.app/og-image-de.png">
+        <script type="application/ld+json">{"@context":"https://schema.org","@type":"MobileApplication","name":"Capsla","operatingSystem":"iOS 26","applicationCategory":"ProductivityApplication","url":"https://capsla.app/de/","installUrl":"https://apps.apple.com/app/id6760552635","inLanguage":["ru","en","de"],"offers":{"@type":"Offer","price":"0","priceCurrency":"RUB"}}</script>
+        <style>
+        :root{
+          color-scheme: light dark;
+          --bg:#F5F5F5; --surface:#FFFFFF; --ink:#0D0D0A; --ink-2:#6E6E73;
+          --hairline:rgba(0,0,0,0.08); --on-ink:#FFFFFF; --logo-filter:none;
+          --t7:clamp(36px, calc(26.9px + 2.43vw), 58px);
+          --t6:clamp(28px, calc(19.7px + 2.21vw), 48px);
+          --t5:clamp(22px, calc(18.7px + 0.88vw), 30px);
+          --t4:clamp(19px, calc(17.8px + 0.33vw), 22px);
+          --t3:17px; --t2:15px; --t1:13px;
+          --lh-d:1.05; --lh-s:1.3; --lh-b:1.55;
+          --r-s:12px; --r-m:20px; --r-f:999px;
+          --sp-in:clamp(28px,3vw,40px); --sp-sec:clamp(64px,7vw,88px); --sp-fin:clamp(104px,12vw,160px);
+          --pad:clamp(20px,3vw,32px);
+          --text:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",system-ui,sans-serif;
+          --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
         }
-        </script>
+        @media (prefers-color-scheme: dark){
+          :root{ --bg:#000000; --surface:#1C1C1E; --ink:#FFFFFF; --ink-2:#A1A1A6;
+            --hairline:rgba(255,255,255,0.10); --on-ink:#000000; --logo-filter:invert(1); }
+        }
+        [data-theme="light"]{ --bg:#F5F5F5; --surface:#FFFFFF; --ink:#0D0D0A; --ink-2:#6E6E73;
+          --hairline:rgba(0,0,0,0.08); --on-ink:#FFFFFF; --logo-filter:none; color-scheme:light }
+        [data-theme="dark"]{ --bg:#000000; --surface:#1C1C1E; --ink:#FFFFFF; --ink-2:#A1A1A6;
+          --hairline:rgba(255,255,255,0.10); --on-ink:#000000; --logo-filter:invert(1); color-scheme:dark }
+        *,*::before,*::after{box-sizing:border-box}
+        html{-webkit-text-size-adjust:100%}
+        body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--text);font-size:var(--t3);line-height:var(--lh-b);-webkit-font-smoothing:antialiased;overflow-wrap:break-word}
+        h1,h2,h3,p,ul,li,figure,blockquote{margin:0;padding:0}
+        h1,h2,h3{overflow-wrap:normal;word-break:normal;hyphens:auto;hyphenate-limit-chars:11 5 4;-webkit-hyphenate-limit-before:5;-webkit-hyphenate-limit-after:4}
+        [data-footer-grid]{display:grid;grid-template-columns:1fr;gap:24px}
+        @media (min-width:568px){[data-footer-grid]{grid-template-columns:repeat(3,1fr)}}
+        ul{list-style:none}
+        img{display:block;max-width:100%;height:auto}
+        a{color:inherit;text-decoration:none}
+        a:hover{text-decoration:underline;text-underline-offset:3px}
+        a:focus-visible{outline:2px solid var(--ink);outline-offset:3px;border-radius:4px}
+        [data-logo]{filter:var(--logo-filter)}
+        @media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+        </style>
     </head>
-
-    <body data-page-lang="de">
-        <div class="page-shell">
-            <header class="site-header">
-                <div class="container header-inner">
-                    <a class="brand" href="../">
-                        <img src="../favicon.png" alt="Capsla Symbol" class="brand-icon" />
-                        <span class="brand-name">Capsla</span>
-                    </a>
-
-                    <div class="header-controls">
-                        <div class="segmented-control" data-control="theme" role="group" aria-label="Darstellung wechseln">
-                            <button type="button" class="segment-button" data-theme-value="system">System</button>
-                            <button type="button" class="segment-button" data-theme-value="light">Hell</button>
-                            <button type="button" class="segment-button" data-theme-value="dark">Dunkel</button>
-                        </div>
-
-                        <div class="segmented-control" data-control="language" role="group" aria-label="Sprache wechseln">
-                            <a href="../en/" class="segment-button is-link" data-lang-link="en">EN</a>
-                            <a href="../ru/" class="segment-button is-link" data-lang-link="ru">RU</a>
-                            <a href="../de/" class="segment-button is-link" data-lang-link="de">DE</a>
-                        </div>
-                    </div>
+    <body>
+        <div>
+        
+          <header style="border-bottom:1px solid var(--hairline)">
+            <div style="max-width:1080px;margin:0 auto;padding:8px max(20px,env(safe-area-inset-right,0px)) 8px max(20px,env(safe-area-inset-left,0px));min-height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px">
+              <a href="#top" style="display:flex;align-items:center;gap:9px;min-height:44px;padding-right:8px">
+                <img data-logo="true" src="/favicon.png" width="28" height="28" alt="" style="width:28px;height:28px">
+                <span style="font-size:21px;font-weight:600;letter-spacing:-0.02em">Capsla</span>
+              </a>
+              <a href="https://apps.apple.com/app/id6760552635" style="display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 18px;border-radius:var(--r-f);background:var(--ink);color:var(--on-ink);font-size:var(--t2);font-weight:600" style-hover="opacity:0.9;text-decoration:none">App Store</a>
+            </div>
+          </header>
+        
+          <main id="top">
+        
+            <section style="max-width:1080px;margin:0 auto;padding:clamp(28px,5vw,64px) max(20px,env(safe-area-inset-right,0px)) var(--sp-sec) max(20px,env(safe-area-inset-left,0px));display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:clamp(28px,4vw,56px);align-items:center">
+              <div style="min-width:0;display:flex;flex-direction:column;gap:20px">
+                <h1 style="font-size:var(--t7);font-weight:700;line-height:var(--lh-d);letter-spacing:-0.03em;text-wrap:balance">Ein ruhiger Timer für Fokus und Pausen</h1>
+                <p style="font-size:var(--t5);line-height:var(--lh-s);color:var(--ink-2);max-width:34ch">Eine Fokusphase, eine kurze Pause und nach ein paar Zyklen eine lange. Die Länge der Phasen und die Anzahl der Zyklen legst du selbst fest.</p>
+                <div style="display:flex;flex-direction:column;gap:10px;align-items:flex-start">
+                  <a href="https://apps.apple.com/app/id6760552635" style="display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 28px;border-radius:var(--r-f);background:var(--ink);color:var(--on-ink);font-size:var(--t4);font-weight:600" style-hover="opacity:0.9;text-decoration:none">Im App Store laden</a>
+                  <p style="font-size:var(--t2)">Kostenlos, ohne Werbung. <span style="color:var(--ink-2)">iPhone, iOS 26 oder neuer.</span></p>
                 </div>
-            </header>
-
-            <main>
-                <section class="hero-section">
-                    <div class="container">
-                        <div class="hero-card apple-card">
-                            <p class="eyebrow">Capsla</p>
-                            <h1 class="hero-title">Datenschutzrichtlinie</h1>
-                            <p class="hero-text">
-                            Diese Datenschutzrichtlinie erklärt, wie Capsla mit Informationen umgeht,
-                            wenn Sie die App verwenden.
-                            </p>
-                            <div class="hero-meta">
-                                <span class="meta-chip">Gültig ab: 6. September 2026</span>
-                                <span class="meta-chip">App: Capsla</span>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="content-section">
-                    <div class="container">
-                        <article class="policy-layout">
-                            <nav class="policy-nav apple-card">
-                                <p class="policy-nav-title">Auf dieser Seite</p>
-                                <a href="#introduction">Einführung</a>
-                                <a href="#data-we-collect">Welche Daten wir erfassen</a>
-                                <a href="#how-we-use-data">Wie wir Daten verwenden</a>
-                                <a href="#icloud-sync">iCloud-Synchronisierung</a>
-                                <a href="#screen-time">Bildschirmzeit</a>
-                                <a href="#third-party-services">Dienste von Drittanbietern</a>
-                                <a href="#data-retention">Datenspeicherung</a>
-                                <a href="#children">Datenschutz von Kindern</a>
-                                <a href="#security">Sicherheit</a>
-                                <a href="#changes">Änderungen dieser Richtlinie</a>
-                                <a href="#contact">Kontakt</a>
-                            </nav>
-
-                            <div class="policy-content">
-                                <section id="introduction" class="content-card apple-card">
-                                    <h2>Einführung</h2>
-                                    <p>
-                                    Capsla ist eine Pomodoro-Timer-App, die Nutzer dabei unterstützt,
-                                    konzentriert zu bleiben und ihre Zeit bewusst zu strukturieren.
-                                    </p>
-                                    <p>
-                                    Wir respektieren Ihre Privatsphäre. Capsla ist so gestaltet,
-                                    dass möglichst wenige Informationen erfasst werden.
-                                    </p>
-                                </section>
-
-                                <section id="data-we-collect" class="content-card apple-card">
-                                    <h2>Welche Daten wir erfassen</h2>
-
-                                    <p>
-                                    Capsla erfasst keine personenbezogenen Daten wie Ihren Namen,
-                                    Ihre E-Mail-Adresse, Telefonnummer oder Ihren genauen Standort.
-                                    </p>
-
-                                    <p>
-                                    Die App kann anonyme Nutzungsdaten und Absturzberichte über Dienste
-                                    von Drittanbietern erfassen, um Leistung und Zuverlässigkeit zu verbessern.
-                                    </p>
-
-                                    <p>
-                                    Diese Daten können Folgendes umfassen:
-                                    </p>
-
-                                    <ul>
-                                        <li>Interaktionen mit der App, zum Beispiel Sitzungsdauer und Nutzung einzelner Funktionen</li>
-                                        <li>Gerätetyp, Betriebssystemversion und ungefähre Region</li>
-                                        <li>Absturzberichte und Diagnosedaten</li>
-                                    </ul>
-
-                                    <p>
-                                    Diese Informationen identifizieren Sie nicht persönlich.
-                                    </p>
-                                </section>
-
-                                <section id="how-we-use-data" class="content-card apple-card">
-                                    <h2>Wie wir Daten verwenden</h2>
-                                    <p>
-                                    Lokal auf Ihrem Gerät gespeicherte Daten werden nur verwendet,
-                                    um die Funktionen der App bereitzustellen, zum Beispiel:
-                                    </p>
-                                    <ul>
-                                        <li>Speichern der Timer-Dauer</li>
-                                        <li>Merken Ihrer Einstellungen</li>
-                                        <li>Verbessern der Nutzungserfahrung innerhalb der App</li>
-                                    </ul>
-                                </section>
-
-                                <section id="icloud-sync" class="content-card apple-card">
-                                    <h2>iCloud-Synchronisierung</h2>
-
-                                    <p>
-                                    Wenn Sie bei Ihrem Apple-Account angemeldet sind und iCloud aktiviert ist, werden Ihr Phasenverlauf und Ihre Fokus-Tags zwischen Ihren Geräten synchronisiert.
-                                    </p>
-
-                                    <p>
-                                    Synchronisiert werden:
-                                    </p>
-
-                                    <ul>
-                                        <li>Aufzeichnungen abgeschlossener Phasen: Phasentyp, geplante und tatsächliche Dauer, Start- und Endzeit, Durchgangsnummer, Ergebnis und Zeitzone</li>
-                                        <li>Fokus-Tags: Name, Farbe, Symbol und Reihenfolge</li>
-                                    </ul>
-
-                                    <p>
-                                    Diese Daten gelangen in die private Datenbank Ihres eigenen iCloud-Accounts. Der Entwickler von Capsla hat darauf keinen Zugriff und kann sie nicht lesen: Die Synchronisierung erfolgt durch Apple nach dessen eigenen Bedingungen — <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Datenschutzrichtlinie von Apple</a>.
-                                    </p>
-
-                                    <p>
-                                    Die Auswahl der zu blockierenden Apps wird nicht synchronisiert — sie bleibt auf dem Gerät.
-                                    </p>
-
-                                    <p>
-                                    Sie können die Synchronisierung in den iCloud-Systemeinstellungen deaktivieren, indem Sie Capsla dort ausschalten. Ihre Daten bleiben auf dem Gerät.
-                                    </p>
-                                </section>
-
-                                <section id="screen-time" class="content-card apple-card">
-                                    <h2>Bildschirmzeit</h2>
-
-                                    <p>
-                                    Capsla kann ausgewählte Apps während einer Fokusphase blockieren. Dafür ist Zugriff auf die Bildschirmzeit erforderlich; er wird nur angefragt, wenn Sie die Blockierung einschalten.
-                                    </p>
-
-                                    <p>
-                                    Die Apps wählen Sie im Systemdialog von Apple aus. Capsla erhält vom System anonyme Kennungen und <strong>sieht die Namen der ausgewählten Apps nicht</strong> — die App kann nicht erfahren, was Sie ausgewählt haben.
-                                    </p>
-
-                                    <p>
-                                    Die Kennungen werden ausschließlich auf Ihrem Gerät gespeichert. Sie werden nicht an den Entwickler gesendet, nicht an Dritte weitergegeben und nicht über iCloud synchronisiert.
-                                    </p>
-
-                                    <p>
-                                    Statistiken der Bildschirmzeit — wie viel Zeit Sie in Apps verbringen — fragt Capsla nicht ab und liest sie nicht.
-                                    </p>
-
-                                    <p>
-                                    Sie können den Zugriff in den Systemeinstellungen unter „Bildschirmzeit“ widerrufen. Beim Löschen der App wird auch Ihre App-Auswahl gelöscht.
-                                    </p>
-                                </section>
-
-                                <section id="third-party-services" class="content-card apple-card">
-                                    <h2>Dienste von Drittanbietern</h2>
-
-                                    <p>
-                                    Capsla verwendet folgende Dienste von Drittanbietern:
-                                    </p>
-
-                                    <ul>
-                                        <li><strong>Firebase Analytics</strong> — für anonyme Nutzungsanalysen</li>
-                                        <li><strong>Firebase Crashlytics</strong> — für Absturzberichte und Diagnosedaten</li>
-                                    </ul>
-
-                                    <p>
-                                    Diese Dienste werden von <strong>Google LLC</strong> bereitgestellt und können
-                                    anonyme Informationen gemäß den eigenen Datenschutzrichtlinien erfassen.
-                                    </p>
-
-                                    <p>
-                                    Weitere Informationen darüber, wie Google mit Daten umgeht:
-                                    </p>
-
-                                    <p>
-                                    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">
-                                        https://policies.google.com/privacy
-                                    </a>
-                                    </p>
-
-                                    <p>
-                                    Capsla verwendet diese Daten nicht, um Nutzer persönlich zu identifizieren.
-                                    </p>
-                                </section>
-
-                                <section id="data-retention" class="content-card apple-card">
-                                    <h2>Datenspeicherung</h2>
-                                    <p>
-                                    Lokal auf Ihrem Gerät gespeicherte Daten bleiben dort, bis Sie die App löschen
-                                    oder die App-Daten entfernen, sofern eine solche Option verfügbar ist.
-                                    </p>
-
-                                    <p>
-                                    Wenn die iCloud-Synchronisierung aktiviert ist, bleibt eine Kopie Ihrer Daten auch nach dem Löschen der App in Ihrem iCloud-Account. Sie können sie in den iCloud-Systemeinstellungen unter der Verwaltung des Account-Speichers entfernen.
-                                    </p>
-                                </section>
-
-                                <section id="children" class="content-card apple-card">
-                                    <h2>Datenschutz von Kindern</h2>
-                                    <p>
-                                    Capsla erfasst wissentlich keine personenbezogenen Daten von Kindern.
-                                    </p>
-                                </section>
-
-                                <section id="security" class="content-card apple-card">
-                                    <h2>Sicherheit</h2>
-                                    <p>
-                                    Wir möchten die App einfach und datenschutzfreundlich halten.
-                                    Dennoch ist keine Methode zur Speicherung oder Übertragung von Daten vollständig sicher.
-                                    </p>
-                                </section>
-
-                                <section id="changes" class="content-card apple-card">
-                                    <h2>Änderungen dieser Richtlinie</h2>
-                                    <p>
-                                    Wir können diese Datenschutzrichtlinie von Zeit zu Zeit aktualisieren.
-                                    Änderungen werden auf dieser Seite mit einem aktualisierten Gültigkeitsdatum veröffentlicht.
-                                    </p>
-                                </section>
-
-                                <section id="contact" class="content-card apple-card">
-                                    <h2>Kontakt</h2>
-
-                                    <p>
-                                    Wenn Sie Fragen zu dieser Datenschutzrichtlinie haben,
-                                    können Sie den Entwickler von Capsla kontaktieren:
-                                    </p>
-
-                                    <p>
-                                    <a href="mailto:privacy@capsla.app">privacy@capsla.app</a>
-                                    </p>
-                                </section>
-                            </div>
-                        </article>
-                    </div>
-                </section>
-            </main>
-
-            <footer class="site-footer">
-                <div class="container footer-inner">
-                    <p>© 2026 Capsla. Alle Rechte vorbehalten.</p>
-                    <a class="footer-link" href="https://apps.apple.com/app/id6760552635">Capsla im App Store</a>
+              </div>
+              <div style="min-width:0;display:flex;justify-content:center">
+                  <picture>
+            <source srcset="/img/de/hero-dark.webp" media="(prefers-color-scheme: dark)">
+            <img src="/img/de/hero-light.webp" width="1600" height="1200" alt="Der Capsla-Timer: der Zähler in Großaufnahme" loading="eager" decoding="async" fetchpriority="high" style="width:100%;max-width:420px;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r-m);border:1px solid var(--hairline)">
+          </picture>
                 </div>
-            </footer>
+            </section>
+        
+            <section id="features" style="max-width:1080px;margin:0 auto;padding:0 max(20px,env(safe-area-inset-right,0px)) var(--sp-sec) max(20px,env(safe-area-inset-left,0px));display:flex;flex-direction:column;gap:var(--sp-in)">
+              <h2 style="font-size:var(--t6);font-weight:700;line-height:var(--lh-d);letter-spacing:-0.025em;max-width:20ch">Was Capsla kann</h2>
+        
+              <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:clamp(16px,2vw,24px)">
+                <article style="min-width:0;border:1px solid var(--hairline);border-radius:var(--r-m);background:var(--surface);padding:var(--pad);display:flex;flex-direction:column;gap:16px">
+                  <h3 style="font-size:var(--t5);font-weight:700;line-height:var(--lh-s);letter-spacing:-0.02em;max-width:20ch">Dein Rhythmus, nicht 25/5</h3>
+                  <p style="color:var(--ink-2)">Fokus, kurze und lange Pause dürfen beliebig lang sein, von 1 bis 999 Minuten. Die Anzahl der Zyklen bis zur langen Pause wählst du von 1 bis 10. Einem laufenden Fokus kannst du 1 oder 5 Minuten hinzufügen.</p>
+                </article>
+                <article style="min-width:0;border:1px solid var(--hairline);border-radius:var(--r-m);background:var(--surface);padding:var(--pad);display:flex;flex-direction:column;gap:16px">
+                  <h3 style="font-size:var(--t5);font-weight:700;line-height:var(--lh-s);letter-spacing:-0.02em;max-width:20ch">Den Timer siehst du, ohne die App zu öffnen</h3>
+                  <p style="color:var(--ink-2)">Eine Live Activity hält die Phase auf dem Sperrbildschirm und in der Dynamic Island: Pause, Zurücksetzen und während der Pause Überspringen. Dieselbe Karte kommt auf die Apple Watch, dort zeigt sie nur die Zeit. Im Kontrollzentrum gibt es einen Schalter, der einen Fokus startet und beendet.</p>
+                </article>
+              </div>
+        
+              <ul style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:0 clamp(24px,4vw,56px)">
+                <li style="min-width:0;border-top:1px solid var(--hairline);padding:20px 0;display:flex;flex-direction:column;gap:6px">
+                  <h3 style="font-size:var(--t4);font-weight:600;line-height:var(--lh-s);letter-spacing:-0.015em">Mitteilungen</h3>
+                  <p style="color:var(--ink-2);font-size:var(--t2);line-height:var(--lh-b)">Die App meldet, dass eine Phase zu Ende ist, warnt dich, wenn der Fokus gleich ausläuft, und erinnert dich, zurückzukommen, wenn die Pause zu lang wird. Eine Pause starten oder überspringen kannst du direkt aus der Mitteilung.</p>
+                </li>
+                <li style="min-width:0;border-top:1px solid var(--hairline);padding:20px 0;display:flex;flex-direction:column;gap:6px">
+                  <h3 style="font-size:var(--t4);font-weight:600;line-height:var(--lh-s);letter-spacing:-0.015em">Widgets</h3>
+                  <p style="color:var(--ink-2);font-size:var(--t2);line-height:var(--lh-b)">Widgets für Timer und Statistik auf dem Home-Bildschirm, dazu „Fokus heute“ auf dem Sperrbildschirm.</p>
+                </li>
+                <li style="min-width:0;border-top:1px solid var(--hairline);padding:20px 0;display:flex;flex-direction:column;gap:6px">
+                  <h3 style="font-size:var(--t4);font-weight:600;line-height:var(--lh-s);letter-spacing:-0.015em">Siri und Kurzbefehle</h3>
+                  <p style="color:var(--ink-2);font-size:var(--t2);line-height:var(--lh-b)">Bitte Siri, den Timer zu starten, anzuhalten oder eine Pause zu überspringen — sie sagt dir auch, wie viel noch übrig ist. Die Antwort kommt mit einer Karte samt Tasten, du kannst also gleich dort weitermachen.</p>
+                </li>
+                <li style="min-width:0;border-top:1px solid var(--hairline);padding:20px 0;display:flex;flex-direction:column;gap:6px">
+                  <h3 style="font-size:var(--t4);font-weight:600;line-height:var(--lh-s);letter-spacing:-0.015em">Tags</h3>
+                  <p style="color:var(--ink-2);font-size:var(--t2);line-height:var(--lh-b)">Ein Tag hält fest, womit du gerade beschäftigt bist: Arbeit, Lernen, Sport — oder ein eigenes. Tags erscheinen in der Suche auf dem iPhone, und wenn ein Fokus eingeschaltet ist, setzt Capsla das passende Tag von selbst ein.</p>
+                </li>
+                <li style="min-width:0;border-top:1px solid var(--hairline);padding:20px 0;display:flex;flex-direction:column;gap:6px">
+                  <h3 style="font-size:var(--t4);font-weight:600;line-height:var(--lh-s);letter-spacing:-0.015em">Soziale Apps bleiben im Fokus zu</h3>
+                  <p style="color:var(--ink-2);font-size:var(--t2);line-height:var(--lh-b)">Ausgewählte Apps lassen sich für die Dauer eines Fokus sperren — das übernimmt die Bildschirmzeit.</p>
+                </li>
+                <li style="min-width:0;border-top:1px solid var(--hairline);padding:20px 0;display:flex;flex-direction:column;gap:6px">
+                  <h3 style="font-size:var(--t4);font-weight:600;line-height:var(--lh-s);letter-spacing:-0.015em">Statistik</h3>
+                  <p style="color:var(--ink-2);font-size:var(--t2);line-height:var(--lh-b)">Jede abgeschlossene Phase landet im Verlauf: reine Zeit, Tag, Stunde des Tages. Daraus entstehen Tage in Folge, übersprungene Pausen und die Übersicht „Wann du dich fokussierst“. Den Verlauf kannst du als CSV exportieren, und iCloud gleicht ihn zwischen deinen Geräten ab.</p>
+                </li>
+                <li style="min-width:0;border-top:1px solid var(--hairline);padding:20px 0;display:flex;flex-direction:column;gap:6px">
+                  <h3 style="font-size:var(--t4);font-weight:600;line-height:var(--lh-s);letter-spacing:-0.015em">Du siehst, was das iPhone verlässt</h3>
+                  <p style="color:var(--ink-2);font-size:var(--t2);line-height:var(--lh-b)">Zwei Schalter für die Datenerfassung und eine Liste der gesendeten Ereignisse: Du kannst nachsehen, was genau gesendet wurde, und die Erfassung abschalten.</p>
+                </li>
+                <li style="min-width:0;border-top:1px solid var(--hairline);padding:20px 0;display:flex;flex-direction:column;gap:6px">
+                  <h3 style="font-size:var(--t4);font-weight:600;line-height:var(--lh-s);letter-spacing:-0.015em">Ton und Vibration</h3>
+                  <p style="color:var(--ink-2);font-size:var(--t2);line-height:var(--lh-b)">Der Ton am Ende einer Phase erklingt auch im Lautlos-Modus — sonst überhört man den Wechsel leicht. Zur Auswahl stehen 16 Töne. Die Vibration lässt sich in der App einstellen oder abschalten: drei Muster, verschieden für das Ende eines Fokus und das Ende einer Pause.</p>
+                </li>
+                <li style="min-width:0;border-top:1px solid var(--hairline);padding:20px 0;display:flex;flex-direction:column;gap:6px">
+                  <h3 style="font-size:var(--t4);font-weight:600;line-height:var(--lh-s);letter-spacing:-0.015em">Kurzaktionen am App-Symbol</h3>
+                  <p style="color:var(--ink-2);font-size:var(--t2);line-height:var(--lh-b)">Ein langer Druck auf das App-Symbol öffnet die Kurzaktionen — einen Fokus starten, ohne auf den Bildschirm zu warten.</p>
+                </li>
+                <li style="min-width:0;border-top:1px solid var(--hairline);padding:20px 0;display:flex;flex-direction:column;gap:6px">
+                  <h3 style="font-size:var(--t4);font-weight:600;line-height:var(--lh-s);letter-spacing:-0.015em">Bedienungshilfen und Sprachen</h3>
+                  <p style="color:var(--ink-2);font-size:var(--t2);line-height:var(--lh-b)">Dunkles Erscheinungsbild, erhöhter Kontrast und größere Schrift werden unterstützt. Die Oberfläche gibt es auf Russisch, Englisch und Deutsch.</p>
+                </li>
+              </ul>
+            </section>
+        
+            <section style="max-width:1080px;margin:0 auto;padding:0 max(20px,env(safe-area-inset-right,0px)) var(--sp-sec) max(20px,env(safe-area-inset-left,0px));display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:clamp(20px,3vw,40px);align-items:center">
+              <div style="min-width:0;display:flex;flex-direction:column;gap:14px">
+                <h2 style="font-size:var(--t6);font-weight:700;line-height:var(--lh-d);letter-spacing:-0.025em;max-width:20ch">Vier animierte Hintergründe</h2>
+                <p style="color:var(--ink-2);max-width:44ch">Verlauf, Orbits, Wellen und Atmen. Verlauf hat sechs Stile, Wellen eine eigene Farbe, Orbits die Dichte der Ringe und fünf Paletten: monochrom und vier farbige.</p>
+                <ul style="display:flex;gap:10px;flex-wrap:wrap;margin-top:4px">
+                    <li style="width:56px;height:56px;border-radius:var(--r-s);background:#020812;display:flex;align-items:center;justify-content:center"><span style="width:28px;height:28px;border-radius:50%;border:2px solid #7ADAFF;display:block"></span></li>
+                    <li style="width:56px;height:56px;border-radius:var(--r-s);background:#100508;display:flex;align-items:center;justify-content:center"><span style="width:28px;height:28px;border-radius:50%;border:2px solid #FFA973;display:block"></span></li>
+                    <li style="width:56px;height:56px;border-radius:var(--r-s);background:#020C09;display:flex;align-items:center;justify-content:center"><span style="width:28px;height:28px;border-radius:50%;border:2px solid #87EFB3;display:block"></span></li>
+                    <li style="width:56px;height:56px;border-radius:var(--r-s);background:#0B0512;display:flex;align-items:center;justify-content:center"><span style="width:28px;height:28px;border-radius:50%;border:2px solid #CFB3FF;display:block"></span></li>
+                  </ul>
+              </div>
+              <div style="min-width:0;display:flex;justify-content:center">
+                  <img src="/img/de/background.webp" width="1600" height="1200" alt="Der animierte Hintergrund „Wellen“ auf dem Timer-Bildschirm" loading="lazy" decoding="async" style="width:100%;max-width:420px;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r-m);border:1px solid var(--hairline)">
+                </div>
+            </section>
+        
+            <section style="background:var(--surface);border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline);margin-bottom:var(--sp-fin)">
+              <div style="max-width:1080px;margin:0 auto;padding:var(--sp-sec) max(20px,env(safe-area-inset-right,0px)) var(--sp-sec) max(20px,env(safe-area-inset-left,0px));display:flex;flex-direction:column;gap:var(--sp-in)">
+                <div style="display:flex;flex-direction:column;gap:14px;max-width:52ch">
+                  <h2 style="font-size:var(--t6);font-weight:700;line-height:var(--lh-d);letter-spacing:-0.025em;max-width:20ch">Nicht nur für die Arbeit am Schreibtisch</h2>
+                  <p style="color:var(--ink-2)">Der Timer hilft überall dort, wo der Rhythmus von außen kommen muss: beim Fokussieren mit ADHS, beim Zählen von Sätzen im Training, beim Abmessen von Zügen bei Partyspielen.</p>
+                </div>
+              </div>
+            </section>
+        
+            <section style="max-width:1080px;margin:0 auto;padding:0 max(20px,env(safe-area-inset-right,0px)) var(--sp-sec) max(20px,env(safe-area-inset-left,0px));display:flex;flex-direction:column;gap:16px">
+              <h2 style="font-size:var(--t6);font-weight:700;line-height:var(--lh-d);letter-spacing:-0.025em;max-width:24ch">Keine Werbung, keine bezahlten Tasten</h2>
+              <p style="font-size:var(--t5);line-height:var(--lh-s);color:var(--ink-2);max-width:60ch">Die wichtigsten Funktionen sind kostenlos und bleiben es. Es gibt keine Bildschirme, die dir etwas verkaufen wollen, und keine Tasten, die ohne Bezahlung aufhören zu funktionieren.</p>
+            </section>
+        
+            <section style="background:var(--ink);color:var(--on-ink)">
+              <div style="max-width:1080px;margin:0 auto;padding:var(--sp-sec) max(20px,env(safe-area-inset-right,0px)) var(--sp-sec) max(20px,env(safe-area-inset-left,0px));display:flex;flex-direction:column;gap:24px;align-items:flex-start">
+                <h2 style="font-size:var(--t6);font-weight:700;line-height:var(--lh-d);letter-spacing:-0.025em;max-width:20ch">Du brauchst nur ein iPhone</h2>
+                <p style="font-size:var(--t4);line-height:var(--lh-s);opacity:0.75;max-width:44ch">Jedes iPhone mit iOS 26 oder neuer. Die App ist kostenlos, eine Anmeldung gibt es nicht.</p>
+                <a href="https://apps.apple.com/app/id6760552635" style="display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:0 30px;border-radius:var(--r-f);background:var(--on-ink);color:var(--ink);font-size:var(--t4);font-weight:600" style-hover="opacity:0.9;text-decoration:none">Im App Store laden</a>
+              </div>
+            </section>
+          </main>
+        
+          <footer style="border-top:1px solid var(--hairline)">
+            <div data-footer-grid="true" style="max-width:1080px;margin:0 auto;padding:32px max(20px,env(safe-area-inset-right,0px)) 40px max(20px,env(safe-area-inset-left,0px));align-items:start">
+              <div style="display:flex;flex-direction:column;gap:8px">
+                <span style="display:flex;align-items:center;gap:9px;font-size:var(--t4);font-weight:600;letter-spacing:-0.02em">
+                  <img data-logo="true" src="/favicon.png" width="24" height="24" alt="" style="width:24px;height:24px">Capsla
+                </span>
+                <span style="color:var(--ink-2);font-size:var(--t2)">Ein Timer für Fokus und Pausen. Nur iPhone.</span>
+                <span style="color:var(--ink-2);font-size:var(--t2)">© 2026 Ramiz Kichibekov</span>
+              </div>
+              <nav aria-label="Bereiche der Website" style="display:flex;flex-direction:column;gap:4px;align-items:flex-start">
+                <a href="#features" style="display:inline-flex;align-items:center;min-height:44px;font-size:var(--t2)">Funktionen</a>
+                <a href="/de/privacy/" style="display:inline-flex;align-items:center;min-height:44px;font-size:var(--t2)">Datenschutz</a>
+        <a href="/de/support/" style="display:inline-flex;align-items:center;min-height:44px;font-size:var(--t2)">Support</a>
+                <a href="https://apps.apple.com/app/id6760552635" style="display:inline-flex;align-items:center;min-height:44px;font-size:var(--t2)">App Store</a>
+              </nav>
+              <nav aria-label="Sprache der Seite" style="display:flex;flex-direction:column;gap:4px;align-items:flex-start">
+                <a href="/ru/" style="display:inline-flex;align-items:center;min-height:44px;font-size:var(--t2);font-weight:600">Русский</a>
+                <a href="/en/" style="display:inline-flex;align-items:center;min-height:44px;font-size:var(--t2)">English</a>
+                <a aria-current="page" href="/de/" style="display:inline-flex;align-items:center;min-height:44px;font-size:var(--t2)">Deutsch</a>
+              </nav>
+            </div>
+          </footer>
         </div>
     </body>
 </html>

@@ -2,24 +2,18 @@
 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-<url>
-  <loc>https://capsla.app/</loc>
-</url>
+<url><loc>https://capsla.app/</loc></url>
 
-<url>
-  <loc>https://capsla.app/ru/</loc>
-</url>
+<url><loc>https://capsla.app/ru/</loc></url>
+<url><loc>https://capsla.app/en/</loc></url>
+<url><loc>https://capsla.app/de/</loc></url>
 
-<url>
-  <loc>https://capsla.app/en/privacy/</loc>
-</url>
+<url><loc>https://capsla.app/ru/privacy/</loc></url>
+<url><loc>https://capsla.app/en/privacy/</loc></url>
+<url><loc>https://capsla.app/de/privacy/</loc></url>
 
-<url>
-  <loc>https://capsla.app/ru/privacy/</loc>
-</url>
-
-<url>
-  <loc>https://capsla.app/de/privacy/</loc>
-</url>
+<url><loc>https://capsla.app/ru/support/</loc></url>
+<url><loc>https://capsla.app/en/support/</loc></url>
+<url><loc>https://capsla.app/de/support/</loc></url>
 
 </urlset>
