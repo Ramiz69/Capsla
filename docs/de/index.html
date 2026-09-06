@@ -19,10 +19,25 @@
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Capsla — Pomodoro-Timer" />
         <meta name="twitter:description" content="Ein ruhiger Fokus-Timer für Apple-Geräte." />
-        <meta name="twitter:image" content="https://capsla.app/og-image.png" />
         <meta name="apple-itunes-app" content="app-id=6760552635"/>
         <link rel="icon" href="/favicon.png" sizes="32x32" />
         <link rel="apple-touch-icon" href="/favicon.png" />
+        <meta name="theme-color" content="#f5f5f7" media="(prefers-color-scheme: light)" />
+        <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+        <script>
+            // Выбранная тема применяется до первой отрисовки. Основной скрипт
+            // отложен, и с ним страница успевала показаться в системной теме,
+            // а потом переключиться — заметное мигание при каждом заходе.
+            (function () {
+                try {
+                    var saved = localStorage.getItem("capsla-theme");
+
+                    if (saved === "light" || saved === "dark") {
+                        document.documentElement.setAttribute("data-theme", saved);
+                    }
+                } catch (error) {}
+            })();
+        </script>
         <link rel="stylesheet" href="../styles.css" />
         <script defer src="../app.js"></script>
         <script type="application/ld+json">
@@ -53,13 +68,13 @@
                     </a>
 
                     <div class="header-controls">
-                        <div class="segmented-control" aria-label="Darstellung wechseln">
+                        <div class="segmented-control" data-control="theme" role="group" aria-label="Darstellung wechseln">
                             <button type="button" class="segment-button" data-theme-value="system">System</button>
                             <button type="button" class="segment-button" data-theme-value="light">Hell</button>
                             <button type="button" class="segment-button" data-theme-value="dark">Dunkel</button>
                         </div>
 
-                        <div class="segmented-control" aria-label="Sprache wechseln">
+                        <div class="segmented-control" data-control="language" role="group" aria-label="Sprache wechseln">
                             <a href="../en/" class="segment-button is-link" data-lang-link="en">EN</a>
                             <a href="../ru/" class="segment-button is-link" data-lang-link="ru">RU</a>
                             <a href="../de/" class="segment-button is-link" data-lang-link="de">DE</a>
@@ -240,6 +255,7 @@
             <footer class="site-footer">
                 <div class="container footer-inner">
                     <p>© 2026 Capsla. Alle Rechte vorbehalten.</p>
+                    <a class="footer-link" href="https://apps.apple.com/app/id6760552635">Capsla im App Store</a>
                 </div>
             </footer>
         </div>

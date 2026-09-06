@@ -3,8 +3,25 @@
    const LANGUAGE_KEY = "capsla-language";
    const SUPPORTED_LANGUAGES = ["en", "ru", "de"];
 
+   // Доступ к хранилищу защищён: в приватном окне и при запрете
+   // сторонних данных обращение к нему бросает, и вместе с ним падал
+   // весь скрипт — переставали работать и темы, и выбор языка.
+   function readStored(key) {
+     try {
+       return localStorage.getItem(key);
+     } catch (error) {
+       return null;
+     }
+   }
+
+   function writeStored(key, value) {
+     try {
+       localStorage.setItem(key, value);
+     } catch (error) {}
+   }
+
    function getSavedTheme() {
-     return localStorage.getItem(THEME_KEY) || "system";
+     return readStored(THEME_KEY) || "system";
    }
 
    function applyTheme(theme) {
@@ -16,7 +33,7 @@
        root.setAttribute("data-theme", theme);
      }
 
-     localStorage.setItem(THEME_KEY, theme);
+     writeStored(THEME_KEY, theme);
      updateThemeButtons(theme);
    }
 
@@ -41,7 +58,7 @@
    }
 
    function detectPreferredLanguage() {
-     const saved = localStorage.getItem(LANGUAGE_KEY);
+     const saved = readStored(LANGUAGE_KEY);
 
      if (saved && SUPPORTED_LANGUAGES.includes(saved)) {
        return saved;
@@ -68,7 +85,7 @@
 
      if (!pageLang) return;
 
-     localStorage.setItem(LANGUAGE_KEY, pageLang);
+     writeStored(LANGUAGE_KEY, pageLang);
 
      document.querySelectorAll("[data-lang-link]").forEach((link) => {
        link.classList.toggle("is-active", link.dataset.langLink === pageLang);

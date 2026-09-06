@@ -59,6 +59,9 @@ html[data-theme="dark"] {
 
 html {
   scroll-behavior: smooth;
+  /* Шапка липкая: без этого якорь оглавления ставит заголовок ровно
+     под неё, и человек попадает на середину раздела. */
+  scroll-padding-top: 96px;
 }
 
 body {
@@ -77,6 +80,9 @@ body {
     linear-gradient(180deg, var(--bg) 0%, var(--bg) 100%);
   color: var(--text-primary);
   min-height: 100vh;
+  /* Динамические панели Safari меняют высоту окна: 100vh считается
+     по развёрнутому состоянию и даёт лишнюю прокрутку. */
+  min-height: 100dvh;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
@@ -229,7 +235,16 @@ img {
   line-height: 0.96;
   letter-spacing: -0.045em;
   font-weight: 700;
-  max-width: 12ch;
+  /* `12ch` держит красивую длину строки на широком экране, но на узком
+     оно шире самой карточки. Длинное слово в такую рамку не влезает
+     и вылезает за экран целиком — «конфиденциальности» уезжало за
+     правый край, и страница прокручивалась вбок. */
+  max-width: min(12ch, 100%);
+  /* Перенос по слогам там, где браузер умеет, и разрыв в любом месте
+     как последнее средство: заголовок обязан остаться внутри карточки
+     на любом языке. */
+  hyphens: auto;
+  overflow-wrap: break-word;
 }
 
 .hero-text {
@@ -285,8 +300,12 @@ img {
 }
 
 .policy-nav a {
-  display: block;
-  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  /* 44 пункта — минимальная цель нажатия в рекомендациях Apple.
+     Было 38: по такой ссылке пальцем попадаешь не всегда. */
+  min-height: 44px;
+  padding: 4px 0;
   color: var(--text-secondary);
   font-size: 0.95rem;
   transition: color 0.2s ease;
@@ -336,8 +355,23 @@ img {
 }
 
 .footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
   color: var(--text-secondary);
   font-size: 0.95rem;
+}
+
+.footer-inner p {
+  margin: 0;
+}
+.footer-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-weight: 500;
 }
 
 .redirect-page {
@@ -412,15 +446,45 @@ img {
 }
 
 @media (max-width: 720px) {
-  .header-inner {
-    padding: 12px 0;
-    align-items: flex-start;
-    flex-direction: column;
+  html {
+    scroll-padding-top: 112px;
   }
 
+  /* Шапка липкая и на телефоне. Тремя строками — марка, тема, язык —
+     она занимала 179 точек, пятую часть экрана, и держала их всё время
+     чтения. Марка идёт первой строкой, оба переключателя — второй. */
+  .header-inner {
+    min-height: 0;
+    padding: 10px 0;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  /* Порядок в разметке — тема, потом язык — на телефоне даёт худшую
+     раскладку: широкая тема выталкивает язык на третью строку.
+     `display: contents` поднимает оба переключателя на один уровень
+     с маркой, и дальше порядком задаётся то, что нужно: марка и язык
+     первой строкой, тема — второй. */
   .header-controls {
-    width: 100%;
-    justify-content: flex-start;
+    display: contents;
+  }
+
+  .brand {
+    order: 1;
+  }
+
+  .segmented-control[data-control="language"] {
+    order: 2;
+  }
+
+  .segmented-control[data-control="theme"] {
+    order: 3;
+  }
+
+  .segment-button {
+    padding: 9px 11px;
+    font-size: 0.85rem;
   }
 
   .hero-card,
