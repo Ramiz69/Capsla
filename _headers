@@ -1,0 +1,23 @@
+# Cloudflare Pages читает этот файл и отдаёт заголовки без пересборки.
+
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  # Страницы обязаны перепроверяться: содержимое меняется, а адреса
+  # у них постоянные.
+  Cache-Control: public, no-cache
+
+# Картинки и стили держатся час, дальше обновляются в фоне. Дольше
+# держать нельзя: имена файлов не содержат отпечатка содержимого,
+# и замена под тем же именем не дошла бы до вернувшихся посетителей.
+/img/*
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/styles.css
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/app.js
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/favicon.png
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
