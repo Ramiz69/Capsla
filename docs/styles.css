@@ -114,8 +114,22 @@ img {
 }
 
 .container {
-  width: min(calc(100% - 32px), var(--max-width));
+  width: 100%;
+  /* Ширина содержимого прежняя: поля ушли в padding, поэтому потолок
+     вырос на их величину. */
+  max-width: calc(var(--max-width) + 32px);
   margin: 0 auto;
+  /* Страница объявлена с `viewport-fit=cover`, то есть занимает экран целиком,
+     включая области под вырезом. В ландшафте на iPhone с вырезом безопасная
+     зона по бокам доходит до 59 пунктов — при жёстком поле в 16 текст ушёл бы
+     под сенсорный блок и скруглённые углы. `max` оставляет прежние 16 там,
+     где вырезов нет.
+
+     Запасное значение у `env` обязательно: без него объявление недействительно
+     в браузерах, которые безопасных зон не объявляют вовсе, и поля обнуляются
+     целиком — текст встаёт вплотную к краю экрана. */
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
 }
 
 .page-shell {
@@ -385,7 +399,8 @@ img {
 .redirect-page {
   display: grid;
   place-items: center;
-  padding: 24px;
+  padding: 24px max(24px, env(safe-area-inset-right, 0px)) 24px
+    max(24px, env(safe-area-inset-left, 0px));
 }
 
 .redirect-shell {
@@ -463,7 +478,11 @@ img {
      чтения. Марка идёт первой строкой, оба переключателя — второй. */
   .header-inner {
     min-height: 0;
-    padding: 10px 0;
+    /* Только по вертикали: боковые поля приходят от `.container` и учитывают
+       безопасные зоны. Сокращённая запись обнулила бы их и прижала марку
+       к краю экрана. */
+    padding-top: 10px;
+    padding-bottom: 10px;
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
