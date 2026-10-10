@@ -1,0 +1,271 @@
+{
+  "lang": "en",
+  "meta": {
+    "title": "Capsla — a quiet focus and break timer for iPhone and Apple Watch",
+    "description": "A Pomodoro timer for iPhone and Apple Watch: sessions that run on their own, distracting apps blocked while you focus, statistics, Health and Calendar. Free, with no ads.",
+    "ogTitle": "Capsla — a quiet focus timer",
+    "ogDescription": "A Pomodoro timer for iPhone and Apple Watch. Free, with no ads.",
+    "ogImage": "og-image.png"
+  },
+  "nav": {
+    "skip": "Skip to content",
+    "label": "Theme and language",
+    "themeLight": "Light",
+    "themeDark": "Dark"
+  },
+  "cta": {
+    "download": "Download on the App Store"
+  },
+  "hero": {
+    "title": "A quiet timer for focus and&nbsp;breaks",
+    "lede": "Focus, a short break, and after a few rounds a long one. The capsule here is a real timer, and the rings around it are the same Orbital background as in the app. Press play.",
+    "fine": "Free, with no ads. For iPhone and Apple Watch."
+  },
+  "timer": {
+    "label": "Try the timer",
+    "focusTime": "Focus time",
+    "focus": "Focus",
+    "minutesLabel": "Focus length in minutes",
+    "start": "Start focus",
+    "pause": "Pause",
+    "resume": "Resume",
+    "reset": "Reset",
+    "palette": "Background palette",
+    "shortBreak": "Short break",
+    "longBreak": "Long break",
+    "sessionDone": "Session complete",
+    "palettes": {
+      "monochrome": "Monochrome",
+      "ocean": "Ocean",
+      "sunset": "Sunset",
+      "forest": "Forest",
+      "violet": "Violet"
+    }
+  },
+  "session": {
+    "title": "A session that runs on its own",
+    "body": "Turn on auto-start and focus, break and the next focus follow one another without a tap until the long break. Breaks and focus switch on separately, so you can rest on cue and come back to work when you choose.",
+    "body2": "Every transition is scheduled ahead, so the session keeps going with the app closed and the signal for the next phase arrives on time.",
+    "chainLabel": "An example session: three focus phases with short breaks, then a long break",
+    "chain": [
+      {
+        "kind": "focus",
+        "name": "Focus",
+        "min": "25 min"
+      },
+      {
+        "kind": "break",
+        "name": "Break",
+        "min": "5 min"
+      },
+      {
+        "kind": "focus",
+        "name": "Focus",
+        "min": "25 min"
+      },
+      {
+        "kind": "break",
+        "name": "Break",
+        "min": "5 min"
+      },
+      {
+        "kind": "focus",
+        "name": "Focus",
+        "min": "25 min"
+      },
+      {
+        "kind": "long",
+        "name": "Long break",
+        "min": "15 min"
+      }
+    ],
+    "toggleBreaks": "Start Breaks Automatically",
+    "toggleFocus": "Start Focus Automatically"
+  },
+  "everywhere": {
+    "title": "The timer is wherever you look",
+    "body": "A Live Activity and the Dynamic Island, the Lock Screen, widgets, Control Center, the Action button. Ask Siri to pause and the answer comes with a card and buttons for the next step. You rarely need to open the app.",
+    "watch": "Capsla has its own Apple Watch app: start and pause from your wrist even when your iPhone isn’t nearby, and feel a tap when a phase ends. Phases you finish on the watch count in your statistics on iPhone.",
+    "note": "The same countdown as in the capsule above.",
+    "places": [
+      {
+        "title": "Lock Screen and Dynamic Island",
+        "body": "The Live Activity shows the phase and the time, with pause and reset, and skip during a break."
+      },
+      {
+        "title": "Widgets",
+        "body": "Timer and statistics on the Home Screen, and a Lock Screen widget with a start button."
+      },
+      {
+        "title": "Control Center and the Action button",
+        "body": "Start or stop focus without opening the app."
+      },
+      {
+        "title": "Siri and Shortcuts",
+        "body": "Start, pause, resume, skip a break, and ask how long you focused today."
+      },
+      {
+        "title": "Apple Watch",
+        "body": "Complications, a Smart Stack card and a button in the watch’s Control Center."
+      }
+    ]
+  },
+  "block": {
+    "title": "Social apps can wait until focus ends",
+    "body": "Pick the apps that pull you away and Capsla blocks them during focus through Screen Time, then lifts the block the moment the phase ends. Open a blocked app and you’ll see a Capsla screen instead."
+  },
+  "stats": {
+    "title": "Where your attention went",
+    "body": "Net focus time by week, month and all time, a chart by day, the hours you focus best, days in a row and time by tag.",
+    "body2": "History starts the day you install Capsla, and the app never fills in numbers it did not record. Export all of it as a CSV file whenever you like.",
+    "items": [
+      {
+        "title": "Health",
+        "body": "Focus tagged Meditation, Walk or Sport can be saved to Health. Capsla only writes there and never reads."
+      },
+      {
+        "title": "Calendar",
+        "body": "Finished sessions go to a calendar of your choice, and you can schedule focus there too."
+      },
+      {
+        "title": "A full-page widget",
+        "body": "On iOS 27, statistics can fill a whole Home Screen page."
+      }
+    ],
+    "image": "/img/en/statistics.webp",
+    "imageAlt": "The Capsla statistics screen for a week: 9 h 43 m of net focus, bars by day and dots by hour of the week"
+  },
+  "signals": {
+    "title": "Quiet, but hard to miss",
+    "body": "A quiet heads-up a few minutes before focus ends, a signal when a phase is over, buttons to start the break or the next focus right from the banner, and a reminder if you forget to come back after a break. Notifications are Time Sensitive, so they come through Do Not Disturb.",
+    "body2": "The end-of-phase signal plays even in silent mode, because a missed transition defeats the point. There are 16 sounds and three vibration patterns, chosen separately for each phase."
+  },
+  "more": {
+    "title": "And also",
+    "items": [
+      {
+        "text": "Focus and breaks from 1 to 999 minutes, 1 to 10 cycles"
+      },
+      {
+        "text": "Add one or five minutes in the last minute of focus"
+      },
+      {
+        "text": "Tags with icons and colors; a Focus filter can pick the tag for you"
+      },
+      {
+        "text": "Four animated backgrounds, including a slow breathing mode"
+      },
+      {
+        "text": "Quick actions on the app icon"
+      },
+      {
+        "text": "Dark Mode, VoiceOver, larger text and increased contrast"
+      },
+      {
+        "text": "17 languages"
+      }
+    ]
+  },
+  "privacy": {
+    "title": "You can see what leaves your phone",
+    "body": "There is no Capsla account. Tags and focus history sync only through your own iCloud, and settings stay on your iPhone.",
+    "body2": "The Privacy screen lists the recent events Capsla itself has sent. It’s a real list from your device, and two switches turn collection off.",
+    "link": "Privacy policy",
+    "href": "/en/privacy/"
+  },
+  "plus": {
+    "title": "The essentials are free and stay free",
+    "body": "Capsla+ is a one-time purchase with no subscription, shared with your family. It adds looks and sound only.",
+    "caption": "What’s in free Capsla and in Capsla+",
+    "colFeature": "Feature",
+    "colFree": "Free",
+    "included": "Included",
+    "notIncluded": "Not included",
+    "free": [
+      {
+        "text": "Timer, auto-start and notifications"
+      },
+      {
+        "text": "The Apple Watch app"
+      },
+      {
+        "text": "Blocking apps during focus"
+      },
+      {
+        "text": "Statistics, Health and Calendar"
+      },
+      {
+        "text": "Tags, widgets, Siri and Shortcuts"
+      },
+      {
+        "text": "Four animated backgrounds and 16 sounds"
+      }
+    ],
+    "paid": [
+      {
+        "title": "New backgrounds",
+        "body": "Five more live timer backgrounds."
+      },
+      {
+        "title": "Accent and palettes",
+        "body": "An accent color for the whole app and new palettes for the backgrounds."
+      },
+      {
+        "title": "Timer digits",
+        "body": "New typefaces for the countdown on iPhone and Apple Watch."
+      },
+      {
+        "title": "Celebration effects",
+        "body": "Other effects when a cycle ends, instead of confetti."
+      },
+      {
+        "title": "Focus sounds",
+        "body": "Brown, pink or white noise in the background while you focus."
+      },
+      {
+        "title": "Watch and widgets",
+        "body": "Your accent and digits on widgets, the Live Activity and Apple Watch."
+      }
+    ],
+    "note": "Nothing that was free moved behind Capsla+, and there are no pop-ups asking you to buy."
+  },
+  "faq": {
+    "title": "Questions",
+    "items": [
+      {
+        "q": "Is Capsla free?",
+        "a": "Yes, with no ads. The timer, the watch app, app blocking, statistics, tags, widgets and Siri are free. Capsla+ is an optional one-time purchase for looks and sound."
+      },
+      {
+        "q": "Do I need an account?",
+        "a": "No. History and tags sync through your iCloud; there is nothing to sign up for."
+      },
+      {
+        "q": "Does the timer keep running if I close the app?",
+        "a": "Yes. The phase keeps counting with the app closed: the time shows on the Lock Screen and in the Dynamic Island, and a notification arrives when the phase ends."
+      },
+      {
+        "q": "Why does the signal play in silent mode?",
+        "a": "On purpose: otherwise a transition is easy to miss, and the whole point of a timer is that you stop watching it."
+      },
+      {
+        "q": "Does the watch need my iPhone nearby?",
+        "a": "No. You can start and pause focus from the watch even when your iPhone isn’t nearby."
+      },
+      {
+        "q": "Which devices does Capsla run on?",
+        "a": "iPhone with iOS 26 or later and Apple Watch with watchOS 26 or later. There is no iPad version."
+      }
+    ]
+  },
+  "final": {
+    "title": "Try it on your iPhone",
+    "body": "Free, with no ads and no account."
+  },
+  "foot": {
+    "label": "Links",
+    "support": "Support",
+    "supportHref": "/en/support/",
+    "privacy": "Privacy"
+  }
+}

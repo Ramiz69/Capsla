@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="{{lang}}" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{meta.title}}</title>
+<meta name="description" content="{{meta.description}}">
+<meta name="google-site-verification" content="mQ-XMhX4pC-cmHKHysrBbrbVa3eKna4o4eNOFXXA_3Q">
+<meta name="apple-itunes-app" content="app-id=6760552635">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f5f5f5" media="(prefers-color-scheme: light)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Capsla">
+<meta property="og:title" content="{{meta.ogTitle}}">
+<meta property="og:description" content="{{meta.ogDescription}}">
+<meta property="og:url" content="{{canonical}}">
+<meta property="og:image" content="https://capsla.app/{{meta.ogImage}}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="{{canonical}}">
+<link rel="alternate" hreflang="en" href="https://capsla.app/en/">
+<link rel="alternate" hreflang="ru" href="https://capsla.app/ru/">
+<link rel="alternate" hreflang="de" href="https://capsla.app/de/">
+<link rel="alternate" hreflang="x-default" href="https://capsla.app/">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/favicon.png">
+<link rel="preload" href="{{@digits.woff2}}" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="{{@home.css}}">
+<script>
+  (function () {
+    try {
+      var saved = localStorage.getItem('capsla-theme');
+      var theme = saved === 'light' || saved === 'dark' ? saved : (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+      document.documentElement.setAttribute('data-theme', theme);
+    } catch (e) {}
+  })();
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"MobileApplication","name":"Capsla","operatingSystem":"iOS 26, watchOS 26","applicationCategory":"ProductivityApplication","url":"{{canonical}}","downloadUrl":"https://apps.apple.com/app/id6760552635","inLanguage":"{{lang}}","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">{{nav.skip}}</a>
+
+<header class="top">
+  <a class="brand" href="{{home}}"><img src="/favicon.png" alt="" width="28" height="28">Capsla</a>
+  <nav class="top-right" aria-label="{{nav.label}}">
+    <button class="pill" id="theme" type="button" data-light="{{nav.themeLight}}" data-dark="{{nav.themeDark}}">{{nav.themeLight}}</button>
+    <div class="langs">
+      {{#list langs}}<a class="pill" href="{{.href}}" hreflang="{{.code}}" lang="{{.code}}"{{.current}}>{{.label}}</a>{{/list}}
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+<section class="hero" aria-labelledby="title">
+  <canvas id="orbits" aria-hidden="true"></canvas>
+  <div class="hero-layout">
+    <div class="hero-copy">
+      <h1 id="title">{{hero.title}}</h1>
+      <p class="lede">{{hero.lede}}</p>
+      <a class="store" href="https://apps.apple.com/app/id6760552635">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.37 12.6c-.02-2.2 1.8-3.26 1.88-3.31-1.03-1.5-2.62-1.7-3.19-1.73-1.36-.14-2.65.8-3.34.8-.69 0-1.75-.78-2.88-.76-1.48.02-2.85.86-3.61 2.19-1.54 2.67-.39 6.62 1.11 8.79.73 1.06 1.6 2.25 2.75 2.21 1.1-.04 1.52-.71 2.85-.71s1.71.71 2.88.69c1.19-.02 1.94-1.08 2.67-2.15.84-1.23 1.19-2.42 1.21-2.48-.03-.01-2.31-.89-2.33-3.54zM14.17 6.13c.61-.74 1.02-1.76.91-2.78-.88.04-1.94.59-2.57 1.32-.56.65-1.06 1.69-.93 2.69.98.08 1.98-.5 2.59-1.23z"/></svg>
+        {{cta.download}}
+      </a>
+      <p class="fine">{{hero.fine}}</p>
+    </div>
+
+    <div class="stage">
+      <div class="capsule" id="capsule" role="group" aria-label="{{timer.label}}">
+        <div class="cap-top">
+          <span class="greeting" id="greeting">{{timer.focusTime}}</span>
+          <div class="cycles" id="cycles" hidden></div>
+        </div>
+        <div class="mid">
+          <p class="digits" id="digits" role="timer">25:00</p>
+          <span class="phase" id="phase"></span>
+        </div>
+        <div class="chips" id="chips" role="group" aria-label="{{timer.minutesLabel}}">
+          <button class="chip" type="button" data-min="1" aria-pressed="false">1</button>
+          <button class="chip" type="button" data-min="5" aria-pressed="false">5</button>
+          <button class="chip" type="button" data-min="25" aria-pressed="true">25</button>
+        </div>
+        <button class="play" id="play" type="button" aria-label="{{timer.start}}">
+          <svg id="play-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l13-7.5z"/></svg>
+        </button>
+        <button class="reset" id="reset" type="button" aria-label="{{timer.reset}}" hidden>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12a8 8 0 1 0 2.4-5.7"/><path d="M4 4v4.5h4.5"/></svg>
+        </button>
+      </div>
+      <div class="palettes" role="radiogroup" aria-label="{{timer.palette}}">
+        <span class="palettes-label">{{timer.palette}}</span>
+      </div>
+    </div>
+  </div>
+  <p class="vh" id="announce" aria-live="polite"></p>
+</section>
+
+<section class="band" id="session" aria-labelledby="session-title">
+  <div class="split">
+    <div class="text">
+      <h2 id="session-title">{{session.title}}</h2>
+      <p>{{session.body}}</p>
+      <p>{{session.body2}}</p>
+    </div>
+    <figure class="chain" aria-label="{{session.chainLabel}}">
+      <ol>
+        {{#list session.chain}}<li class="link link-{{.kind}}"><span class="link-name">{{.name}}</span><span class="link-min">{{.min}}</span></li>{{/list}}
+      </ol>
+      <div class="toggles">
+        <div class="toggle" role="presentation"><span>{{session.toggleBreaks}}</span><i aria-hidden="true"></i></div>
+        <div class="toggle" role="presentation"><span>{{session.toggleFocus}}</span><i aria-hidden="true"></i></div>
+      </div>
+    </figure>
+  </div>
+</section>
+
+<section class="band" id="everywhere" aria-labelledby="everywhere-title">
+  <div class="split split-reverse">
+    <div class="text">
+      <h2 id="everywhere-title">{{everywhere.title}}</h2>
+      <p>{{everywhere.body}}</p>
+      <p>{{everywhere.watch}}</p>
+    </div>
+    <figure class="devices" aria-hidden="true">
+      <div class="island"><span class="island-dot"></span><span class="island-time" data-mirror>25:00</span></div>
+      <div class="watch"><div class="watch-face"><span class="watch-phase" data-mirror-phase>{{timer.focus}}</span><span class="watch-time" data-mirror>25:00</span></div></div>
+      <figcaption class="devices-note">{{everywhere.note}}</figcaption>
+    </figure>
+  </div>
+  <ul class="places">
+    {{#list everywhere.places}}<li><strong>{{.title}}</strong><span>{{.body}}</span></li>{{/list}}
+  </ul>
+</section>
+
+<section class="band" id="block" aria-labelledby="block-title">
+  <div class="split split-reverse">
+    <div class="text">
+      <h2 id="block-title">{{block.title}}</h2>
+      <p>{{block.body}}</p>
+    </div>
+    {{?block.image}}<figure class="shot"><img src="{{block.image}}" alt="{{block.imageAlt}}" width="800" height="1738" loading="lazy" decoding="async"></figure>{{/?}}
+  </div>
+</section>
+
+<section class="band" id="stats" aria-labelledby="stats-title">
+  <div class="split">
+    <div class="text">
+      <h2 id="stats-title">{{stats.title}}</h2>
+      <p>{{stats.body}}</p>
+      <p>{{stats.body2}}</p>
+    </div>
+    <figure class="shot"><img src="{{stats.image}}" alt="{{stats.imageAlt}}" width="800" height="1738" loading="lazy" decoding="async"></figure>
+  </div>
+  <ul class="places">
+    {{#list stats.items}}<li><strong>{{.title}}</strong><span>{{.body}}</span></li>{{/list}}
+  </ul>
+</section>
+
+<section class="band" id="signals" aria-labelledby="signals-title">
+  <div class="narrow">
+    <h2 id="signals-title">{{signals.title}}</h2>
+    <p>{{signals.body}}</p>
+    <p>{{signals.body2}}</p>
+  </div>
+</section>
+
+<section class="band" id="more" aria-labelledby="more-title">
+  <div class="narrow">
+    <h2 id="more-title">{{more.title}}</h2>
+  </div>
+  <ul class="facts">
+    {{#list more.items}}<li>{{.text}}</li>{{/list}}
+  </ul>
+</section>
+
+<section class="band" id="privacy" aria-labelledby="privacy-title">
+  <div class="narrow">
+    <h2 id="privacy-title">{{privacy.title}}</h2>
+    <p>{{privacy.body}}</p>
+    <p>{{privacy.body2}}</p>
+    <p><a class="link-arrow" href="{{privacy.href}}">{{privacy.link}}</a></p>
+  </div>
+</section>
+
+<section class="band" id="plus" aria-labelledby="plus-title">
+  <div class="narrow">
+    <h2 id="plus-title">{{plus.title}}</h2>
+    <p>{{plus.body}}</p>
+  </div>
+  <div class="table-wrap">
+    <table class="compare">
+      <caption class="vh">{{plus.caption}}</caption>
+      <thead><tr><th scope="col">{{plus.colFeature}}</th><th scope="col">{{plus.colFree}}</th><th scope="col">Capsla+</th></tr></thead>
+      <tbody>
+        {{#list plus.free}}<tr><th scope="row">{{.text}}</th><td><span class="yes" aria-label="{{plus.included}}">●</span></td><td><span class="yes" aria-label="{{plus.included}}">●</span></td></tr>{{/list}}
+        {{#list plus.paid}}<tr><th scope="row">{{.title}}<small>{{.body}}</small></th><td><span class="no" aria-label="{{plus.notIncluded}}">—</span></td><td><span class="yes" aria-label="{{plus.included}}">●</span></td></tr>{{/list}}
+      </tbody>
+    </table>
+  </div>
+  <p class="narrow note">{{plus.note}}</p>
+</section>
+
+{{?reviews}}
+<section class="band" id="reviews" aria-labelledby="reviews-title">
+  <div class="narrow">
+    <h2 id="reviews-title">{{reviews.title}}</h2>
+    <p>{{reviews.body}}</p>
+  </div>
+  <div class="quotes">
+    {{#list reviews.items}}<figure class="quote"><blockquote><p>{{.text}}</p></blockquote><figcaption>{{.author}}<span>{{.meta}}</span></figcaption></figure>{{/list}}
+  </div>
+</section>
+{{/?}}
+
+<section class="band" id="faq" aria-labelledby="faq-title">
+  <div class="narrow">
+    <h2 id="faq-title">{{faq.title}}</h2>
+    {{#list faq.items}}<details><summary>{{.q}}</summary><p>{{.a}}</p></details>{{/list}}
+  </div>
+</section>
+
+<section class="band final" aria-labelledby="final-title">
+  <div class="narrow center">
+    <h2 id="final-title">{{final.title}}</h2>
+    <p>{{final.body}}</p>
+    <a class="store" href="https://apps.apple.com/app/id6760552635">{{cta.download}}</a>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <nav aria-label="{{foot.label}}">
+    <a href="{{foot.supportHref}}">{{foot.support}}</a>
+    <a href="{{privacy.href}}">{{foot.privacy}}</a>
+    <a href="mailto:support@capsla.app">support@capsla.app</a>
+  </nav>
+  <p>© 2026 Ramiz Kichibekov</p>
+</footer>
+
+<script type="application/json" id="strings">{{json timer}}</script>
+<script type="module" src="{{@home.js}}"></script>
+</body>
+</html>

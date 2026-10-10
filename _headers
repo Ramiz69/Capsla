@@ -24,3 +24,9 @@
 
 /favicon.png
   Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+# Стили, скрипт и шрифт главной собираются build.mjs с отпечатком
+# содержимого в имени: новый файл — новое имя, поэтому держать можно год.
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+

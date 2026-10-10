@@ -1,62 +1,236 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-        <title>Capsla — Quiet Focus Timer for iPhone</title>
-        <meta name="description" content="A minimalist Pomodoro timer for iPhone: any phase length, app blocking during focus, Live Activity, widgets, Siri and statistics. No ads." />
-        <meta name="google-site-verification" content="mQ-XMhX4pC-cmHKHysrBbrbVa3eKna4o4eNOFXXA_3Q" />
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Capsla" />
-        <meta property="og:title" content="Capsla — Quiet Focus Timer" />
-        <meta property="og:description" content="A minimalist Pomodoro timer designed for deep focus on iPhone." />
-        <meta property="og:url" content="https://capsla.app/" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Capsla — Quiet Focus Timer" />
-        <meta name="twitter:description" content="A minimalist Pomodoro timer designed for deep focus on iPhone." />
-        <meta property="og:image" content="https://capsla.app/og-image.png" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="Capsla — quiet focus timer" />
-        <meta name="twitter:image" content="https://capsla.app/og-image.png" />
-        <link rel="icon" type="image/png" href="./favicon.png" />
-        <link rel="apple-touch-icon" href="./favicon.png" />
-        <meta name="theme-color" content="#f5f5f5" media="(prefers-color-scheme: light)" />
-        <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
-        <link rel="canonical" href="https://capsla.app/" />
-        <link rel="alternate" hreflang="en" href="https://capsla.app/en/" />
-        <link rel="alternate" hreflang="ru" href="https://capsla.app/ru/" />
-        <link rel="alternate" hreflang="de" href="https://capsla.app/de/" />
-        <link rel="alternate" hreflang="x-default" href="https://capsla.app/" />
-        <script>
-            (function () {
-                try {
-                    var saved = localStorage.getItem("capsla-theme");
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Capsla — a quiet focus and break timer for iPhone and Apple Watch</title>
+<meta name="description" content="A Pomodoro timer for iPhone and Apple Watch: sessions that run on their own, distracting apps blocked while you focus, statistics, Health and Calendar. Free, with no ads.">
+<meta name="google-site-verification" content="mQ-XMhX4pC-cmHKHysrBbrbVa3eKna4o4eNOFXXA_3Q">
+<meta name="apple-itunes-app" content="app-id=6760552635">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f5f5f5" media="(prefers-color-scheme: light)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Capsla">
+<meta property="og:title" content="Capsla — a quiet focus timer">
+<meta property="og:description" content="A Pomodoro timer for iPhone and Apple Watch. Free, with no ads.">
+<meta property="og:url" content="https://capsla.app/">
+<meta property="og:image" content="https://capsla.app/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://capsla.app/">
+<link rel="alternate" hreflang="en" href="https://capsla.app/en/">
+<link rel="alternate" hreflang="ru" href="https://capsla.app/ru/">
+<link rel="alternate" hreflang="de" href="https://capsla.app/de/">
+<link rel="alternate" hreflang="x-default" href="https://capsla.app/">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/favicon.png">
+<link rel="preload" href="/assets/digits.cd57d033f8.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/home.1962587ae1.css">
+<script>
+  (function () {
+    try {
+      var saved = localStorage.getItem('capsla-theme');
+      var theme = saved === 'light' || saved === 'dark' ? saved : (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+      document.documentElement.setAttribute('data-theme', theme);
+    } catch (e) {}
+  })();
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"MobileApplication","name":"Capsla","operatingSystem":"iOS 26, watchOS 26","applicationCategory":"ProductivityApplication","url":"https://capsla.app/","downloadUrl":"https://apps.apple.com/app/id6760552635","inLanguage":"en","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
 
-                    if (saved === "light" || saved === "dark") {
-                        document.documentElement.setAttribute("data-theme", saved);
-                    }
-                } catch (error) {}
-            })();
-        </script>
-        <link rel="stylesheet" href="./styles.css" />
-        <script defer src="./app.js"></script>
-    </head>
-    <body class="redirect-page">
-        <main class="redirect-shell">
-            <div class="apple-card redirect-card">
-                <h1 class="hero-title">Capsla</h1>
-                <p class="hero-text">Choose a language · Выберите язык · Sprache wählen</p>
+<header class="top">
+  <a class="brand" href="/"><img src="/favicon.png" alt="" width="28" height="28">Capsla</a>
+  <nav class="top-right" aria-label="Theme and language">
+    <button class="pill" id="theme" type="button" data-light="Light" data-dark="Dark">Light</button>
+    <div class="langs">
+      <a class="pill" href="/ru/" hreflang="ru" lang="ru">RU</a><a class="pill" href="/en/" hreflang="en" lang="en" aria-current="page">EN</a><a class="pill" href="/de/" hreflang="de" lang="de">DE</a>
+    </div>
+  </nav>
+</header>
 
-                <!-- Ссылки видны всегда, а не только без скриптов. Иначе
-                     поисковик и человек с медленным соединением получают
-                     страницу «Redirecting…» без единого выхода с неё. -->
-                <div class="noscript-links">
-                    <a class="button button-primary" href="./en/">English</a>
-                    <a class="button button-secondary" href="./ru/">Русский</a>
-                    <a class="button button-secondary" href="./de/">Deutsch</a>
-                </div>
-            </div>
-        </main>
-    </body>
+<main id="main">
+<section class="hero" aria-labelledby="title">
+  <canvas id="orbits" aria-hidden="true"></canvas>
+  <div class="hero-layout">
+    <div class="hero-copy">
+      <h1 id="title">A quiet timer for focus and&nbsp;breaks</h1>
+      <p class="lede">Focus, a short break, and after a few rounds a long one. The capsule here is a real timer, and the rings around it are the same Orbital background as in the app. Press play.</p>
+      <a class="store" href="https://apps.apple.com/app/id6760552635">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.37 12.6c-.02-2.2 1.8-3.26 1.88-3.31-1.03-1.5-2.62-1.7-3.19-1.73-1.36-.14-2.65.8-3.34.8-.69 0-1.75-.78-2.88-.76-1.48.02-2.85.86-3.61 2.19-1.54 2.67-.39 6.62 1.11 8.79.73 1.06 1.6 2.25 2.75 2.21 1.1-.04 1.52-.71 2.85-.71s1.71.71 2.88.69c1.19-.02 1.94-1.08 2.67-2.15.84-1.23 1.19-2.42 1.21-2.48-.03-.01-2.31-.89-2.33-3.54zM14.17 6.13c.61-.74 1.02-1.76.91-2.78-.88.04-1.94.59-2.57 1.32-.56.65-1.06 1.69-.93 2.69.98.08 1.98-.5 2.59-1.23z"/></svg>
+        Download on the App Store
+      </a>
+      <p class="fine">Free, with no ads. For iPhone and Apple Watch.</p>
+    </div>
+
+    <div class="stage">
+      <div class="capsule" id="capsule" role="group" aria-label="Try the timer">
+        <div class="cap-top">
+          <span class="greeting" id="greeting">Focus time</span>
+          <div class="cycles" id="cycles" hidden></div>
+        </div>
+        <div class="mid">
+          <p class="digits" id="digits" role="timer">25:00</p>
+          <span class="phase" id="phase"></span>
+        </div>
+        <div class="chips" id="chips" role="group" aria-label="Focus length in minutes">
+          <button class="chip" type="button" data-min="1" aria-pressed="false">1</button>
+          <button class="chip" type="button" data-min="5" aria-pressed="false">5</button>
+          <button class="chip" type="button" data-min="25" aria-pressed="true">25</button>
+        </div>
+        <button class="play" id="play" type="button" aria-label="Start focus">
+          <svg id="play-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l13-7.5z"/></svg>
+        </button>
+        <button class="reset" id="reset" type="button" aria-label="Reset" hidden>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12a8 8 0 1 0 2.4-5.7"/><path d="M4 4v4.5h4.5"/></svg>
+        </button>
+      </div>
+      <div class="palettes" role="radiogroup" aria-label="Background palette">
+        <span class="palettes-label">Background palette</span>
+      </div>
+    </div>
+  </div>
+  <p class="vh" id="announce" aria-live="polite"></p>
+</section>
+
+<section class="band" id="session" aria-labelledby="session-title">
+  <div class="split">
+    <div class="text">
+      <h2 id="session-title">A session that runs on its own</h2>
+      <p>Turn on auto-start and focus, break and the next focus follow one another without a tap until the long break. Breaks and focus switch on separately, so you can rest on cue and come back to work when you choose.</p>
+      <p>Every transition is scheduled ahead, so the session keeps going with the app closed and the signal for the next phase arrives on time.</p>
+    </div>
+    <figure class="chain" aria-label="An example session: three focus phases with short breaks, then a long break">
+      <ol>
+        <li class="link link-focus"><span class="link-name">Focus</span><span class="link-min">25 min</span></li><li class="link link-break"><span class="link-name">Break</span><span class="link-min">5 min</span></li><li class="link link-focus"><span class="link-name">Focus</span><span class="link-min">25 min</span></li><li class="link link-break"><span class="link-name">Break</span><span class="link-min">5 min</span></li><li class="link link-focus"><span class="link-name">Focus</span><span class="link-min">25 min</span></li><li class="link link-long"><span class="link-name">Long break</span><span class="link-min">15 min</span></li>
+      </ol>
+      <div class="toggles">
+        <div class="toggle" role="presentation"><span>Start Breaks Automatically</span><i aria-hidden="true"></i></div>
+        <div class="toggle" role="presentation"><span>Start Focus Automatically</span><i aria-hidden="true"></i></div>
+      </div>
+    </figure>
+  </div>
+</section>
+
+<section class="band" id="everywhere" aria-labelledby="everywhere-title">
+  <div class="split split-reverse">
+    <div class="text">
+      <h2 id="everywhere-title">The timer is wherever you look</h2>
+      <p>A Live Activity and the Dynamic Island, the Lock Screen, widgets, Control Center, the Action button. Ask Siri to pause and the answer comes with a card and buttons for the next step. You rarely need to open the app.</p>
+      <p>Capsla has its own Apple Watch app: start and pause from your wrist even when your iPhone isn’t nearby, and feel a tap when a phase ends. Phases you finish on the watch count in your statistics on iPhone.</p>
+    </div>
+    <figure class="devices" aria-hidden="true">
+      <div class="island"><span class="island-dot"></span><span class="island-time" data-mirror>25:00</span></div>
+      <div class="watch"><div class="watch-face"><span class="watch-phase" data-mirror-phase>Focus</span><span class="watch-time" data-mirror>25:00</span></div></div>
+      <figcaption class="devices-note">The same countdown as in the capsule above.</figcaption>
+    </figure>
+  </div>
+  <ul class="places">
+    <li><strong>Lock Screen and Dynamic Island</strong><span>The Live Activity shows the phase and the time, with pause and reset, and skip during a break.</span></li><li><strong>Widgets</strong><span>Timer and statistics on the Home Screen, and a Lock Screen widget with a start button.</span></li><li><strong>Control Center and the Action button</strong><span>Start or stop focus without opening the app.</span></li><li><strong>Siri and Shortcuts</strong><span>Start, pause, resume, skip a break, and ask how long you focused today.</span></li><li><strong>Apple Watch</strong><span>Complications, a Smart Stack card and a button in the watch’s Control Center.</span></li>
+  </ul>
+</section>
+
+<section class="band" id="block" aria-labelledby="block-title">
+  <div class="split split-reverse">
+    <div class="text">
+      <h2 id="block-title">Social apps can wait until focus ends</h2>
+      <p>Pick the apps that pull you away and Capsla blocks them during focus through Screen Time, then lifts the block the moment the phase ends. Open a blocked app and you’ll see a Capsla screen instead.</p>
+    </div>
+    
+  </div>
+</section>
+
+<section class="band" id="stats" aria-labelledby="stats-title">
+  <div class="split">
+    <div class="text">
+      <h2 id="stats-title">Where your attention went</h2>
+      <p>Net focus time by week, month and all time, a chart by day, the hours you focus best, days in a row and time by tag.</p>
+      <p>History starts the day you install Capsla, and the app never fills in numbers it did not record. Export all of it as a CSV file whenever you like.</p>
+    </div>
+    <figure class="shot"><img src="/img/en/statistics.webp" alt="The Capsla statistics screen for a week: 9 h 43 m of net focus, bars by day and dots by hour of the week" width="800" height="1738" loading="lazy" decoding="async"></figure>
+  </div>
+  <ul class="places">
+    <li><strong>Health</strong><span>Focus tagged Meditation, Walk or Sport can be saved to Health. Capsla only writes there and never reads.</span></li><li><strong>Calendar</strong><span>Finished sessions go to a calendar of your choice, and you can schedule focus there too.</span></li><li><strong>A full-page widget</strong><span>On iOS 27, statistics can fill a whole Home Screen page.</span></li>
+  </ul>
+</section>
+
+<section class="band" id="signals" aria-labelledby="signals-title">
+  <div class="narrow">
+    <h2 id="signals-title">Quiet, but hard to miss</h2>
+    <p>A quiet heads-up a few minutes before focus ends, a signal when a phase is over, buttons to start the break or the next focus right from the banner, and a reminder if you forget to come back after a break. Notifications are Time Sensitive, so they come through Do Not Disturb.</p>
+    <p>The end-of-phase signal plays even in silent mode, because a missed transition defeats the point. There are 16 sounds and three vibration patterns, chosen separately for each phase.</p>
+  </div>
+</section>
+
+<section class="band" id="more" aria-labelledby="more-title">
+  <div class="narrow">
+    <h2 id="more-title">And also</h2>
+  </div>
+  <ul class="facts">
+    <li>Focus and breaks from 1 to 999 minutes, 1 to 10 cycles</li><li>Add one or five minutes in the last minute of focus</li><li>Tags with icons and colors; a Focus filter can pick the tag for you</li><li>Four animated backgrounds, including a slow breathing mode</li><li>Quick actions on the app icon</li><li>Dark Mode, VoiceOver, larger text and increased contrast</li><li>17 languages</li>
+  </ul>
+</section>
+
+<section class="band" id="privacy" aria-labelledby="privacy-title">
+  <div class="narrow">
+    <h2 id="privacy-title">You can see what leaves your phone</h2>
+    <p>There is no Capsla account. Tags and focus history sync only through your own iCloud, and settings stay on your iPhone.</p>
+    <p>The Privacy screen lists the recent events Capsla itself has sent. It’s a real list from your device, and two switches turn collection off.</p>
+    <p><a class="link-arrow" href="/en/privacy/">Privacy policy</a></p>
+  </div>
+</section>
+
+<section class="band" id="plus" aria-labelledby="plus-title">
+  <div class="narrow">
+    <h2 id="plus-title">The essentials are free and stay free</h2>
+    <p>Capsla+ is a one-time purchase with no subscription, shared with your family. It adds looks and sound only.</p>
+  </div>
+  <div class="table-wrap">
+    <table class="compare">
+      <caption class="vh">What’s in free Capsla and in Capsla+</caption>
+      <thead><tr><th scope="col">Feature</th><th scope="col">Free</th><th scope="col">Capsla+</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Timer, auto-start and notifications</th><td><span class="yes" aria-label="Included">●</span></td><td><span class="yes" aria-label="Included">●</span></td></tr><tr><th scope="row">The Apple Watch app</th><td><span class="yes" aria-label="Included">●</span></td><td><span class="yes" aria-label="Included">●</span></td></tr><tr><th scope="row">Blocking apps during focus</th><td><span class="yes" aria-label="Included">●</span></td><td><span class="yes" aria-label="Included">●</span></td></tr><tr><th scope="row">Statistics, Health and Calendar</th><td><span class="yes" aria-label="Included">●</span></td><td><span class="yes" aria-label="Included">●</span></td></tr><tr><th scope="row">Tags, widgets, Siri and Shortcuts</th><td><span class="yes" aria-label="Included">●</span></td><td><span class="yes" aria-label="Included">●</span></td></tr><tr><th scope="row">Four animated backgrounds and 16 sounds</th><td><span class="yes" aria-label="Included">●</span></td><td><span class="yes" aria-label="Included">●</span></td></tr>
+        <tr><th scope="row">New backgrounds<small>Five more live timer backgrounds.</small></th><td><span class="no" aria-label="Not included">—</span></td><td><span class="yes" aria-label="Included">●</span></td></tr><tr><th scope="row">Accent and palettes<small>An accent color for the whole app and new palettes for the backgrounds.</small></th><td><span class="no" aria-label="Not included">—</span></td><td><span class="yes" aria-label="Included">●</span></td></tr><tr><th scope="row">Timer digits<small>New typefaces for the countdown on iPhone and Apple Watch.</small></th><td><span class="no" aria-label="Not included">—</span></td><td><span class="yes" aria-label="Included">●</span></td></tr><tr><th scope="row">Celebration effects<small>Other effects when a cycle ends, instead of confetti.</small></th><td><span class="no" aria-label="Not included">—</span></td><td><span class="yes" aria-label="Included">●</span></td></tr><tr><th scope="row">Focus sounds<small>Brown, pink or white noise in the background while you focus.</small></th><td><span class="no" aria-label="Not included">—</span></td><td><span class="yes" aria-label="Included">●</span></td></tr><tr><th scope="row">Watch and widgets<small>Your accent and digits on widgets, the Live Activity and Apple Watch.</small></th><td><span class="no" aria-label="Not included">—</span></td><td><span class="yes" aria-label="Included">●</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="narrow note">Nothing that was free moved behind Capsla+, and there are no pop-ups asking you to buy.</p>
+</section>
+
+
+
+<section class="band" id="faq" aria-labelledby="faq-title">
+  <div class="narrow">
+    <h2 id="faq-title">Questions</h2>
+    <details><summary>Is Capsla free?</summary><p>Yes, with no ads. The timer, the watch app, app blocking, statistics, tags, widgets and Siri are free. Capsla+ is an optional one-time purchase for looks and sound.</p></details><details><summary>Do I need an account?</summary><p>No. History and tags sync through your iCloud; there is nothing to sign up for.</p></details><details><summary>Does the timer keep running if I close the app?</summary><p>Yes. The phase keeps counting with the app closed: the time shows on the Lock Screen and in the Dynamic Island, and a notification arrives when the phase ends.</p></details><details><summary>Why does the signal play in silent mode?</summary><p>On purpose: otherwise a transition is easy to miss, and the whole point of a timer is that you stop watching it.</p></details><details><summary>Does the watch need my iPhone nearby?</summary><p>No. You can start and pause focus from the watch even when your iPhone isn’t nearby.</p></details><details><summary>Which devices does Capsla run on?</summary><p>iPhone with iOS 26 or later and Apple Watch with watchOS 26 or later. There is no iPad version.</p></details>
+  </div>
+</section>
+
+<section class="band final" aria-labelledby="final-title">
+  <div class="narrow center">
+    <h2 id="final-title">Try it on your iPhone</h2>
+    <p>Free, with no ads and no account.</p>
+    <a class="store" href="https://apps.apple.com/app/id6760552635">Download on the App Store</a>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <nav aria-label="Links">
+    <a href="/en/support/">Support</a>
+    <a href="/en/privacy/">Privacy</a>
+    <a href="mailto:support@capsla.app">support@capsla.app</a>
+  </nav>
+  <p>© 2026 Ramiz Kichibekov</p>
+</footer>
+
+<script type="application/json" id="strings">{"label":"Try the timer","focusTime":"Focus time","focus":"Focus","minutesLabel":"Focus length in minutes","start":"Start focus","pause":"Pause","resume":"Resume","reset":"Reset","palette":"Background palette","shortBreak":"Short break","longBreak":"Long break","sessionDone":"Session complete","palettes":{"monochrome":"Monochrome","ocean":"Ocean","sunset":"Sunset","forest":"Forest","violet":"Violet"}}</script>
+<script type="module" src="/assets/home.d49e8f13c2.js"></script>
+</body>
 </html>
