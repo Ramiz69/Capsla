@@ -112,7 +112,9 @@
   },
   "block": {
     "title": "Soziale Netzwerke können warten, bis der Fokus endet",
-    "body": "Wähle die Apps, die dich ablenken, und Capsla sperrt sie während des Fokus über die Bildschirmzeit. Sobald die Phase endet, ist die Sperre aufgehoben. Öffnest du eine gesperrte App, siehst du stattdessen einen Bildschirm von Capsla."
+    "body": "Wähle die Apps, die dich ablenken, und Capsla sperrt sie während des Fokus über die Bildschirmzeit. Sobald die Phase endet, ist die Sperre aufgehoben. Öffnest du eine gesperrte App, siehst du stattdessen einen Bildschirm von Capsla.",
+    "image": "/img/de/block.webp",
+    "imageAlt": "Screenshot aus dem App Store: Apps zum Sperren auswählen"
   },
   "stats": {
     "title": "Wohin deine Aufmerksamkeit ging",

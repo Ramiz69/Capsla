@@ -112,7 +112,9 @@
   },
   "block": {
     "title": "I social possono aspettare la fine del focus",
-    "body": "Scegli le app che ti distraggono e Capsla le blocca durante il focus tramite Tempo di utilizzo, poi toglie il blocco appena la fase finisce. Se apri un’app bloccata, al suo posto vedrai una schermata di Capsla."
+    "body": "Scegli le app che ti distraggono e Capsla le blocca durante il focus tramite Tempo di utilizzo, poi toglie il blocco appena la fase finisce. Se apri un’app bloccata, al suo posto vedrai una schermata di Capsla.",
+    "image": "/img/it/block.webp",
+    "imageAlt": "Schermata dell’App Store: scegliere le app da bloccare"
   },
   "stats": {
     "title": "Dove è andata la tua attenzione",

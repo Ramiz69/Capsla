@@ -112,7 +112,9 @@
   },
   "block": {
     "title": "Sosyal medya odaklanma bitene kadar bekleyebilir",
-    "body": "Dikkatinizi dağıtan uygulamaları seçin; Capsla onları odaklanma sırasında Ekran Süresi aracılığıyla engeller ve aşama biter bitmez engeli kaldırır. Engellenen bir uygulamayı açarsanız onun yerine bir Capsla ekranı görürsünüz."
+    "body": "Dikkatinizi dağıtan uygulamaları seçin; Capsla onları odaklanma sırasında Ekran Süresi aracılığıyla engeller ve aşama biter bitmez engeli kaldırır. Engellenen bir uygulamayı açarsanız onun yerine bir Capsla ekranı görürsünüz.",
+    "image": "/img/tr/block.webp",
+    "imageAlt": "App Store ekran görüntüsü: engellenecek uygulamaları seçme"
   },
   "stats": {
     "title": "Dikkatiniz nereye gitti",

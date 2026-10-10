@@ -112,7 +112,9 @@
   },
   "block": {
     "title": "社群 App 可以等專注結束再看",
-    "body": "選出讓你分心的 App，Capsla 會在專注期間透過「螢幕使用時間」封鎖它們，階段一結束就解除封鎖。打開被封鎖的 App 時，你會看到 Capsla 的畫面。"
+    "body": "選出讓你分心的 App，Capsla 會在專注期間透過「螢幕使用時間」封鎖它們，階段一結束就解除封鎖。打開被封鎖的 App 時，你會看到 Capsla 的畫面。",
+    "image": "/img/zh-hant/block.webp",
+    "imageAlt": "App Store 截圖：選擇要封鎖的 App"
   },
   "stats": {
     "title": "注意力花在哪裡",

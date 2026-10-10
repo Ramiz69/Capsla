@@ -112,7 +112,9 @@
   },
   "block": {
     "title": "Social apps can wait until focus ends",
-    "body": "Pick the apps that pull you away and Capsla blocks them during focus through Screen Time, then lifts the block the moment the phase ends. Open a blocked app and you’ll see a Capsla screen instead."
+    "body": "Pick the apps that pull you away and Capsla blocks them during focus through Screen Time, then lifts the block the moment the phase ends. Open a blocked app and you’ll see a Capsla screen instead.",
+    "image": "/img/en/block.webp",
+    "imageAlt": "App Store screenshot: choosing apps to block"
   },
   "stats": {
     "title": "Where your attention went",

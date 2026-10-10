@@ -112,7 +112,9 @@
   },
   "block": {
     "title": "Las redes sociales pueden esperar a que acabe el enfoque",
-    "body": "Elige las apps que te distraen y Capsla las bloquea durante el enfoque a través de Tiempo de uso, y quita el bloqueo en cuanto termina la fase. Si abres una app bloqueada, verás una pantalla de Capsla en su lugar."
+    "body": "Elige las apps que te distraen y Capsla las bloquea durante el enfoque a través de Tiempo de uso, y quita el bloqueo en cuanto termina la fase. Si abres una app bloqueada, verás una pantalla de Capsla en su lugar.",
+    "image": "/img/es/block.webp",
+    "imageAlt": "Captura del App Store: elegir las apps que se bloquean"
   },
   "stats": {
     "title": "Adónde fue tu atención",

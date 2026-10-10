@@ -112,7 +112,9 @@
   },
   "block": {
     "title": "Mạng xã hội có thể chờ đến khi hết giờ tập trung",
-    "body": "Chọn những ứng dụng hay kéo bạn đi, và Capsla sẽ chặn chúng trong lúc tập trung thông qua Thời gian sử dụng, rồi gỡ chặn ngay khi giai đoạn kết thúc. Nếu mở một ứng dụng bị chặn, bạn sẽ thấy màn hình của Capsla thay vào đó."
+    "body": "Chọn những ứng dụng hay kéo bạn đi, và Capsla sẽ chặn chúng trong lúc tập trung thông qua Thời gian sử dụng, rồi gỡ chặn ngay khi giai đoạn kết thúc. Nếu mở một ứng dụng bị chặn, bạn sẽ thấy màn hình của Capsla thay vào đó.",
+    "image": "/img/vi/block.webp",
+    "imageAlt": "Ảnh chụp từ App Store: chọn ứng dụng cần chặn"
   },
   "stats": {
     "title": "Sự chú ý của bạn đã đi đâu",

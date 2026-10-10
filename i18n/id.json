@@ -112,7 +112,9 @@
   },
   "block": {
     "title": "Media sosial bisa menunggu sampai fokus selesai",
-    "body": "Pilih aplikasi yang mengalihkan perhatian Anda, dan Capsla memblokirnya selama fokus melalui Durasi Layar, lalu membuka blokir begitu fase berakhir. Jika Anda membuka aplikasi yang diblokir, yang muncul adalah layar Capsla."
+    "body": "Pilih aplikasi yang mengalihkan perhatian Anda, dan Capsla memblokirnya selama fokus melalui Durasi Layar, lalu membuka blokir begitu fase berakhir. Jika Anda membuka aplikasi yang diblokir, yang muncul adalah layar Capsla.",
+    "image": "/img/id/block.webp",
+    "imageAlt": "Tangkapan layar App Store: memilih aplikasi yang diblokir"
   },
   "stats": {
     "title": "Ke mana perhatian Anda tercurah",

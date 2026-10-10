@@ -112,7 +112,9 @@
   },
   "block": {
     "title": "As redes sociais podem esperar o fim do foco",
-    "body": "Escolha os apps que tiram sua atenção e o Capsla os bloqueia durante o foco pelo Tempo de Uso, removendo o bloqueio assim que a fase termina. Se você abrir um app bloqueado, verá uma tela do Capsla no lugar dele."
+    "body": "Escolha os apps que tiram sua atenção e o Capsla os bloqueia durante o foco pelo Tempo de Uso, removendo o bloqueio assim que a fase termina. Se você abrir um app bloqueado, verá uma tela do Capsla no lugar dele.",
+    "image": "/img/pt-br/block.webp",
+    "imageAlt": "Captura da App Store: escolher os apps para bloquear"
   },
   "stats": {
     "title": "Para onde foi sua atenção",
