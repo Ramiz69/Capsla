@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="{{lang}}" dir="{{dir}}" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{press.metaTitle}}</title>
+<meta name="description" content="{{press.metaDescription}}">
+<meta name="color-scheme" content="dark light">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Capsla">
+<meta property="og:title" content="{{press.metaTitle}}">
+<meta property="og:description" content="{{press.metaDescription}}">
+<meta property="og:url" content="{{canonical}}">
+<meta property="og:image" content="https://capsla.app/{{meta.ogImage}}">
+<link rel="canonical" href="{{canonical}}">
+<link rel="alternate" hreflang="en" href="https://capsla.app/press/">
+<link rel="alternate" hreflang="ru" href="https://capsla.app/ru/press/">
+<link rel="alternate" hreflang="x-default" href="https://capsla.app/press/">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/favicon.png">
+<link rel="stylesheet" href="{{@home.css}}">
+<script>
+  (function () {
+    try {
+      var saved = localStorage.getItem('capsla-theme');
+      var theme = saved === 'light' || saved === 'dark' ? saved : (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+      document.documentElement.setAttribute('data-theme', theme);
+    } catch (e) {}
+  })();
+</script>
+</head>
+<body class="press-page">
+<a class="skip" href="#main">{{nav.skip}}</a>
+
+<header class="top">
+  <a class="brand" href="{{home}}"><img src="/favicon.png" alt="" width="28" height="28">Capsla</a>
+  <nav class="top-right" aria-label="{{nav.label}}">
+    <a class="pill" href="{{press.otherHref}}" hreflang="{{press.otherLang}}" lang="{{press.otherLang}}">{{press.otherName}}</a>
+  </nav>
+</header>
+
+<main id="main" class="press">
+  <section class="band press-head" aria-labelledby="press-title">
+    <img class="press-icon" src="/img/press/icon-256.webp" alt="" width="96" height="96">
+    <h1 id="press-title">{{press.title}}</h1>
+    <p class="lede">{{press.lede}}</p>
+    <p class="press-cta">
+      <a class="store-text" href="{{press.kitHref}}" download>{{press.kitLink}}</a>
+      <a class="link-arrow" href="mailto:press@capsla.app">press@capsla.app</a>
+    </p>
+    <p class="fine">{{press.kitNote}}</p>
+  </section>
+
+  <section class="band" aria-labelledby="facts-title">
+    <h2 id="facts-title">{{press.factsTitle}}</h2>
+    <dl class="facts-sheet">
+      {{#list press.facts}}<div><dt>{{.term}}</dt><dd>{{.value}}</dd></div>{{/list}}
+    </dl>
+  </section>
+
+  <section class="band" aria-labelledby="describe-title">
+    <div class="narrow">
+      <h2 id="describe-title">{{press.describeTitle}}</h2>
+      <h3>{{press.sentenceTitle}}</h3>
+      <p class="copyable">{{press.sentence}}</p>
+      <h3>{{press.paragraphTitle}}</h3>
+      <p class="copyable">{{press.paragraph}}</p>
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="diff-title">
+    <div class="narrow"><h2 id="diff-title">{{press.diffTitle}}</h2></div>
+    <ul class="places">
+      {{#list press.diff}}<li><strong>{{.title}}</strong><span>{{.body}}</span></li>{{/list}}
+    </ul>
+  </section>
+
+  <section class="band" aria-labelledby="new-title">
+    <div class="narrow">
+      <h2 id="new-title">{{press.newTitle}}</h2>
+      <ul class="plain">
+        {{#list press.new}}<li>{{.text}}</li>{{/list}}
+      </ul>
+    </div>
+  </section>
+
+  <section class="band final" aria-labelledby="assets-title">
+    <div class="narrow">
+      <h2 id="assets-title">{{press.assetsTitle}}</h2>
+      <p>{{press.assetsBody}}</p>
+    </div>
+    <div class="gallery">
+      {{#list press.shots}}<a href="{{press.kitHref}}" download><img src="{{.src}}" alt="{{.alt}}" width="{{.w}}" height="{{.h}}" loading="lazy" decoding="async" class="{{.kind}}"></a>{{/list}}
+    </div>
+    <p class="press-cta">
+      <a class="store-text" href="{{press.kitHref}}" download>{{press.kitLink}}</a>
+      <a class="link-arrow" href="/press/capsla-icon-1024.png" download>{{press.iconLink}}</a>
+    </p>
+  </section>
+</main>
+
+<footer class="foot">
+  <nav aria-label="{{foot.label}}">
+    <a href="{{home}}">Capsla</a>
+    <a href="{{foot.supportHref}}">{{foot.support}}</a>
+    <a href="{{privacy.href}}">{{foot.privacy}}</a>
+    <a href="mailto:press@capsla.app">press@capsla.app</a>
+  </nav>
+  <p>© 2026 Ramiz Kichibekov</p>
+</footer>
+</body>
+</html>

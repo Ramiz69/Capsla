@@ -72,7 +72,7 @@ emit('home.js', home);
 
 // ——— Шаблон ———
 
-const template = readFileSync('src/home.html', 'utf8');
+const templates = { home: readFileSync('src/home.html', 'utf8'), press: readFileSync('src/press.html', 'utf8') };
 
 function lookup(data, path) {
   return path.split('.').reduce((v, k) => (v == null ? undefined : v[k]), data);
@@ -84,8 +84,8 @@ function need(data, path) {
   return v;
 }
 
-function render(data) {
-  let html = template;
+function render(data, kind = 'home') {
+  let html = templates[kind];
   html = html.replace(/\{\{\?([\w.]+)\}\}([\s\S]*?)\{\{\/\?\}\}/g, (_, path, block) => (lookup(data, path) === undefined ? '' : block));
   html = html.replace(/\{\{#list ([\w.]+)\}\}([\s\S]*?)\{\{\/list\}\}/g, (_, path, block) =>
     need(data, path).map((item) => block.replace(/\{\{\.(\w+)\}\}/g, (__, f) => {
@@ -126,8 +126,22 @@ for (const page of PAGES) {
   console.log(`${page.out.padEnd(20)} ${(Buffer.byteLength(html) / 1024).toFixed(1)} КБ`);
 }
 
+// Страница для прессы — только на языках, где есть ключ `press`.
+const PRESS = [
+  { site: 'en', out: 'press/index.html', canonical: `${ORIGIN}/press/`, home: '/' },
+  { site: 'ru', out: 'ru/press/index.html', canonical: `${ORIGIN}/ru/press/`, home: '/ru/' },
+];
+for (const page of PRESS) {
+  const strings = JSON.parse(readFileSync(`i18n/${page.site}.json`, 'utf8'));
+  if (!strings.press) continue;
+  mkdirSync(dirname(page.out), { recursive: true });
+  const html = render({ ...strings, dir: 'ltr', canonical: page.canonical, home: page.home }, 'press');
+  writeFileSync(page.out, html);
+  console.log(`${page.out.padEnd(20)} ${(Buffer.byteLength(html) / 1024).toFixed(1)} КБ`);
+}
+
 // Карта сайта: главные на всех языках и рукописные страницы, какие есть.
-const urls = [`${ORIGIN}/`, ...LANGS.map((l) => `${ORIGIN}/${l.site}/`)];
+const urls = [`${ORIGIN}/`, ...LANGS.map((l) => `${ORIGIN}/${l.site}/`), ...PRESS.filter((p) => existsSync(p.out)).map((p) => p.canonical)];
 for (const l of LANGS) for (const sub of ['privacy', 'support']) {
   if (existsSync(`${l.site}/${sub}/index.html`)) urls.push(`${ORIGIN}/${l.site}/${sub}/`);
 }

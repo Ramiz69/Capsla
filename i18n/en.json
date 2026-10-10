@@ -267,5 +267,133 @@
     "support": "Support",
     "supportHref": "/en/support/",
     "privacy": "Privacy"
+  },
+  "press": {
+    "metaTitle": "Capsla press kit",
+    "metaDescription": "Facts, descriptions, screenshots and the app icon for writing about Capsla, a quiet Pomodoro timer for iPhone and Apple Watch.",
+    "otherHref": "/ru/press/",
+    "otherLang": "ru",
+    "otherName": "Русский",
+    "title": "Press kit",
+    "lede": "Capsla is a quiet Pomodoro timer for iPhone and Apple Watch, made by one independent developer. For promo codes, interviews or anything else, write to press@capsla.app.",
+    "kitHref": "/press/capsla-press-kit-en.zip",
+    "kitLink": "Download the press kit (ZIP, 17 MB)",
+    "kitNote": "The app icon at 1024 px, 10 iPhone screenshots and 4 Apple Watch screenshots, as they appear on the App Store. Free to use in coverage of Capsla.",
+    "factsTitle": "Fact sheet",
+    "facts": [
+      {
+        "term": "Developer",
+        "value": "Ramiz Kichibekov, independent"
+      },
+      {
+        "term": "Platforms",
+        "value": "iPhone with iOS 26 or later; Apple Watch with watchOS 26 or later"
+      },
+      {
+        "term": "First released",
+        "value": "May 2026"
+      },
+      {
+        "term": "Current version",
+        "value": "1.5.0, October 2026"
+      },
+      {
+        "term": "Price",
+        "value": "Free, with no ads. Capsla+ is an optional one-time purchase of $9.99 in the US, with Family Sharing. No subscription."
+      },
+      {
+        "term": "Languages",
+        "value": "17, including right-to-left Arabic"
+      },
+      {
+        "term": "Privacy",
+        "value": "No account. Focus history and tags sync only through the user’s own iCloud. Usage analytics and crash reports can be switched off with two toggles, and the Privacy screen lists the recent events the app has sent."
+      },
+      {
+        "term": "Links",
+        "value": "<a href=\"https://apps.apple.com/app/id6760552635\">App Store</a>, <a href=\"https://capsla.app/\">capsla.app</a>"
+      }
+    ],
+    "describeTitle": "Describing Capsla",
+    "sentenceTitle": "In one sentence",
+    "sentence": "Capsla is a Pomodoro timer for iPhone and Apple Watch that runs whole focus sessions on its own, shows the countdown wherever you look and keeps distracting apps closed until focus ends.",
+    "paragraphTitle": "In a paragraph",
+    "paragraph": "Capsla turns the Pomodoro technique into a session that runs itself: focus, a short break and the next focus follow one another without a tap until the long break, and every transition is scheduled ahead, so it keeps going with the app closed. The countdown lives in a Live Activity and the Dynamic Island, on the Lock Screen, in widgets and on Apple Watch, where its own app starts and pauses focus even without the iPhone nearby. During focus, Screen Time keeps the apps you chose closed. Statistics count net focus time without pauses, and history starts the day you install the app, with nothing filled in after the fact. The core is free with no ads; Capsla+ is a one-time purchase that adds backgrounds, typefaces for the timer and focus sounds.",
+    "diffTitle": "What makes it different",
+    "diff": [
+      {
+        "title": "A session that runs itself",
+        "body": "Separate switches start breaks and the next focus automatically. Transitions are scheduled ahead, so signals arrive on time with the app closed."
+      },
+      {
+        "title": "On the wrist, without the phone",
+        "body": "The Apple Watch app starts and pauses focus even when the iPhone isn’t nearby, taps the wrist at the end of a phase and counts in the iPhone’s statistics."
+      },
+      {
+        "title": "Statistics that don’t flatter",
+        "body": "Net minutes without pauses, the hours you focus best, days in a row. History starts at install and the app never fills in numbers it did not record."
+      },
+      {
+        "title": "Privacy you can check",
+        "body": "There is no account. The Privacy screen shows the actual events Capsla has sent from the device, and two switches turn collection off."
+      },
+      {
+        "title": "Free core, one-time extras",
+        "body": "Everything released before Capsla+ stays free. Capsla+ adds looks and sound only, with no subscription and no pop-ups asking to buy."
+      }
+    ],
+    "newTitle": "New in 1.5.0",
+    "new": [
+      {
+        "text": "Auto-start, with separate switches for breaks and for the next focus"
+      },
+      {
+        "text": "Focus tagged Meditation, Walk or Sport saved to Health"
+      },
+      {
+        "text": "Finished sessions logged to a calendar of your choice, and focus scheduled from there"
+      },
+      {
+        "text": "Capsla+: five new backgrounds, an accent color, timer typefaces, celebration effects and focus sounds"
+      },
+      {
+        "text": "A tip jar in Settings"
+      }
+    ],
+    "assetsTitle": "Screenshots and icon",
+    "assetsBody": "A few of the screenshots in the kit. Each one in full resolution is inside the ZIP.",
+    "iconLink": "App icon only (PNG, 1024 px)",
+    "shots": [
+      {
+        "src": "/img/press/en-iphone-1.webp",
+        "alt": "Capsla on iPhone: a focus phase counting down in the capsule",
+        "kind": "shot-phone",
+        "w": "600",
+        "h": "1299"
+      },
+      {
+        "src": "/img/press/en-iphone-2.webp",
+        "alt": "Settings with the two auto-start switches",
+        "kind": "shot-phone",
+        "w": "600",
+        "h": "1299"
+      },
+      {
+        "src": "/img/press/en-iphone-3.webp",
+        "alt": "A Capsla+ background behind the timer",
+        "kind": "shot-phone",
+        "w": "600",
+        "h": "1299"
+      },
+      {
+        "src": "/img/press/en-watch-1.webp",
+        "alt": "Capsla on Apple Watch: a focus phase with the tag Work",
+        "kind": "shot-watch",
+        "w": "600",
+        "h": "731"
+      }
+    ],
+    "footLabel": "Press",
+    "pageHref": "/press/"
   }
 }
