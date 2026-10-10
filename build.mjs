@@ -46,6 +46,8 @@ const withAssets = (text) => text.replace(/\{\{@([\w.-]+)\}\}/g, (_, name) => {
 });
 
 emit('digits.woff2', readFileSync('src/digits.woff2'));
+// Официальные значки App Store (toolbox.marketingtools.apple.com): белый для тёмной темы, чёрный для светлой.
+for (const f of readdirSync('src').filter((n) => n.startsWith('badge-'))) emit(f, readFileSync(`src/${f}`));
 emit('home.css', withAssets(readFileSync('src/home.css', 'utf8')));
 // Движок колец вклеивается в скрипт страницы: один запрос вместо двух.
 const orbital = readFileSync('src/orbital.js', 'utf8').replace(/^export /gm, '');
@@ -89,6 +91,8 @@ for (const page of PAGES) {
     ...strings,
     canonical: page.canonical,
     home: page.home,
+    badgeWhite: assets[`badge-white-${page.lang}.svg`],
+    badgeBlack: assets[`badge-black-${page.lang}.svg`],
     langs: LANGS.map((l) => ({ ...l, current: l.code === page.lang ? ' aria-current="page"' : '' })),
   };
   mkdirSync(dirname(page.out), { recursive: true });
