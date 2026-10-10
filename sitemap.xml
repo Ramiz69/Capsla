@@ -1,19 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
 <url><loc>https://capsla.app/</loc></url>
-
-<url><loc>https://capsla.app/ru/</loc></url>
 <url><loc>https://capsla.app/en/</loc></url>
+<url><loc>https://capsla.app/ru/</loc></url>
 <url><loc>https://capsla.app/de/</loc></url>
-
-<url><loc>https://capsla.app/ru/privacy/</loc></url>
+<url><loc>https://capsla.app/fr/</loc></url>
+<url><loc>https://capsla.app/it/</loc></url>
+<url><loc>https://capsla.app/es/</loc></url>
+<url><loc>https://capsla.app/pt-br/</loc></url>
+<url><loc>https://capsla.app/uk/</loc></url>
+<url><loc>https://capsla.app/tr/</loc></url>
+<url><loc>https://capsla.app/ar/</loc></url>
+<url><loc>https://capsla.app/hi/</loc></url>
+<url><loc>https://capsla.app/id/</loc></url>
+<url><loc>https://capsla.app/vi/</loc></url>
+<url><loc>https://capsla.app/ja/</loc></url>
+<url><loc>https://capsla.app/ko/</loc></url>
+<url><loc>https://capsla.app/zh-hans/</loc></url>
+<url><loc>https://capsla.app/zh-hant/</loc></url>
 <url><loc>https://capsla.app/en/privacy/</loc></url>
-<url><loc>https://capsla.app/de/privacy/</loc></url>
-
-<url><loc>https://capsla.app/ru/support/</loc></url>
 <url><loc>https://capsla.app/en/support/</loc></url>
+<url><loc>https://capsla.app/ru/privacy/</loc></url>
+<url><loc>https://capsla.app/ru/support/</loc></url>
+<url><loc>https://capsla.app/de/privacy/</loc></url>
 <url><loc>https://capsla.app/de/support/</loc></url>
-
 </urlset>

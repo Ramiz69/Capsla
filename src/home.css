@@ -55,7 +55,7 @@ body {
 a { color: inherit; }
 :focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; border-radius: 6px; }
 .vh { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
-.skip { position: absolute; left: 16px; top: -60px; z-index: 10; background: var(--button-bg); color: var(--button-fg); padding: 8px 14px; border-radius: 999px; }
+.skip { position: absolute; inset-inline-start: 16px; top: -60px; z-index: 10; background: var(--button-bg); color: var(--button-fg); padding: 8px 14px; border-radius: 999px; }
 .skip:focus { top: 12px; }
 
 /* ——— Шапка ——— */
@@ -74,8 +74,20 @@ a { color: inherit; }
   border: 0; border-radius: 999px; padding: 9px 13px; cursor: pointer; text-decoration: none;
   -webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px);
 }
-.langs .pill { background: transparent; color: var(--text-2); padding: 9px 9px; }
-.langs .pill[aria-current="page"] { background: var(--fill); color: var(--text); }
+.langs { position: relative; }
+.langs summary { cursor: pointer; list-style: none; display: flex; align-items: center; gap: 7px; }
+.langs summary::-webkit-details-marker { display: none; }
+.langs summary svg { width: 16px; height: 16px; }
+.langs ul {
+  position: absolute; top: calc(100% + 8px); inset-inline-end: 0; z-index: 6;
+  list-style: none; margin: 0; padding: 6px; min-width: 200px; max-height: min(70svh, 560px); overflow-y: auto;
+  background: var(--card); border: 1px solid var(--card-edge); border-radius: 16px;
+  -webkit-backdrop-filter: blur(28px) saturate(150%); backdrop-filter: blur(28px) saturate(150%);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, .3);
+}
+.langs a { display: block; padding: 9px 12px; border-radius: 10px; text-decoration: none; font-size: 15px; color: var(--text-2); }
+.langs a:hover { background: var(--fill); color: var(--text); }
+.langs a[aria-current="page"] { color: var(--text); font-weight: 600; }
 
 /* ——— Первое окно ——— */
 .hero { position: relative; min-height: 100svh; overflow: hidden; isolation: isolate; }
@@ -161,14 +173,14 @@ h1 {
 .play:active { transform: scale(.94); }
 .play svg { width: 38%; height: 38%; }
 .reset {
-  position: absolute; left: calc(var(--h) * 0.045); bottom: calc(var(--h) * 0.142);
+  position: absolute; inset-inline-start: calc(var(--h) * 0.045); bottom: calc(var(--h) * 0.142);
   width: calc(var(--h) * 0.064); height: calc(var(--h) * 0.064); border-radius: 50%; border: 0; cursor: pointer;
   background: var(--fill); color: var(--text); display: grid; place-items: center; transition: opacity .25s ease;
 }
 .reset[hidden] { display: grid; opacity: 0; pointer-events: none; }
 .reset svg { width: 44%; height: 44%; }
 .palettes { display: flex; align-items: center; gap: 12px; }
-.palettes-label { font-size: 13px; color: var(--text-3); margin-right: 4px; }
+.palettes-label { font-size: 13px; color: var(--text-3); margin-inline-end: 4px; }
 .swatch {
   width: 26px; height: 26px; border-radius: 50%; cursor: pointer; padding: 0;
   border: 1px solid var(--card-edge);
@@ -209,7 +221,7 @@ h2 {
 .toggles { border-top: 1px solid var(--rule); }
 .toggle { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--rule); font-size: 16px; }
 .toggle i { flex: none; width: 51px; height: 31px; border-radius: 999px; background: #34c759; position: relative; }
-.toggle i::after { content: ""; position: absolute; top: 2px; right: 2px; width: 27px; height: 27px; border-radius: 50%; background: #fff; box-shadow: 0 2px 6px rgba(0, 0, 0, .2); }
+.toggle i::after { content: ""; position: absolute; top: 2px; inset-inline-end: 2px; width: 27px; height: 27px; border-radius: 50%; background: #fff; box-shadow: 0 2px 6px rgba(0, 0, 0, .2); }
 
 /* Снимок экрана целиком, в портретной ориентации, как экран устройства. */
 .shot { margin: 0; justify-self: center; }
@@ -250,10 +262,10 @@ h2 {
 /* Сравнение */
 .table-wrap { margin-top: 40px; overflow-x: auto; }
 .compare { width: 100%; max-width: 860px; border-collapse: collapse; font-size: 16px; }
-.compare th, .compare td { padding: 14px 0; border-bottom: 1px solid var(--rule); text-align: left; vertical-align: top; }
+.compare th, .compare td { padding: 14px 0; border-bottom: 1px solid var(--rule); text-align: start; vertical-align: top; }
 .compare thead th { font-size: 14px; font-weight: 600; color: var(--text-3); }
 .compare td, .compare thead th:not(:first-child) { text-align: center; width: 120px; }
-.compare tbody th { font-weight: 500; padding-right: 24px; }
+.compare tbody th { font-weight: 500; padding-inline-end: 24px; }
 .compare small { display: block; font-size: 14px; color: var(--text-3); font-weight: 400; margin-top: 2px; }
 .yes { color: var(--text); }
 .no { color: var(--text-3); }
@@ -268,13 +280,13 @@ h2 {
 .quote figcaption span { font-weight: 400; color: var(--text-3); }
 
 /* Вопросы */
-details { border-top: 1px solid var(--rule); }
-details:last-of-type { border-bottom: 1px solid var(--rule); }
-summary { cursor: pointer; padding: 18px 32px 18px 0; font-weight: 600; list-style: none; position: relative; }
-summary::-webkit-details-marker { display: none; }
-summary::after { content: "+"; position: absolute; right: 4px; top: 14px; font-size: 24px; font-weight: 300; color: var(--text-3); transition: transform .2s ease; }
-details[open] summary::after { transform: rotate(45deg); }
-details p { padding-bottom: 8px; }
+#faq details { border-top: 1px solid var(--rule); }
+#faq details:last-of-type { border-bottom: 1px solid var(--rule); }
+#faq summary { cursor: pointer; padding-block: 18px; padding-inline: 0 32px; font-weight: 600; list-style: none; position: relative; }
+#faq summary::-webkit-details-marker { display: none; }
+#faq summary::after { content: "+"; position: absolute; inset-inline-end: 4px; top: 14px; font-size: 24px; font-weight: 300; color: var(--text-3); transition: transform .2s ease; }
+#faq details[open] summary::after { transform: rotate(45deg); }
+#faq details p { padding-bottom: 8px; }
 
 .foot {
   max-width: 1360px; margin: 0 auto; padding: 32px var(--gutter) max(32px, env(safe-area-inset-bottom));
@@ -297,6 +309,7 @@ details p { padding-bottom: 8px; }
 }
 @media (max-width: 420px) {
   .top .pill#theme { display: none; }
+  .langs summary span { max-width: 9em; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 }
 @media (prefers-reduced-motion: reduce) {
   body, .cycle .arc { transition: none; }

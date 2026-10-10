@@ -11,20 +11,36 @@
 // {{?путь}}…{{/?}} — блок только если ключ есть, {{json путь}},
 // {{@файл}} — адрес файла из src/ с отпечатком содержимого.
 
-import { readFileSync, writeFileSync, mkdirSync, readdirSync, rmSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, readdirSync, rmSync, existsSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { dirname, extname, basename } from 'node:path';
 
 const ORIGIN = 'https://capsla.app';
+// Языки приложения. `site` — каталог на сайте и имя файла в i18n/,
+// `name` — название языка на нём самом, для меню.
 const LANGS = [
-  { code: 'ru', label: 'RU', href: '/ru/' },
-  { code: 'en', label: 'EN', href: '/en/' },
-  { code: 'de', label: 'DE', href: '/de/' },
-];
+  { site: 'en', name: 'English' },
+  { site: 'ru', name: 'Русский' },
+  { site: 'de', name: 'Deutsch' },
+  { site: 'fr', name: 'Français' },
+  { site: 'it', name: 'Italiano' },
+  { site: 'es', name: 'Español' },
+  { site: 'pt-br', name: 'Português (Brasil)' },
+  { site: 'uk', name: 'Українська' },
+  { site: 'tr', name: 'Türkçe' },
+  { site: 'ar', name: 'العربية', rtl: true },
+  { site: 'hi', name: 'हिन्दी' },
+  { site: 'id', name: 'Bahasa Indonesia' },
+  { site: 'vi', name: 'Tiếng Việt' },
+  { site: 'ja', name: '日本語' },
+  { site: 'ko', name: '한국어' },
+  { site: 'zh-hans', name: '简体中文' },
+  { site: 'zh-hant', name: '繁體中文' },
+].filter((l) => existsSync(`i18n/${l.site}.json`));
+
 const PAGES = [
-  { lang: 'ru', out: 'ru/index.html', canonical: `${ORIGIN}/ru/`, home: '/ru/' },
-  { lang: 'en', out: 'en/index.html', canonical: `${ORIGIN}/en/`, home: '/en/' },
-  { lang: 'en', out: 'index.html', canonical: `${ORIGIN}/`, home: '/' },
+  ...LANGS.map((l) => ({ site: l.site, out: `${l.site}/index.html`, canonical: `${ORIGIN}/${l.site}/`, home: `/${l.site}/` })),
+  { site: 'en', out: 'index.html', canonical: `${ORIGIN}/`, home: '/' },
 ];
 
 // ——— Файлы с отпечатком ———
@@ -86,20 +102,38 @@ function render(data) {
 }
 
 for (const page of PAGES) {
-  const strings = JSON.parse(readFileSync(`i18n/${page.lang}.json`, 'utf8'));
+  const lang = LANGS.find((l) => l.site === page.site);
+  const strings = JSON.parse(readFileSync(`i18n/${page.site}.json`, 'utf8'));
   const data = {
     ...strings,
+    dir: lang.rtl ? 'rtl' : 'ltr',
     canonical: page.canonical,
     home: page.home,
-    badgeWhite: assets[`badge-white-${page.lang}.svg`],
-    badgeBlack: assets[`badge-black-${page.lang}.svg`],
-    langs: LANGS.map((l) => ({ ...l, current: l.code === page.lang ? ' aria-current="page"' : '' })),
+    currentName: lang.name,
+    badgeWhite: assets[`badge-white-${page.site}.svg`],
+    badgeBlack: assets[`badge-black-${page.site}.svg`],
+    langs: LANGS.map((l) => ({
+      code: JSON.parse(readFileSync(`i18n/${l.site}.json`, 'utf8')).lang,
+      name: l.name,
+      href: `/${l.site}/`,
+      abs: `${ORIGIN}/${l.site}/`,
+      current: l.site === page.site ? ' aria-current="page"' : '',
+    })),
   };
   mkdirSync(dirname(page.out), { recursive: true });
   const html = render(data);
   writeFileSync(page.out, html);
-  console.log(`${page.out.padEnd(16)} ${(Buffer.byteLength(html) / 1024).toFixed(1)} КБ`);
+  console.log(`${page.out.padEnd(20)} ${(Buffer.byteLength(html) / 1024).toFixed(1)} КБ`);
 }
+
+// Карта сайта: главные на всех языках и рукописные страницы, какие есть.
+const urls = [`${ORIGIN}/`, ...LANGS.map((l) => `${ORIGIN}/${l.site}/`)];
+for (const l of LANGS) for (const sub of ['privacy', 'support']) {
+  if (existsSync(`${l.site}/${sub}/index.html`)) urls.push(`${ORIGIN}/${l.site}/${sub}/`);
+}
+writeFileSync('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((u) => `<url><loc>${u}</loc></url>`).join('\n')}\n</urlset>\n`);
+console.log(`sitemap.xml          ${urls.length} адресов`);
+
 for (const [name, url] of Object.entries(assets)) {
   console.log(`${name.padEnd(16)} ${(readFileSync('.' + url).length / 1024).toFixed(1)} КБ  ${url}`);
 }

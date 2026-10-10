@@ -207,3 +207,8 @@ updateMotion();
 render();
 placeRings();
 updateRunning();
+
+// Меню языков закрывается щелчком мимо и клавишей Escape, как системное.
+const langMenu = document.querySelector('.langs');
+document.addEventListener('click', (e) => { if (langMenu.open && !langMenu.contains(e.target)) langMenu.open = false; });
+document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && langMenu.open) { langMenu.open = false; langMenu.querySelector('summary').focus(); } });

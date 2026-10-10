@@ -1,0 +1,271 @@
+{
+  "lang": "vi",
+  "meta": {
+    "title": "Capsla — hẹn giờ tập trung và nghỉ ngơi yên tĩnh cho iPhone và Apple Watch",
+    "description": "Hẹn giờ Pomodoro cho iPhone và Apple Watch: phiên tự chạy, chặn ứng dụng gây xao nhãng khi tập trung, thống kê, Sức khỏe và Lịch. Miễn phí, không quảng cáo.",
+    "ogTitle": "Capsla — hẹn giờ tập trung yên tĩnh",
+    "ogDescription": "Hẹn giờ Pomodoro cho iPhone và Apple Watch. Miễn phí, không quảng cáo.",
+    "ogImage": "og-image.png"
+  },
+  "nav": {
+    "skip": "Chuyển đến nội dung",
+    "label": "Giao diện và ngôn ngữ",
+    "themeLight": "Sáng",
+    "themeDark": "Tối"
+  },
+  "cta": {
+    "download": "Tải về trên App Store"
+  },
+  "hero": {
+    "title": "Hẹn giờ yên tĩnh cho tập trung và nghỉ&nbsp;ngơi",
+    "lede": "Tập trung, nghỉ ngắn, và sau vài vòng là một lần nghỉ dài. Viên nang ở đây là một hẹn giờ thật, còn các vòng quanh nó chính là nền Quỹ đạo như trong ứng dụng. Hãy nhấn phát.",
+    "fine": "Miễn phí, không quảng cáo. Cho iPhone và Apple Watch."
+  },
+  "timer": {
+    "label": "Dùng thử hẹn giờ",
+    "focusTime": "Đến giờ tập trung",
+    "focus": "Tập trung",
+    "minutesLabel": "Thời lượng tập trung, tính bằng phút",
+    "start": "Bắt đầu tập trung",
+    "pause": "Tạm dừng",
+    "resume": "Tiếp tục",
+    "reset": "Đặt lại",
+    "palette": "Bảng màu nền",
+    "shortBreak": "Nghỉ ngắn",
+    "longBreak": "Nghỉ dài",
+    "sessionDone": "Đã xong phiên",
+    "palettes": {
+      "monochrome": "Đơn sắc",
+      "ocean": "Đại dương",
+      "sunset": "Hoàng hôn",
+      "forest": "Rừng",
+      "violet": "Tím"
+    }
+  },
+  "session": {
+    "title": "Một phiên tự chạy",
+    "body": "Bật tự động bắt đầu, và tập trung, giờ nghỉ cùng lượt tập trung tiếp theo sẽ nối tiếp nhau mà không cần chạm, cho đến giờ nghỉ dài. Giờ nghỉ và tập trung được bật riêng, nên bạn có thể nghỉ theo tín hiệu và tự chọn lúc quay lại làm việc.",
+    "body2": "Mọi lần chuyển đều được lên lịch trước, nên phiên vẫn tiếp tục khi ứng dụng đã đóng và tín hiệu cho giai đoạn tiếp theo đến đúng giờ.",
+    "chainLabel": "Ví dụ một phiên: ba lượt tập trung xen kẽ giờ nghỉ ngắn, rồi một giờ nghỉ dài",
+    "chain": [
+      {
+        "kind": "focus",
+        "name": "Tập trung",
+        "min": "25 phút"
+      },
+      {
+        "kind": "break",
+        "name": "Nghỉ",
+        "min": "5 phút"
+      },
+      {
+        "kind": "focus",
+        "name": "Tập trung",
+        "min": "25 phút"
+      },
+      {
+        "kind": "break",
+        "name": "Nghỉ",
+        "min": "5 phút"
+      },
+      {
+        "kind": "focus",
+        "name": "Tập trung",
+        "min": "25 phút"
+      },
+      {
+        "kind": "long",
+        "name": "Nghỉ dài",
+        "min": "15 phút"
+      }
+    ],
+    "toggleBreaks": "Tự động bắt đầu giờ nghỉ",
+    "toggleFocus": "Tự động bắt đầu tập trung"
+  },
+  "everywhere": {
+    "title": "Hẹn giờ ở mọi nơi bạn nhìn",
+    "body": "Hoạt động trực tiếp và Dynamic Island, Màn hình khóa, tiện ích, Trung tâm điều khiển, nút Tác vụ. Nhờ Siri tạm dừng, câu trả lời sẽ kèm một khung hiển thị có nút cho bước tiếp theo. Bạn hiếm khi phải mở ứng dụng.",
+    "watch": "Capsla có ứng dụng riêng cho Apple Watch: bắt đầu và tạm dừng ngay trên cổ tay, kể cả khi iPhone không ở gần, và cảm nhận một lần chạm nhẹ khi giai đoạn kết thúc. Các giai đoạn bạn hoàn thành trên đồng hồ được tính vào thống kê trên iPhone.",
+    "note": "Cùng một lượt đếm ngược như trong viên nang ở trên.",
+    "places": [
+      {
+        "title": "Màn hình khóa và Dynamic Island",
+        "body": "Hoạt động trực tiếp hiển thị giai đoạn và thời gian, có nút tạm dừng và đặt lại, và nút bỏ qua khi đang nghỉ."
+      },
+      {
+        "title": "Tiện ích",
+        "body": "Hẹn giờ và thống kê trên Màn hình chính, cùng một tiện ích Màn hình khóa có nút bắt đầu."
+      },
+      {
+        "title": "Trung tâm điều khiển và nút Tác vụ",
+        "body": "Bắt đầu hoặc dừng tập trung mà không cần mở ứng dụng."
+      },
+      {
+        "title": "Siri và Phím tắt",
+        "body": "Bắt đầu, tạm dừng, tiếp tục, bỏ qua giờ nghỉ và hỏi hôm nay bạn đã tập trung bao lâu."
+      },
+      {
+        "title": "Apple Watch",
+        "body": "Tổ hợp cho mặt đồng hồ, khung hiển thị trong Ngăn xếp thông minh và nút trong Trung tâm điều khiển của đồng hồ."
+      }
+    ]
+  },
+  "block": {
+    "title": "Mạng xã hội có thể chờ đến khi hết giờ tập trung",
+    "body": "Chọn những ứng dụng hay kéo bạn đi, và Capsla sẽ chặn chúng trong lúc tập trung thông qua Thời gian sử dụng, rồi gỡ chặn ngay khi giai đoạn kết thúc. Nếu mở một ứng dụng bị chặn, bạn sẽ thấy màn hình của Capsla thay vào đó."
+  },
+  "stats": {
+    "title": "Sự chú ý của bạn đã đi đâu",
+    "body": "Thời gian tập trung thực theo tuần, theo tháng và toàn bộ, biểu đồ theo ngày, những giờ bạn tập trung tốt nhất, số ngày liên tiếp và thời gian theo thẻ.",
+    "body2": "Lịch sử bắt đầu từ ngày bạn cài Capsla, và ứng dụng không bao giờ tự điền những con số nó không ghi lại. Bạn có thể xuất toàn bộ thành tệp CSV bất cứ lúc nào.",
+    "items": [
+      {
+        "title": "Sức khỏe",
+        "body": "Lượt tập trung gắn thẻ “Thiền”, “Đi bộ” hoặc “Thể thao” có thể được lưu vào Sức khỏe. Capsla chỉ ghi vào đó và không bao giờ đọc."
+      },
+      {
+        "title": "Lịch",
+        "body": "Các phiên đã xong được ghi vào lịch bạn chọn, và bạn cũng có thể đặt lịch tập trung ngay trong đó."
+      },
+      {
+        "title": "Tiện ích cả trang",
+        "body": "Trên iOS 27, thống kê có thể chiếm cả một trang Màn hình chính."
+      }
+    ],
+    "image": "/img/vi/statistics.webp",
+    "imageAlt": "Màn hình thống kê của Capsla trong một tuần: thời gian tập trung thực, cột theo ngày và chấm theo giờ trong tuần"
+  },
+  "signals": {
+    "title": "Yên tĩnh nhưng khó bỏ lỡ",
+    "body": "Một cảnh báo không kèm âm thanh vài phút trước khi hết thời gian tập trung, một tín hiệu khi giai đoạn kết thúc, nút bắt đầu giờ nghỉ hoặc lượt tập trung tiếp theo ngay từ biểu ngữ, và lời nhắc nếu bạn quên quay lại sau giờ nghỉ. Thông báo được đánh dấu là Gấp nên vẫn đến cả khi bật Không làm phiền.",
+    "body2": "Tín hiệu kết thúc giai đoạn vẫn phát cả ở chế độ im lặng, vì bỏ lỡ lần chuyển thì hẹn giờ mất ý nghĩa. Có 16 âm thanh và ba kiểu phản hồi cảm ứng, chọn riêng cho từng giai đoạn."
+  },
+  "more": {
+    "title": "Và còn nữa",
+    "items": [
+      {
+        "text": "Tập trung và nghỉ từ 1 đến 999 phút, từ 1 đến 10 chu kỳ"
+      },
+      {
+        "text": "Thêm một hoặc năm phút trong phút cuối của lượt tập trung"
+      },
+      {
+        "text": "Thẻ có biểu tượng và màu sắc; bộ lọc tập trung có thể chọn thẻ thay bạn"
+      },
+      {
+        "text": "Bốn nền động, gồm cả chế độ “Hơi thở” chậm rãi"
+      },
+      {
+        "text": "Tác vụ nhanh trên biểu tượng ứng dụng"
+      },
+      {
+        "text": "Chế độ tối, VoiceOver, văn bản lớn hơn và tăng độ tương phản"
+      },
+      {
+        "text": "17 ngôn ngữ"
+      }
+    ]
+  },
+  "privacy": {
+    "title": "Bạn thấy được những gì rời khỏi điện thoại",
+    "body": "Không có tài khoản Capsla. Thẻ và lịch sử tập trung chỉ đồng bộ qua iCloud của riêng bạn, còn cài đặt vẫn nằm trên iPhone.",
+    "body2": "Màn hình Quyền riêng tư liệt kê các sự kiện gần đây do chính Capsla gửi. Đó là danh sách thật từ thiết bị của bạn, và hai công tắc giúp tắt việc thu thập dữ liệu.",
+    "link": "Chính sách quyền riêng tư (bằng tiếng Anh)",
+    "href": "/en/privacy/"
+  },
+  "plus": {
+    "title": "Những phần thiết yếu miễn phí và sẽ luôn miễn phí",
+    "body": "Capsla+ là giao dịch mua một lần, không đăng ký, dùng chung với gia đình. Nó chỉ thêm giao diện và âm thanh.",
+    "caption": "Capsla miễn phí và Capsla+ có những gì",
+    "colFeature": "Tính năng",
+    "colFree": "Miễn phí",
+    "included": "Có",
+    "notIncluded": "Không có",
+    "free": [
+      {
+        "text": "Hẹn giờ, tự động bắt đầu và thông báo"
+      },
+      {
+        "text": "Ứng dụng cho Apple Watch"
+      },
+      {
+        "text": "Chặn ứng dụng khi tập trung"
+      },
+      {
+        "text": "Thống kê, Sức khỏe và Lịch"
+      },
+      {
+        "text": "Thẻ, tiện ích, Siri và Phím tắt"
+      },
+      {
+        "text": "Bốn nền động và 16 âm thanh"
+      }
+    ],
+    "paid": [
+      {
+        "title": "Hình nền mới",
+        "body": "Thêm năm hình nền động cho bộ hẹn giờ."
+      },
+      {
+        "title": "Màu nhấn và bảng màu",
+        "body": "Màu nhấn cho toàn bộ ứng dụng và bảng màu mới cho hình nền."
+      },
+      {
+        "title": "Chữ số hẹn giờ",
+        "body": "Kiểu chữ mới cho đếm ngược trên iPhone và Apple Watch."
+      },
+      {
+        "title": "Hiệu ứng ăn mừng",
+        "body": "Hiệu ứng khác khi kết thúc chu kỳ, thay cho pháo giấy."
+      },
+      {
+        "title": "Âm thanh tập trung",
+        "body": "Tiếng ồn nâu, hồng hoặc trắng phát nền trong lúc bạn tập trung."
+      },
+      {
+        "title": "Đồng hồ và tiện ích",
+        "body": "Màu nhấn và chữ số bạn chọn trên tiện ích, Hoạt động trực tiếp và Apple Watch."
+      }
+    ],
+    "note": "Không có gì từng miễn phí bị chuyển sang Capsla+, và không có cửa sổ bật lên nào mời bạn mua."
+  },
+  "faq": {
+    "title": "Câu hỏi",
+    "items": [
+      {
+        "q": "Capsla có miễn phí không?",
+        "a": "Có, và không có quảng cáo. Hẹn giờ, ứng dụng đồng hồ, chặn ứng dụng, thống kê, thẻ, tiện ích và Siri đều miễn phí. Capsla+ là giao dịch mua một lần tùy chọn, chỉ dành cho giao diện và âm thanh."
+      },
+      {
+        "q": "Tôi có cần tài khoản không?",
+        "a": "Không. Lịch sử và thẻ đồng bộ qua iCloud của bạn; không có gì phải đăng ký."
+      },
+      {
+        "q": "Hẹn giờ có tiếp tục chạy khi tôi đóng ứng dụng không?",
+        "a": "Có. Giai đoạn vẫn tiếp tục đếm khi ứng dụng đã đóng: thời gian hiện trên Màn hình khóa và trong Dynamic Island, và một thông báo sẽ đến khi giai đoạn kết thúc."
+      },
+      {
+        "q": "Vì sao tín hiệu vẫn phát ở chế độ im lặng?",
+        "a": "Đó là chủ ý: nếu không, rất dễ bỏ lỡ lần chuyển, mà ý nghĩa của hẹn giờ chính là để bạn thôi phải canh chừng nó."
+      },
+      {
+        "q": "Đồng hồ có cần iPhone ở gần không?",
+        "a": "Không. Bạn có thể bắt đầu và tạm dừng tập trung từ đồng hồ, kể cả khi iPhone không ở gần."
+      },
+      {
+        "q": "Capsla chạy trên những thiết bị nào?",
+        "a": "iPhone chạy iOS 26 trở lên và Apple Watch chạy watchOS 26 trở lên. Không có phiên bản cho iPad."
+      }
+    ]
+  },
+  "final": {
+    "title": "Dùng thử trên iPhone của bạn",
+    "body": "Miễn phí, không quảng cáo, không cần tài khoản."
+  },
+  "foot": {
+    "label": "Liên kết",
+    "support": "Hỗ trợ",
+    "supportHref": "/en/support/",
+    "privacy": "Quyền riêng tư"
+  }
+}

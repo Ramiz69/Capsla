@@ -1,228 +1,250 @@
-<!DOCTYPE html>
-<html lang="de">
-    <head>
-        <meta charset="utf-8" />
-        <title>Capsla — ein ruhiger Timer für Fokus und Pausen fürs iPhone</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-        <meta name="description" content="Capsla — ein Timer für Fokus und Pausen fürs iPhone: beliebige Phasenlängen, Live Activity, Widgets, Mitteilungen, Siri, Tags, Statistik. Ohne Werbung.">
-        <meta name="color-scheme" content="light dark">
-        <meta name="theme-color" content="#F5F5F5" media="(prefers-color-scheme: light)">
-        <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
-        <meta name="apple-itunes-app" content="app-id=6760552635">
-        <link rel="apple-touch-icon" href="/favicon.png">
-        <link rel="icon" href="/favicon.png" type="image/png">
-        <link rel="canonical" href="https://capsla.app/de/">
-        <link rel="alternate" hreflang="ru" href="https://capsla.app/ru/">
-        <link rel="alternate" hreflang="en" href="https://capsla.app/en/">
-        <link rel="alternate" hreflang="de" href="https://capsla.app/de/">
-        <link rel="alternate" hreflang="x-default" href="https://capsla.app/">
-        <meta property="og:type" content="website">
-        <meta property="og:site_name" content="Capsla">
-        <meta property="og:url" content="https://capsla.app/de/">
-        <meta property="og:title" content="Capsla — ein ruhiger Timer für Fokus und Pausen">
-        <meta property="og:description" content="Ein Timer für Fokus und Pausen fürs iPhone. Beliebige Phasenlängen, Live Activity, Widgets, Mitteilungen, Siri, Tags, Statistik. Ohne Werbung.">
-        <meta property="og:image" content="https://capsla.app/og-image-de.png">
-        <meta property="og:image:width" content="1200">
-        <meta property="og:image:height" content="630">
-        <meta property="og:image:alt" content="Der Capsla-Timer auf schwarzem Hintergrund">
-        <meta property="og:locale" content="de_DE">
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Capsla — ein ruhiger Timer für Fokus und Pausen">
-        <meta name="twitter:description" content="Ein Timer für Fokus und Pausen fürs iPhone. Ohne Werbung.">
-        <meta name="twitter:image" content="https://capsla.app/og-image-de.png">
-        <script type="application/ld+json">{"@context":"https://schema.org","@type":"MobileApplication","name":"Capsla","operatingSystem":"iOS 26","applicationCategory":"ProductivityApplication","url":"https://capsla.app/de/","installUrl":"https://apps.apple.com/app/id6760552635","inLanguage":["ru","en","de"],"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"}}</script>
-        <style>
-        :root{
-          color-scheme: light dark;
-          --bg:#F5F5F5; --surface:#FFFFFF; --ink:#0D0D0A; --ink-2:#6E6E73;
-          --hairline:rgba(0,0,0,0.08); --on-ink:#FFFFFF; --logo-filter:none;
-          --t7:clamp(36px, calc(26.9px + 2.43vw), 58px);
-          --t6:clamp(28px, calc(19.7px + 2.21vw), 48px);
-          --t5:clamp(22px, calc(18.7px + 0.88vw), 30px);
-          --t4:clamp(19px, calc(17.8px + 0.33vw), 22px);
-          --t3:17px; --t2:15px; --t1:13px;
-          --lh-d:1.05; --lh-s:1.3; --lh-b:1.55;
-          --r-s:12px; --r-m:20px; --r-f:999px;
-          --sp-in:clamp(28px,3vw,40px); --sp-sec:clamp(64px,7vw,88px); --sp-fin:clamp(104px,12vw,160px);
-          --pad:clamp(20px,3vw,32px);
-          --text:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",system-ui,sans-serif;
-          --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
-        }
-        @media (prefers-color-scheme: dark){
-          :root{ --bg:#000000; --surface:#1C1C1E; --ink:#FFFFFF; --ink-2:#A1A1A6;
-            --hairline:rgba(255,255,255,0.10); --on-ink:#000000; --logo-filter:invert(1); }
-        }
-        [data-theme="light"]{ --bg:#F5F5F5; --surface:#FFFFFF; --ink:#0D0D0A; --ink-2:#6E6E73;
-          --hairline:rgba(0,0,0,0.08); --on-ink:#FFFFFF; --logo-filter:none; color-scheme:light }
-        [data-theme="dark"]{ --bg:#000000; --surface:#1C1C1E; --ink:#FFFFFF; --ink-2:#A1A1A6;
-          --hairline:rgba(255,255,255,0.10); --on-ink:#000000; --logo-filter:invert(1); color-scheme:dark }
-        *,*::before,*::after{box-sizing:border-box}
-        html{-webkit-text-size-adjust:100%}
-        body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--text);font-size:var(--t3);line-height:var(--lh-b);-webkit-font-smoothing:antialiased;overflow-wrap:break-word}
-        h1,h2,h3,p,ul,li,figure,blockquote{margin:0;padding:0}
-        h1,h2,h3{overflow-wrap:normal;word-break:normal;hyphens:auto;hyphenate-limit-chars:11 5 4;-webkit-hyphenate-limit-before:5;-webkit-hyphenate-limit-after:4}
-        [data-footer-grid]{display:grid;grid-template-columns:1fr;gap:24px}
-        @media (min-width:568px){[data-footer-grid]{grid-template-columns:repeat(3,1fr)}}
-        ul{list-style:none}
-        img{display:block;max-width:100%;height:auto}
-        a{color:inherit;text-decoration:none}
-        a:hover{text-decoration:underline;text-underline-offset:3px}
-        a:focus-visible{outline:2px solid var(--ink);outline-offset:3px;border-radius:4px}
-        [data-logo]{filter:var(--logo-filter)}
-        @media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
-        </style>
-    </head>
-    <body>
-        <div>
-        
-          <header style="border-bottom:1px solid var(--hairline)">
-            <div style="max-width:1080px;margin:0 auto;padding:8px max(20px,env(safe-area-inset-right,0px)) 8px max(20px,env(safe-area-inset-left,0px));min-height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px">
-              <a href="#top" style="display:flex;align-items:center;gap:9px;min-height:44px;padding-right:8px">
-                <img data-logo="true" src="/favicon.png" width="28" height="28" alt="" style="width:28px;height:28px">
-                <span style="font-size:21px;font-weight:600;letter-spacing:-0.02em">Capsla</span>
-              </a>
-              <a href="https://apps.apple.com/app/id6760552635" style="display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 18px;border-radius:var(--r-f);background:var(--ink);color:var(--on-ink);font-size:var(--t2);font-weight:600" style-hover="opacity:0.9;text-decoration:none">App Store</a>
-            </div>
-          </header>
-        
-          <main id="top">
-        
-            <section style="max-width:1080px;margin:0 auto;padding:clamp(28px,5vw,64px) max(20px,env(safe-area-inset-right,0px)) var(--sp-sec) max(20px,env(safe-area-inset-left,0px));display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:clamp(28px,4vw,56px);align-items:center">
-              <div style="min-width:0;display:flex;flex-direction:column;gap:20px">
-                <h1 style="font-size:var(--t7);font-weight:700;line-height:var(--lh-d);letter-spacing:-0.03em;text-wrap:balance">Ein ruhiger Timer für Fokus und Pausen</h1>
-                <p style="font-size:var(--t5);line-height:var(--lh-s);color:var(--ink-2);max-width:34ch">Eine Fokusphase, eine kurze Pause und nach ein paar Zyklen eine lange. Die Länge der Phasen und die Anzahl der Zyklen legst du selbst fest.</p>
-                <div style="display:flex;flex-direction:column;gap:10px;align-items:flex-start">
-                  <a href="https://apps.apple.com/app/id6760552635" style="display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 28px;border-radius:var(--r-f);background:var(--ink);color:var(--on-ink);font-size:var(--t4);font-weight:600" style-hover="opacity:0.9;text-decoration:none">Im App Store laden</a>
-                  <p style="font-size:var(--t2)">Kostenlos, ohne Werbung. <span style="color:var(--ink-2)">iPhone, iOS 26 oder neuer.</span></p>
-                </div>
-              </div>
-              <div style="min-width:0;display:flex;justify-content:center">
-                  <picture>
-            <source srcset="/img/de/timer-dark.webp" media="(prefers-color-scheme: dark)">
-            <img src="/img/de/timer-light.webp" width="800" height="1739" alt="Der Capsla-Timer: der Zähler in Großaufnahme" loading="eager" decoding="async" fetchpriority="high" style="width:100%;max-width:280px;aspect-ratio:1206/2622;object-fit:contain;border-radius:36px;border:1px solid var(--hairline)">
-          </picture>
-                </div>
-            </section>
-        
-            <section id="features" style="max-width:1080px;margin:0 auto;padding:0 max(20px,env(safe-area-inset-right,0px)) var(--sp-sec) max(20px,env(safe-area-inset-left,0px));display:flex;flex-direction:column;gap:var(--sp-in)">
-              <h2 style="font-size:var(--t6);font-weight:700;line-height:var(--lh-d);letter-spacing:-0.025em;max-width:20ch">Was Capsla kann</h2>
-        
-              <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:clamp(16px,2vw,24px)">
-                <article style="min-width:0;border:1px solid var(--hairline);border-radius:var(--r-m);background:var(--surface);padding:var(--pad);display:flex;flex-direction:column;gap:16px">
-                  <h3 style="font-size:var(--t5);font-weight:700;line-height:var(--lh-s);letter-spacing:-0.02em;max-width:20ch">Dein Rhythmus, nicht 25/5</h3>
-                  <p style="color:var(--ink-2)">Fokus, kurze und lange Pause dürfen beliebig lang sein, von 1 bis 999 Minuten. Die Anzahl der Zyklen bis zur langen Pause wählst du von 1 bis 10. Einem laufenden Fokus kannst du 1 oder 5 Minuten hinzufügen.</p>
-                </article>
-                <article style="min-width:0;border:1px solid var(--hairline);border-radius:var(--r-m);background:var(--surface);padding:var(--pad);display:flex;flex-direction:column;gap:16px">
-                  <h3 style="font-size:var(--t5);font-weight:700;line-height:var(--lh-s);letter-spacing:-0.02em;max-width:20ch">Den Timer siehst du, ohne die App zu öffnen</h3>
-                  <p style="color:var(--ink-2)">Eine Live Activity hält die Phase auf dem Sperrbildschirm und in der Dynamic Island: Pause, Zurücksetzen und während der Pause Überspringen. Dieselbe Karte kommt auf die Apple Watch, dort zeigt sie nur die Zeit. Im Kontrollzentrum gibt es einen Schalter, der einen Fokus startet und beendet.</p>
-                </article>
-              </div>
-        
-              <ul style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:0 clamp(24px,4vw,56px)">
-                <li style="min-width:0;border-top:1px solid var(--hairline);padding:20px 0;display:flex;flex-direction:column;gap:6px">
-                  <h3 style="font-size:var(--t4);font-weight:600;line-height:var(--lh-s);letter-spacing:-0.015em">Mitteilungen</h3>
-                  <p style="color:var(--ink-2);font-size:var(--t2);line-height:var(--lh-b)">Die App meldet, dass eine Phase zu Ende ist, warnt dich, wenn der Fokus gleich ausläuft, und erinnert dich, zurückzukommen, wenn die Pause zu lang wird. Eine Pause starten oder überspringen kannst du direkt aus der Mitteilung.</p>
-                </li>
-                <li style="min-width:0;border-top:1px solid var(--hairline);padding:20px 0;display:flex;flex-direction:column;gap:6px">
-                  <h3 style="font-size:var(--t4);font-weight:600;line-height:var(--lh-s);letter-spacing:-0.015em">Widgets</h3>
-                  <p style="color:var(--ink-2);font-size:var(--t2);line-height:var(--lh-b)">Widgets für Timer und Statistik auf dem Home-Bildschirm, dazu „Fokus heute“ auf dem Sperrbildschirm.</p>
-                </li>
-                <li style="min-width:0;border-top:1px solid var(--hairline);padding:20px 0;display:flex;flex-direction:column;gap:6px">
-                  <h3 style="font-size:var(--t4);font-weight:600;line-height:var(--lh-s);letter-spacing:-0.015em">Siri und Kurzbefehle</h3>
-                  <p style="color:var(--ink-2);font-size:var(--t2);line-height:var(--lh-b)">Bitte Siri, den Timer zu starten, anzuhalten oder eine Pause zu überspringen — sie sagt dir auch, wie viel noch übrig ist. Die Antwort kommt mit einer Karte samt Tasten, du kannst also gleich dort weitermachen.</p>
-                </li>
-                <li style="min-width:0;border-top:1px solid var(--hairline);padding:20px 0;display:flex;flex-direction:column;gap:6px">
-                  <h3 style="font-size:var(--t4);font-weight:600;line-height:var(--lh-s);letter-spacing:-0.015em">Tags</h3>
-                  <p style="color:var(--ink-2);font-size:var(--t2);line-height:var(--lh-b)">Ein Tag hält fest, womit du gerade beschäftigt bist: Arbeit, Lernen, Sport — oder ein eigenes. Tags erscheinen in der Suche auf dem iPhone, und wenn ein Fokus eingeschaltet ist, setzt Capsla das passende Tag von selbst ein.</p>
-                </li>
-                <li style="min-width:0;border-top:1px solid var(--hairline);padding:20px 0;display:flex;flex-direction:column;gap:6px">
-                  <h3 style="font-size:var(--t4);font-weight:600;line-height:var(--lh-s);letter-spacing:-0.015em">Soziale Apps bleiben im Fokus zu</h3>
-                  <p style="color:var(--ink-2);font-size:var(--t2);line-height:var(--lh-b)">Ausgewählte Apps lassen sich für die Dauer eines Fokus sperren — das übernimmt die Bildschirmzeit.</p>
-                </li>
-                <li style="min-width:0;border-top:1px solid var(--hairline);padding:20px 0;display:flex;flex-direction:column;gap:6px">
-                  <h3 style="font-size:var(--t4);font-weight:600;line-height:var(--lh-s);letter-spacing:-0.015em">Statistik</h3>
-                  <p style="color:var(--ink-2);font-size:var(--t2);line-height:var(--lh-b)">Jede abgeschlossene Phase landet im Verlauf: reine Zeit, Tag, Stunde des Tages. Daraus entstehen Tage in Folge, übersprungene Pausen und die Übersicht „Wann du dich fokussierst“. Den Verlauf kannst du als CSV exportieren, und iCloud gleicht ihn zwischen deinen Geräten ab.</p>
-                </li>
-                <li style="min-width:0;border-top:1px solid var(--hairline);padding:20px 0;display:flex;flex-direction:column;gap:6px">
-                  <h3 style="font-size:var(--t4);font-weight:600;line-height:var(--lh-s);letter-spacing:-0.015em">Du siehst, was das iPhone verlässt</h3>
-                  <p style="color:var(--ink-2);font-size:var(--t2);line-height:var(--lh-b)">Zwei Schalter für die Datenerfassung und eine Liste der gesendeten Ereignisse: Du kannst nachsehen, was genau gesendet wurde, und die Erfassung abschalten.</p>
-                </li>
-                <li style="min-width:0;border-top:1px solid var(--hairline);padding:20px 0;display:flex;flex-direction:column;gap:6px">
-                  <h3 style="font-size:var(--t4);font-weight:600;line-height:var(--lh-s);letter-spacing:-0.015em">Ton und Vibration</h3>
-                  <p style="color:var(--ink-2);font-size:var(--t2);line-height:var(--lh-b)">Der Ton am Ende einer Phase erklingt auch im Lautlos-Modus — sonst überhört man den Wechsel leicht. Zur Auswahl stehen 16 Töne. Die Vibration lässt sich in der App einstellen oder abschalten: drei Muster, verschieden für das Ende eines Fokus und das Ende einer Pause.</p>
-                </li>
-                <li style="min-width:0;border-top:1px solid var(--hairline);padding:20px 0;display:flex;flex-direction:column;gap:6px">
-                  <h3 style="font-size:var(--t4);font-weight:600;line-height:var(--lh-s);letter-spacing:-0.015em">Kurzaktionen am App-Symbol</h3>
-                  <p style="color:var(--ink-2);font-size:var(--t2);line-height:var(--lh-b)">Ein langer Druck auf das App-Symbol öffnet die Kurzaktionen — einen Fokus starten, ohne auf den Bildschirm zu warten.</p>
-                </li>
-                <li style="min-width:0;border-top:1px solid var(--hairline);padding:20px 0;display:flex;flex-direction:column;gap:6px">
-                  <h3 style="font-size:var(--t4);font-weight:600;line-height:var(--lh-s);letter-spacing:-0.015em">Bedienungshilfen und Sprachen</h3>
-                  <p style="color:var(--ink-2);font-size:var(--t2);line-height:var(--lh-b)">Dunkles Erscheinungsbild, erhöhter Kontrast und größere Schrift werden unterstützt. Die Oberfläche gibt es auf Russisch, Englisch und Deutsch.</p>
-                </li>
-              </ul>
-            </section>
-        
-            <section style="max-width:1080px;margin:0 auto;padding:0 max(20px,env(safe-area-inset-right,0px)) var(--sp-sec) max(20px,env(safe-area-inset-left,0px));display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:clamp(20px,3vw,40px);align-items:center">
-              <div style="min-width:0;display:flex;flex-direction:column;gap:14px">
-                <h2 style="font-size:var(--t6);font-weight:700;line-height:var(--lh-d);letter-spacing:-0.025em;max-width:20ch">Vier animierte Hintergründe</h2>
-                <p style="color:var(--ink-2);max-width:44ch">Verlauf, Orbits, Wellen und Atmen. Verlauf hat sechs Stile, Wellen eine eigene Farbe, Orbits die Dichte der Ringe und fünf Paletten: monochrom und vier farbige.</p>
-                <ul style="display:flex;gap:10px;flex-wrap:wrap;margin-top:4px">
-                    <li style="width:56px;height:56px;border-radius:var(--r-s);background:#020812;display:flex;align-items:center;justify-content:center"><span style="width:28px;height:28px;border-radius:50%;border:2px solid #7ADAFF;display:block"></span></li>
-                    <li style="width:56px;height:56px;border-radius:var(--r-s);background:#100508;display:flex;align-items:center;justify-content:center"><span style="width:28px;height:28px;border-radius:50%;border:2px solid #FFA973;display:block"></span></li>
-                    <li style="width:56px;height:56px;border-radius:var(--r-s);background:#020C09;display:flex;align-items:center;justify-content:center"><span style="width:28px;height:28px;border-radius:50%;border:2px solid #87EFB3;display:block"></span></li>
-                    <li style="width:56px;height:56px;border-radius:var(--r-s);background:#0B0512;display:flex;align-items:center;justify-content:center"><span style="width:28px;height:28px;border-radius:50%;border:2px solid #CFB3FF;display:block"></span></li>
-                  </ul>
-              </div>
-              <div style="min-width:0;display:flex;justify-content:center">
-                  <img src="/img/de/waves.webp" width="800" height="1739" alt="Der animierte Hintergrund „Wellen“ auf dem Timer-Bildschirm" loading="lazy" decoding="async" style="width:100%;max-width:280px;aspect-ratio:1206/2622;object-fit:contain;border-radius:36px;border:1px solid var(--hairline)">
-                </div>
-            </section>
-        
-            <section style="background:var(--surface);border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline);margin-bottom:var(--sp-fin)">
-              <div style="max-width:1080px;margin:0 auto;padding:var(--sp-sec) max(20px,env(safe-area-inset-right,0px)) var(--sp-sec) max(20px,env(safe-area-inset-left,0px));display:flex;flex-direction:column;gap:var(--sp-in)">
-                <div style="display:flex;flex-direction:column;gap:14px;max-width:52ch">
-                  <h2 style="font-size:var(--t6);font-weight:700;line-height:var(--lh-d);letter-spacing:-0.025em;max-width:20ch">Nicht nur für die Arbeit am Schreibtisch</h2>
-                  <p style="color:var(--ink-2)">Der Timer hilft überall dort, wo der Rhythmus von außen kommen muss: beim Fokussieren mit ADHS, beim Zählen von Sätzen im Training, beim Abmessen von Zügen bei Partyspielen.</p>
-                </div>
-              </div>
-            </section>
-        
-            <section style="max-width:1080px;margin:0 auto;padding:0 max(20px,env(safe-area-inset-right,0px)) var(--sp-sec) max(20px,env(safe-area-inset-left,0px));display:flex;flex-direction:column;gap:16px">
-              <h2 style="font-size:var(--t6);font-weight:700;line-height:var(--lh-d);letter-spacing:-0.025em;max-width:24ch">Keine Werbung, keine bezahlten Tasten</h2>
-              <p style="font-size:var(--t5);line-height:var(--lh-s);color:var(--ink-2);max-width:60ch">Die wichtigsten Funktionen sind kostenlos und bleiben es. Es gibt keine Bildschirme, die dir etwas verkaufen wollen, und keine Tasten, die ohne Bezahlung aufhören zu funktionieren.</p>
-            </section>
-        
-            <section style="background:var(--ink);color:var(--on-ink)">
-              <div style="max-width:1080px;margin:0 auto;padding:var(--sp-sec) max(20px,env(safe-area-inset-right,0px)) var(--sp-sec) max(20px,env(safe-area-inset-left,0px));display:flex;flex-direction:column;gap:24px;align-items:flex-start">
-                <h2 style="font-size:var(--t6);font-weight:700;line-height:var(--lh-d);letter-spacing:-0.025em;max-width:20ch">Du brauchst nur ein iPhone</h2>
-                <p style="font-size:var(--t4);line-height:var(--lh-s);opacity:0.75;max-width:44ch">Jedes iPhone mit iOS 26 oder neuer. Die App ist kostenlos, eine Anmeldung gibt es nicht.</p>
-                <a href="https://apps.apple.com/app/id6760552635" style="display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:0 30px;border-radius:var(--r-f);background:var(--on-ink);color:var(--ink);font-size:var(--t4);font-weight:600" style-hover="opacity:0.9;text-decoration:none">Im App Store laden</a>
-              </div>
-            </section>
-          </main>
-        
-          <footer style="border-top:1px solid var(--hairline)">
-            <div data-footer-grid="true" style="max-width:1080px;margin:0 auto;padding:32px max(20px,env(safe-area-inset-right,0px)) 40px max(20px,env(safe-area-inset-left,0px));align-items:start">
-              <div style="display:flex;flex-direction:column;gap:8px">
-                <span style="display:flex;align-items:center;gap:9px;font-size:var(--t4);font-weight:600;letter-spacing:-0.02em">
-                  <img data-logo="true" src="/favicon.png" width="24" height="24" alt="" style="width:24px;height:24px">Capsla
-                </span>
-                <span style="color:var(--ink-2);font-size:var(--t2)">Ein Timer für Fokus und Pausen. Nur iPhone.</span>
-                <span style="color:var(--ink-2);font-size:var(--t2)">© 2026 Ramiz Kichibekov</span>
-              </div>
-              <nav aria-label="Bereiche der Website" style="display:flex;flex-direction:column;gap:4px;align-items:flex-start">
-                <a href="#features" style="display:inline-flex;align-items:center;min-height:44px;font-size:var(--t2)">Funktionen</a>
-                <a href="/de/privacy/" style="display:inline-flex;align-items:center;min-height:44px;font-size:var(--t2)">Datenschutz</a>
-        <a href="/de/support/" style="display:inline-flex;align-items:center;min-height:44px;font-size:var(--t2)">Support</a>
-                <a href="https://apps.apple.com/app/id6760552635" style="display:inline-flex;align-items:center;min-height:44px;font-size:var(--t2)">App Store</a>
-              </nav>
-              <nav aria-label="Sprache der Seite" style="display:flex;flex-direction:column;gap:4px;align-items:flex-start">
-                <a href="/ru/" style="display:inline-flex;align-items:center;min-height:44px;font-size:var(--t2);font-weight:600">Русский</a>
-                <a href="/en/" style="display:inline-flex;align-items:center;min-height:44px;font-size:var(--t2)">English</a>
-                <a aria-current="page" href="/de/" style="display:inline-flex;align-items:center;min-height:44px;font-size:var(--t2)">Deutsch</a>
-              </nav>
-            </div>
-          </footer>
+<!doctype html>
+<html lang="de" dir="ltr" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Capsla — ein ruhiger Timer für Fokus und Pausen auf iPhone und Apple Watch</title>
+<meta name="description" content="Ein Pomodoro-Timer für iPhone und Apple Watch: Sitzungen, die von allein laufen, ablenkende Apps im Fokus gesperrt, Statistik, Health und Kalender. Kostenlos und ohne Werbung.">
+<meta name="google-site-verification" content="mQ-XMhX4pC-cmHKHysrBbrbVa3eKna4o4eNOFXXA_3Q">
+<meta name="apple-itunes-app" content="app-id=6760552635">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f5f5f5" media="(prefers-color-scheme: light)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Capsla">
+<meta property="og:title" content="Capsla — ein ruhiger Fokus-Timer">
+<meta property="og:description" content="Ein Pomodoro-Timer für iPhone und Apple Watch. Kostenlos und ohne Werbung.">
+<meta property="og:url" content="https://capsla.app/de/">
+<meta property="og:image" content="https://capsla.app/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://capsla.app/de/">
+<link rel="alternate" hreflang="en" href="https://capsla.app/en/">
+<link rel="alternate" hreflang="ru" href="https://capsla.app/ru/">
+<link rel="alternate" hreflang="de" href="https://capsla.app/de/">
+<link rel="alternate" hreflang="fr" href="https://capsla.app/fr/">
+<link rel="alternate" hreflang="it" href="https://capsla.app/it/">
+<link rel="alternate" hreflang="es" href="https://capsla.app/es/">
+<link rel="alternate" hreflang="pt-BR" href="https://capsla.app/pt-br/">
+<link rel="alternate" hreflang="uk" href="https://capsla.app/uk/">
+<link rel="alternate" hreflang="tr" href="https://capsla.app/tr/">
+<link rel="alternate" hreflang="ar" href="https://capsla.app/ar/">
+<link rel="alternate" hreflang="hi" href="https://capsla.app/hi/">
+<link rel="alternate" hreflang="id" href="https://capsla.app/id/">
+<link rel="alternate" hreflang="vi" href="https://capsla.app/vi/">
+<link rel="alternate" hreflang="ja" href="https://capsla.app/ja/">
+<link rel="alternate" hreflang="ko" href="https://capsla.app/ko/">
+<link rel="alternate" hreflang="zh-Hans" href="https://capsla.app/zh-hans/">
+<link rel="alternate" hreflang="zh-Hant" href="https://capsla.app/zh-hant/">
+<link rel="alternate" hreflang="x-default" href="https://capsla.app/">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/favicon.png">
+<link rel="preload" href="/assets/digits.cd57d033f8.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/home.f974396820.css">
+<script>
+  (function () {
+    try {
+      var saved = localStorage.getItem('capsla-theme');
+      var theme = saved === 'light' || saved === 'dark' ? saved : (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+      document.documentElement.setAttribute('data-theme', theme);
+    } catch (e) {}
+  })();
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"MobileApplication","name":"Capsla","operatingSystem":"iOS 26, watchOS 26","applicationCategory":"ProductivityApplication","url":"https://capsla.app/de/","downloadUrl":"https://apps.apple.com/app/id6760552635","inLanguage":"de","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Zum Inhalt springen</a>
+
+<header class="top">
+  <a class="brand" href="/de/"><img src="/favicon.png" alt="" width="28" height="28">Capsla</a>
+  <nav class="top-right" aria-label="Darstellung und Sprache">
+    <button class="pill" id="theme" type="button" data-light="Hell" data-dark="Dunkel">Hell</button>
+    <details class="langs">
+      <summary class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span>Deutsch</span></summary>
+      <ul>
+        <li><a href="/en/" hreflang="en" lang="en">English</a></li><li><a href="/ru/" hreflang="ru" lang="ru">Русский</a></li><li><a href="/de/" hreflang="de" lang="de" aria-current="page">Deutsch</a></li><li><a href="/fr/" hreflang="fr" lang="fr">Français</a></li><li><a href="/it/" hreflang="it" lang="it">Italiano</a></li><li><a href="/es/" hreflang="es" lang="es">Español</a></li><li><a href="/pt-br/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a></li><li><a href="/uk/" hreflang="uk" lang="uk">Українська</a></li><li><a href="/tr/" hreflang="tr" lang="tr">Türkçe</a></li><li><a href="/ar/" hreflang="ar" lang="ar">العربية</a></li><li><a href="/hi/" hreflang="hi" lang="hi">हिन्दी</a></li><li><a href="/id/" hreflang="id" lang="id">Bahasa Indonesia</a></li><li><a href="/vi/" hreflang="vi" lang="vi">Tiếng Việt</a></li><li><a href="/ja/" hreflang="ja" lang="ja">日本語</a></li><li><a href="/ko/" hreflang="ko" lang="ko">한국어</a></li><li><a href="/zh-hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li><li><a href="/zh-hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li>
+      </ul>
+    </details>
+  </nav>
+</header>
+
+<main id="main">
+<section class="hero" aria-labelledby="title">
+  <canvas id="orbits" aria-hidden="true"></canvas>
+  <div class="hero-layout">
+    <div class="hero-copy">
+      <h1 id="title">Ein ruhiger Timer für Fokus und&nbsp;Pausen</h1>
+      <p class="lede">Fokus, eine kurze Pause und nach ein paar Runden eine lange. Die Kapsel hier ist ein echter Timer, und die Ringe darum sind derselbe Orbital-Hintergrund wie in der App. Drück auf Start.</p>
+      <a class="badge" href="https://apps.apple.com/app/id6760552635"><img class="badge-on-dark" src="/assets/badge-white-de.581a2e77ad.svg" alt="Laden im App Store" width="160" height="53"><img class="badge-on-light" src="/assets/badge-black-de.4f2967e1f6.svg" alt="Laden im App Store" width="160" height="53"></a>
+      <p class="fine">Kostenlos und ohne Werbung. Für iPhone und Apple Watch.</p>
+    </div>
+
+    <div class="stage">
+      <div class="capsule" id="capsule" role="group" aria-label="Timer ausprobieren">
+        <div class="cap-top">
+          <span class="greeting" id="greeting">Zeit für Fokus</span>
+          <div class="cycles" id="cycles" hidden></div>
         </div>
-    </body>
+        <div class="mid">
+          <p class="digits" id="digits" role="timer">25:00</p>
+          <span class="phase" id="phase"></span>
+        </div>
+        <div class="chips" id="chips" role="group" aria-label="Fokusdauer in Minuten">
+          <button class="chip" type="button" data-min="1" aria-pressed="false">1</button>
+          <button class="chip" type="button" data-min="5" aria-pressed="false">5</button>
+          <button class="chip" type="button" data-min="25" aria-pressed="true">25</button>
+        </div>
+        <button class="play" id="play" type="button" aria-label="Fokus starten">
+          <svg id="play-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l13-7.5z"/></svg>
+        </button>
+        <button class="reset" id="reset" type="button" aria-label="Zurücksetzen" hidden>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12a8 8 0 1 0 2.4-5.7"/><path d="M4 4v4.5h4.5"/></svg>
+        </button>
+      </div>
+      <div class="palettes" role="radiogroup" aria-label="Hintergrundpalette">
+        <span class="palettes-label">Hintergrundpalette</span>
+      </div>
+    </div>
+  </div>
+  <p class="vh" id="announce" aria-live="polite"></p>
+</section>
+
+<section class="band" id="session" aria-labelledby="session-title">
+  <div class="split">
+    <div class="text">
+      <h2 id="session-title">Eine Sitzung, die von allein läuft</h2>
+      <p>Schalte den automatischen Start ein, und Fokus, Pause und der nächste Fokus folgen ohne Tippen aufeinander bis zur langen Pause. Pausen und Fokus lassen sich getrennt einschalten: So beginnt die Pause pünktlich, und an die Arbeit gehst du zurück, wann du willst.</p>
+      <p>Jeder Übergang ist im Voraus geplant. Darum läuft die Sitzung auch bei geschlossener App weiter, und das Signal für die nächste Phase kommt pünktlich.</p>
+    </div>
+    <figure class="chain" aria-label="Eine Beispielsitzung: drei Fokusphasen mit kurzen Pausen, danach eine lange Pause">
+      <ol>
+        <li class="link link-focus"><span class="link-name">Fokus</span><span class="link-min">25 Min.</span></li><li class="link link-break"><span class="link-name">Pause</span><span class="link-min">5 Min.</span></li><li class="link link-focus"><span class="link-name">Fokus</span><span class="link-min">25 Min.</span></li><li class="link link-break"><span class="link-name">Pause</span><span class="link-min">5 Min.</span></li><li class="link link-focus"><span class="link-name">Fokus</span><span class="link-min">25 Min.</span></li><li class="link link-long"><span class="link-name">Lange Pause</span><span class="link-min">15 Min.</span></li>
+      </ol>
+      <div class="toggles">
+        <div class="toggle" role="presentation"><span>Pausen automatisch starten</span><i aria-hidden="true"></i></div>
+        <div class="toggle" role="presentation"><span>Fokus automatisch starten</span><i aria-hidden="true"></i></div>
+      </div>
+    </figure>
+  </div>
+</section>
+
+<section class="band" id="everywhere" aria-labelledby="everywhere-title">
+  <div class="split split-reverse">
+    <div class="text">
+      <h2 id="everywhere-title">Der Timer ist dort, wo du hinschaust</h2>
+      <p>Eine Live-Aktivität und die Dynamic Island, der Sperrbildschirm, Widgets, das Kontrollzentrum, die Aktionstaste. Bitte Siri, zu pausieren, und die Antwort kommt mit einer Karte und Tasten für den nächsten Schritt. Die App musst du selten öffnen.</p>
+      <p>Capsla hat eine eigene App für die Apple Watch: Starte und pausiere am Handgelenk, auch wenn dein iPhone nicht in der Nähe ist, und spüre ein Tippen, wenn eine Phase endet. Phasen, die du auf der Uhr abschließt, zählen in deiner Statistik auf dem iPhone.</p>
+    </div>
+    <figure class="devices" aria-hidden="true">
+      <div class="island"><span class="island-dot"></span><span class="island-time" data-mirror>25:00</span></div>
+      <div class="watch"><div class="watch-face"><span class="watch-phase" data-mirror-phase>Fokus</span><span class="watch-time" data-mirror>25:00</span></div></div>
+      <figcaption class="devices-note">Derselbe Countdown wie in der Kapsel oben.</figcaption>
+    </figure>
+  </div>
+  <ul class="places">
+    <li><strong>Sperrbildschirm und Dynamic Island</strong><span>Die Live-Aktivität zeigt Phase und Zeit, mit Pausieren und Zurücksetzen, in der Pause auch mit Überspringen.</span></li><li><strong>Widgets</strong><span>Timer und Statistik auf dem Home-Bildschirm und ein Widget für den Sperrbildschirm mit Starttaste.</span></li><li><strong>Kontrollzentrum und Aktionstaste</strong><span>Fokus starten oder beenden, ohne die App zu öffnen.</span></li><li><strong>Siri und Kurzbefehle</strong><span>Starten, pausieren, fortsetzen, eine Pause überspringen und fragen, wie lange du heute fokussiert warst.</span></li><li><strong>Apple Watch</strong><span>Komplikationen, eine Karte im Smart-Stapel und eine Taste im Kontrollzentrum der Uhr.</span></li>
+  </ul>
+</section>
+
+<section class="band" id="block" aria-labelledby="block-title">
+  <div class="split split-reverse">
+    <div class="text">
+      <h2 id="block-title">Soziale Netzwerke können warten, bis der Fokus endet</h2>
+      <p>Wähle die Apps, die dich ablenken, und Capsla sperrt sie während des Fokus über die Bildschirmzeit. Sobald die Phase endet, ist die Sperre aufgehoben. Öffnest du eine gesperrte App, siehst du stattdessen einen Bildschirm von Capsla.</p>
+    </div>
+    
+  </div>
+</section>
+
+<section class="band" id="stats" aria-labelledby="stats-title">
+  <div class="split">
+    <div class="text">
+      <h2 id="stats-title">Wohin deine Aufmerksamkeit ging</h2>
+      <p>Reine Fokuszeit nach Woche, Monat und gesamt, ein Diagramm nach Tagen, die Stunden, in denen du dich am besten konzentrierst, Tage in Folge und Zeit nach Tags.</p>
+      <p>Die Historie beginnt an dem Tag, an dem du Capsla installierst, und die App ergänzt keine Zahlen, die sie nicht aufgezeichnet hat. Exportiere alles jederzeit als CSV-Datei.</p>
+    </div>
+    <figure class="shot"><img src="/img/de/statistics.webp" alt="Der Statistikbildschirm von Capsla für eine Woche: reine Fokuszeit, Balken nach Tagen und Punkte nach Stunden der Woche" width="800" height="1738" loading="lazy" decoding="async"></figure>
+  </div>
+  <ul class="places">
+    <li><strong>Health</strong><span>Fokus mit dem Tag „Meditation“, „Spaziergang“ oder „Sport“ lässt sich in Health speichern. Capsla schreibt dort nur und liest nie.</span></li><li><strong>Kalender</strong><span>Abgeschlossene Sitzungen landen in einem Kalender deiner Wahl, und dort kannst du auch Fokus planen.</span></li><li><strong>Ein Widget über die ganze Seite</strong><span>Unter iOS 27 kann die Statistik eine ganze Seite des Home-Bildschirms füllen.</span></li>
+  </ul>
+</section>
+
+<section class="band" id="signals" aria-labelledby="signals-title">
+  <div class="narrow">
+    <h2 id="signals-title">Leise, aber kaum zu überhören</h2>
+    <p>Ein leiser Hinweis einige Minuten vor dem Ende des Fokus, ein Signal, wenn eine Phase vorbei ist, Tasten, mit denen du die Pause oder den nächsten Fokus direkt aus dem Banner startest, und eine Erinnerung, falls du nach der Pause nicht zurückkommst. Die Mitteilungen sind dringlich und kommen daher auch bei „Nicht stören“ durch.</p>
+    <p>Das Signal am Ende einer Phase ertönt auch im Stummmodus, denn ein verpasster Übergang macht den Sinn zunichte. Es gibt 16 Sounds und drei Vibrationsmuster, für jede Phase einzeln wählbar.</p>
+  </div>
+</section>
+
+<section class="band" id="more" aria-labelledby="more-title">
+  <div class="narrow">
+    <h2 id="more-title">Außerdem</h2>
+  </div>
+  <ul class="facts">
+    <li>Fokus und Pausen von 1 bis 999 Minuten, 1 bis 10 Zyklen</li><li>In der letzten Fokusminute eine oder fünf Minuten hinzufügen</li><li>Tags mit Symbolen und Farben; ein Fokusfilter kann den Tag für dich wählen</li><li>Vier animierte Hintergründe, darunter ein langsamer Modus „Atmen“</li><li>Schnellaktionen auf dem App-Symbol</li><li>Dunkelmodus, VoiceOver, größerer Text und erhöhter Kontrast</li><li>17 Sprachen</li>
+  </ul>
+</section>
+
+<section class="band" id="privacy" aria-labelledby="privacy-title">
+  <div class="narrow">
+    <h2 id="privacy-title">Du siehst, was dein iPhone verlässt</h2>
+    <p>Ein Capsla-Konto gibt es nicht. Tags und Fokusverlauf synchronisieren nur über deine eigene iCloud, die Einstellungen bleiben auf deinem iPhone.</p>
+    <p>Der Bildschirm „Datenschutz“ zeigt die letzten Ereignisse, die Capsla selbst gesendet hat. Das ist eine echte Liste von deinem Gerät, und zwei Schalter stellen die Erfassung ab.</p>
+    <p><a class="link-arrow" href="/de/privacy/">Datenschutzerklärung</a></p>
+  </div>
+</section>
+
+<section class="band" id="plus" aria-labelledby="plus-title">
+  <div class="narrow">
+    <h2 id="plus-title">Das Wesentliche ist kostenlos und bleibt es</h2>
+    <p>Capsla+ ist ein einmaliger Kauf ohne Abo, mit deiner Familie geteilt. Es ergänzt nur Aussehen und Klang.</p>
+  </div>
+  <div class="table-wrap">
+    <table class="compare">
+      <caption class="vh">Was in Capsla kostenlos ist und was Capsla+ bringt</caption>
+      <thead><tr><th scope="col">Funktion</th><th scope="col">Kostenlos</th><th scope="col">Capsla+</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Timer, automatischer Start und Mitteilungen</th><td><span class="yes" aria-label="Enthalten">●</span></td><td><span class="yes" aria-label="Enthalten">●</span></td></tr><tr><th scope="row">Die App für die Apple Watch</th><td><span class="yes" aria-label="Enthalten">●</span></td><td><span class="yes" aria-label="Enthalten">●</span></td></tr><tr><th scope="row">Apps während des Fokus sperren</th><td><span class="yes" aria-label="Enthalten">●</span></td><td><span class="yes" aria-label="Enthalten">●</span></td></tr><tr><th scope="row">Statistik, Health und Kalender</th><td><span class="yes" aria-label="Enthalten">●</span></td><td><span class="yes" aria-label="Enthalten">●</span></td></tr><tr><th scope="row">Tags, Widgets, Siri und Kurzbefehle</th><td><span class="yes" aria-label="Enthalten">●</span></td><td><span class="yes" aria-label="Enthalten">●</span></td></tr><tr><th scope="row">Vier animierte Hintergründe und 16 Sounds</th><td><span class="yes" aria-label="Enthalten">●</span></td><td><span class="yes" aria-label="Enthalten">●</span></td></tr>
+        <tr><th scope="row">Neue Hintergründe<small>Fünf weitere lebendige Timer-Hintergründe.</small></th><td><span class="no" aria-label="Nicht enthalten">—</span></td><td><span class="yes" aria-label="Enthalten">●</span></td></tr><tr><th scope="row">Akzent und Paletten<small>Eine Akzentfarbe für die ganze App und neue Paletten für die Hintergründe.</small></th><td><span class="no" aria-label="Nicht enthalten">—</span></td><td><span class="yes" aria-label="Enthalten">●</span></td></tr><tr><th scope="row">Timer-Ziffern<small>Neue Schriften für den Countdown auf iPhone und Apple Watch.</small></th><td><span class="no" aria-label="Nicht enthalten">—</span></td><td><span class="yes" aria-label="Enthalten">●</span></td></tr><tr><th scope="row">Feiereffekte<small>Andere Effekte am Ende eines Zyklus statt Konfetti.</small></th><td><span class="no" aria-label="Nicht enthalten">—</span></td><td><span class="yes" aria-label="Enthalten">●</span></td></tr><tr><th scope="row">Fokusklänge<small>Braunes, rosa oder weißes Rauschen im Hintergrund, solange du fokussiert arbeitest.</small></th><td><span class="no" aria-label="Nicht enthalten">—</span></td><td><span class="yes" aria-label="Enthalten">●</span></td></tr><tr><th scope="row">Watch und Widgets<small>Dein Akzent und deine Ziffern in Widgets, der Live Activity und auf der Apple Watch.</small></th><td><span class="no" aria-label="Nicht enthalten">—</span></td><td><span class="yes" aria-label="Enthalten">●</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="narrow note">Nichts, was kostenlos war, wurde hinter Capsla+ verschoben, und es gibt keine Pop-ups, die zum Kauf auffordern.</p>
+</section>
+
+
+
+<section class="band" id="faq" aria-labelledby="faq-title">
+  <div class="narrow">
+    <h2 id="faq-title">Fragen</h2>
+    <details><summary>Ist Capsla kostenlos?</summary><p>Ja, und ohne Werbung. Timer, App für die Uhr, App-Sperre, Statistik, Tags, Widgets und Siri sind kostenlos. Capsla+ ist ein optionaler einmaliger Kauf für Aussehen und Klang.</p></details><details><summary>Brauche ich ein Konto?</summary><p>Nein. Historie und Tags synchronisieren über deine iCloud; registrieren musst du dich nirgends.</p></details><details><summary>Läuft der Timer weiter, wenn ich die App schließe?</summary><p>Ja. Die Phase zählt bei geschlossener App weiter: Die Zeit steht auf dem Sperrbildschirm und in der Dynamic Island, und am Ende der Phase kommt eine Mitteilung.</p></details><details><summary>Warum ertönt das Signal im Stummmodus?</summary><p>Mit Absicht: Sonst verpasst man einen Übergang leicht, und der Sinn eines Timers ist ja, dass du nicht mehr auf ihn schauen musst.</p></details><details><summary>Braucht die Uhr mein iPhone in der Nähe?</summary><p>Nein. Du kannst den Fokus auf der Uhr starten und pausieren, auch wenn dein iPhone nicht in der Nähe ist.</p></details><details><summary>Auf welchen Geräten läuft Capsla?</summary><p>Auf dem iPhone mit iOS 26 oder neuer und auf der Apple Watch mit watchOS 26 oder neuer. Eine Version für das iPad gibt es nicht.</p></details>
+  </div>
+</section>
+
+<section class="band final" aria-labelledby="final-title">
+  <div class="narrow center">
+    <h2 id="final-title">Probier es auf deinem iPhone aus</h2>
+    <p>Kostenlos, ohne Werbung und ohne Konto.</p>
+    <a class="badge" href="https://apps.apple.com/app/id6760552635"><img class="badge-on-dark" src="/assets/badge-white-de.581a2e77ad.svg" alt="Laden im App Store" width="160" height="53"><img class="badge-on-light" src="/assets/badge-black-de.4f2967e1f6.svg" alt="Laden im App Store" width="160" height="53"></a>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <nav aria-label="Links">
+    <a href="/de/support/">Support</a>
+    <a href="/de/privacy/">Datenschutz</a>
+    <a href="mailto:support@capsla.app">support@capsla.app</a>
+  </nav>
+  <p>© 2026 Ramiz Kichibekov</p>
+</footer>
+
+<script type="application/json" id="strings">{"label":"Timer ausprobieren","focusTime":"Zeit für Fokus","focus":"Fokus","minutesLabel":"Fokusdauer in Minuten","start":"Fokus starten","pause":"Pausieren","resume":"Fortsetzen","reset":"Zurücksetzen","palette":"Hintergrundpalette","shortBreak":"Kurze Pause","longBreak":"Lange Pause","sessionDone":"Sitzung abgeschlossen","palettes":{"monochrome":"Monochrom","ocean":"Ozean","sunset":"Abendrot","forest":"Wald","violet":"Violett"}}</script>
+<script type="module" src="/assets/home.f28666fc95.js"></script>
+</body>
 </html>

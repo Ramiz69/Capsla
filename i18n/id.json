@@ -1,0 +1,271 @@
+{
+  "lang": "id",
+  "meta": {
+    "title": "Capsla — timer fokus dan istirahat yang tenang untuk iPhone dan Apple Watch",
+    "description": "Timer Pomodoro untuk iPhone dan Apple Watch: sesi yang berjalan sendiri, aplikasi pengganggu diblokir selama fokus, statistik, Kesehatan, dan Kalender. Gratis, tanpa iklan.",
+    "ogTitle": "Capsla — timer fokus yang tenang",
+    "ogDescription": "Timer Pomodoro untuk iPhone dan Apple Watch. Gratis, tanpa iklan.",
+    "ogImage": "og-image.png"
+  },
+  "nav": {
+    "skip": "Langsung ke konten",
+    "label": "Tema dan bahasa",
+    "themeLight": "Terang",
+    "themeDark": "Gelap"
+  },
+  "cta": {
+    "download": "Unduh di App Store"
+  },
+  "hero": {
+    "title": "Timer yang tenang untuk fokus dan&nbsp;istirahat",
+    "lede": "Fokus, istirahat pendek, dan setelah beberapa putaran, istirahat panjang. Kapsul di sini adalah timer sungguhan, dan cincin di sekelilingnya adalah latar Orbit yang sama seperti di aplikasi. Tekan putar.",
+    "fine": "Gratis, tanpa iklan. Untuk iPhone dan Apple Watch."
+  },
+  "timer": {
+    "label": "Coba timernya",
+    "focusTime": "Waktunya fokus",
+    "focus": "Fokus",
+    "minutesLabel": "Durasi fokus dalam menit",
+    "start": "Mulai Fokus",
+    "pause": "Jeda",
+    "resume": "Lanjutkan",
+    "reset": "Atur Ulang",
+    "palette": "Palet latar",
+    "shortBreak": "Istirahat Pendek",
+    "longBreak": "Istirahat Panjang",
+    "sessionDone": "Sesi selesai",
+    "palettes": {
+      "monochrome": "Monokrom",
+      "ocean": "Samudra",
+      "sunset": "Senja",
+      "forest": "Hutan",
+      "violet": "Violet"
+    }
+  },
+  "session": {
+    "title": "Sesi yang berjalan sendiri",
+    "body": "Nyalakan mulai otomatis, maka fokus, istirahat, dan fokus berikutnya berlanjut tanpa ketukan hingga istirahat panjang. Istirahat dan fokus dinyalakan terpisah, jadi Anda bisa beristirahat sesuai sinyal dan kembali bekerja saat Anda mau.",
+    "body2": "Setiap pergantian dijadwalkan lebih dulu, sehingga sesi terus berjalan meski aplikasi ditutup dan sinyal fase berikutnya datang tepat waktu.",
+    "chainLabel": "Contoh sesi: tiga fase fokus dengan istirahat pendek, lalu istirahat panjang",
+    "chain": [
+      {
+        "kind": "focus",
+        "name": "Fokus",
+        "min": "25 mnt"
+      },
+      {
+        "kind": "break",
+        "name": "Istirahat",
+        "min": "5 mnt"
+      },
+      {
+        "kind": "focus",
+        "name": "Fokus",
+        "min": "25 mnt"
+      },
+      {
+        "kind": "break",
+        "name": "Istirahat",
+        "min": "5 mnt"
+      },
+      {
+        "kind": "focus",
+        "name": "Fokus",
+        "min": "25 mnt"
+      },
+      {
+        "kind": "long",
+        "name": "Istirahat panjang",
+        "min": "15 mnt"
+      }
+    ],
+    "toggleBreaks": "Mulai istirahat otomatis",
+    "toggleFocus": "Mulai fokus otomatis"
+  },
+  "everywhere": {
+    "title": "Timer ada di mana pun Anda melihat",
+    "body": "Aktivitas Langsung dan Dynamic Island, Layar Terkunci, widget, Pusat Kontrol, tombol Tindakan. Minta Siri menjeda, dan jawabannya datang dengan kartu berisi tombol untuk langkah berikutnya. Anda jarang perlu membuka aplikasinya.",
+    "watch": "Capsla memiliki aplikasi Apple Watch sendiri: mulai dan jeda dari pergelangan tangan, bahkan saat iPhone tidak ada di dekat Anda, dan rasakan ketukan saat fase berakhir. Fase yang Anda selesaikan di jam masuk ke statistik di iPhone.",
+    "note": "Hitung mundur yang sama seperti di kapsul di atas.",
+    "places": [
+      {
+        "title": "Layar Terkunci dan Dynamic Island",
+        "body": "Aktivitas Langsung menampilkan fase dan waktu, dengan tombol jeda dan atur ulang, serta lewati saat istirahat."
+      },
+      {
+        "title": "Widget",
+        "body": "Timer dan statistik di Layar Utama, serta widget Layar Terkunci dengan tombol mulai."
+      },
+      {
+        "title": "Pusat Kontrol dan tombol Tindakan",
+        "body": "Mulai atau hentikan fokus tanpa membuka aplikasi."
+      },
+      {
+        "title": "Siri dan Pintasan",
+        "body": "Mulai, jeda, lanjutkan, lewati istirahat, dan tanyakan berapa lama Anda fokus hari ini."
+      },
+      {
+        "title": "Apple Watch",
+        "body": "Komplikasi, kartu Smart Stack, dan tombol di Pusat Kontrol jam."
+      }
+    ]
+  },
+  "block": {
+    "title": "Media sosial bisa menunggu sampai fokus selesai",
+    "body": "Pilih aplikasi yang mengalihkan perhatian Anda, dan Capsla memblokirnya selama fokus melalui Durasi Layar, lalu membuka blokir begitu fase berakhir. Jika Anda membuka aplikasi yang diblokir, yang muncul adalah layar Capsla."
+  },
+  "stats": {
+    "title": "Ke mana perhatian Anda tercurah",
+    "body": "Waktu fokus bersih per minggu, per bulan, dan sepanjang waktu, grafik per hari, jam saat Anda paling fokus, hari berturut-turut, serta waktu menurut tag.",
+    "body2": "Riwayat dimulai pada hari Anda memasang Capsla, dan aplikasi tidak pernah mengisi angka yang tidak dicatatnya. Ekspor semuanya sebagai file CSV kapan saja.",
+    "items": [
+      {
+        "title": "Kesehatan",
+        "body": "Fokus dengan tag Meditasi, Jalan Kaki, atau Olahraga bisa disimpan ke Kesehatan. Capsla hanya menulis ke sana dan tidak pernah membaca."
+      },
+      {
+        "title": "Kalender",
+        "body": "Sesi yang selesai masuk ke kalender pilihan Anda, dan Anda juga bisa menjadwalkan fokus di sana."
+      },
+      {
+        "title": "Widget satu halaman penuh",
+        "body": "Di iOS 27, statistik bisa memenuhi satu halaman Layar Utama."
+      }
+    ],
+    "image": "/img/id/statistics.webp",
+    "imageAlt": "Layar statistik Capsla untuk satu minggu: waktu fokus bersih, batang per hari, dan titik per jam dalam seminggu"
+  },
+  "signals": {
+    "title": "Tenang, tapi sulit terlewat",
+    "body": "Peringatan lembut beberapa menit sebelum fokus berakhir, sinyal saat fase selesai, tombol untuk memulai istirahat atau fokus berikutnya langsung dari banner, dan pengingat jika Anda lupa kembali setelah istirahat. Notifikasi bersifat Sensitif Waktu, sehingga tetap sampai meski Jangan Ganggu aktif.",
+    "body2": "Sinyal akhir fase tetap berbunyi dalam mode senyap, karena pergantian yang terlewat membuat timer kehilangan tujuannya. Ada 16 suara dan tiga pola getar, dipilih terpisah untuk setiap fase."
+  },
+  "more": {
+    "title": "Dan juga",
+    "items": [
+      {
+        "text": "Fokus dan istirahat dari 1 hingga 999 menit, 1 hingga 10 siklus"
+      },
+      {
+        "text": "Tambah satu atau lima menit di menit terakhir fokus"
+      },
+      {
+        "text": "Tag dengan ikon dan warna; filter Fokus bisa memilihkan tag untuk Anda"
+      },
+      {
+        "text": "Empat latar animasi, termasuk mode napas yang lambat"
+      },
+      {
+        "text": "Tindakan cepat di ikon aplikasi"
+      },
+      {
+        "text": "Mode Gelap, VoiceOver, Teks yang Lebih Besar, dan Tambah Kontras"
+      },
+      {
+        "text": "17 bahasa"
+      }
+    ]
+  },
+  "privacy": {
+    "title": "Anda bisa melihat apa yang keluar dari ponsel",
+    "body": "Tidak ada akun Capsla. Tag dan riwayat fokus hanya disinkronkan melalui iCloud Anda sendiri, dan pengaturan tetap di iPhone Anda.",
+    "body2": "Layar Privasi menampilkan peristiwa terbaru yang dikirim Capsla sendiri. Ini daftar nyata dari perangkat Anda, dan dua sakelar mematikan pengumpulan data.",
+    "link": "Kebijakan privasi (dalam bahasa Inggris)",
+    "href": "/en/privacy/"
+  },
+  "plus": {
+    "title": "Yang utama gratis dan akan tetap gratis",
+    "body": "Capsla+ adalah pembelian sekali tanpa langganan, dibagikan dengan keluarga Anda. Isinya hanya tampilan dan suara.",
+    "caption": "Isi Capsla gratis dan Capsla+",
+    "colFeature": "Fitur",
+    "colFree": "Gratis",
+    "included": "Termasuk",
+    "notIncluded": "Tidak termasuk",
+    "free": [
+      {
+        "text": "Timer, mulai otomatis, dan notifikasi"
+      },
+      {
+        "text": "Aplikasi Apple Watch"
+      },
+      {
+        "text": "Blokir aplikasi selama fokus"
+      },
+      {
+        "text": "Statistik, Kesehatan, dan Kalender"
+      },
+      {
+        "text": "Tag, widget, Siri, dan Pintasan"
+      },
+      {
+        "text": "Empat latar animasi dan 16 suara"
+      }
+    ],
+    "paid": [
+      {
+        "title": "Latar Baru",
+        "body": "Lima latar timer bergerak tambahan."
+      },
+      {
+        "title": "Aksen dan Palet",
+        "body": "Warna aksen untuk seluruh app dan palet baru untuk latar."
+      },
+      {
+        "title": "Angka Timer",
+        "body": "Jenis huruf baru untuk hitung mundur di iPhone dan Apple Watch."
+      },
+      {
+        "title": "Efek Perayaan",
+        "body": "Efek lain saat siklus selesai, sebagai ganti konfeti."
+      },
+      {
+        "title": "Suara Fokus",
+        "body": "Derau cokelat, merah muda, atau putih di latar belakang selama Anda fokus."
+      },
+      {
+        "title": "Watch dan Widget",
+        "body": "Warna aksen dan angka pilihan Anda di widget, Aktivitas Langsung, dan Apple Watch."
+      }
+    ],
+    "note": "Tidak ada yang sebelumnya gratis dipindahkan ke balik Capsla+, dan tidak ada pop-up yang meminta Anda membeli."
+  },
+  "faq": {
+    "title": "Pertanyaan",
+    "items": [
+      {
+        "q": "Apakah Capsla gratis?",
+        "a": "Ya, tanpa iklan. Timer, aplikasi jam, blokir aplikasi, statistik, tag, widget, dan Siri gratis. Capsla+ adalah pembelian sekali yang opsional untuk tampilan dan suara."
+      },
+      {
+        "q": "Apakah saya perlu akun?",
+        "a": "Tidak. Riwayat dan tag disinkronkan melalui iCloud Anda; tidak ada yang perlu didaftarkan."
+      },
+      {
+        "q": "Apakah timer tetap berjalan jika aplikasi ditutup?",
+        "a": "Ya. Fase terus berjalan meski aplikasi ditutup: waktu tampil di Layar Terkunci dan di Dynamic Island, dan notifikasi datang saat fase berakhir."
+      },
+      {
+        "q": "Mengapa sinyal berbunyi dalam mode senyap?",
+        "a": "Disengaja: jika tidak, pergantian mudah terlewat, padahal inti dari timer adalah Anda tidak perlu terus mengawasinya."
+      },
+      {
+        "q": "Apakah jam memerlukan iPhone di dekatnya?",
+        "a": "Tidak. Anda bisa memulai dan menjeda fokus dari jam meski iPhone tidak ada di dekat Anda."
+      },
+      {
+        "q": "Capsla berjalan di perangkat apa saja?",
+        "a": "iPhone dengan iOS 26 atau lebih baru dan Apple Watch dengan watchOS 26 atau lebih baru. Tidak ada versi iPad."
+      }
+    ]
+  },
+  "final": {
+    "title": "Coba di iPhone Anda",
+    "body": "Gratis, tanpa iklan dan tanpa akun."
+  },
+  "foot": {
+    "label": "Tautan",
+    "support": "Dukungan",
+    "supportHref": "/en/support/",
+    "privacy": "Privasi"
+  }
+}

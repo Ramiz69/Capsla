@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{lang}}" data-theme="dark">
+<html lang="{{lang}}" dir="{{dir}}" data-theme="dark">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -20,10 +20,8 @@
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="{{canonical}}">
-<link rel="alternate" hreflang="en" href="https://capsla.app/en/">
-<link rel="alternate" hreflang="ru" href="https://capsla.app/ru/">
-<link rel="alternate" hreflang="de" href="https://capsla.app/de/">
-<link rel="alternate" hreflang="x-default" href="https://capsla.app/">
+{{#list langs}}<link rel="alternate" hreflang="{{.code}}" href="{{.abs}}">
+{{/list}}<link rel="alternate" hreflang="x-default" href="https://capsla.app/">
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="apple-touch-icon" href="/favicon.png">
 <link rel="preload" href="{{@digits.woff2}}" as="font" type="font/woff2" crossorigin>
@@ -48,9 +46,12 @@
   <a class="brand" href="{{home}}"><img src="/favicon.png" alt="" width="28" height="28">Capsla</a>
   <nav class="top-right" aria-label="{{nav.label}}">
     <button class="pill" id="theme" type="button" data-light="{{nav.themeLight}}" data-dark="{{nav.themeDark}}">{{nav.themeLight}}</button>
-    <div class="langs">
-      {{#list langs}}<a class="pill" href="{{.href}}" hreflang="{{.code}}" lang="{{.code}}"{{.current}}>{{.label}}</a>{{/list}}
-    </div>
+    <details class="langs">
+      <summary class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span>{{currentName}}</span></summary>
+      <ul>
+        {{#list langs}}<li><a href="{{.href}}" hreflang="{{.code}}" lang="{{.code}}"{{.current}}>{{.name}}</a></li>{{/list}}
+      </ul>
+    </details>
   </nav>
 </header>
 

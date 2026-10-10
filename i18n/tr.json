@@ -1,0 +1,271 @@
+{
+  "lang": "tr",
+  "meta": {
+    "title": "Capsla — iPhone ve Apple Watch için sakin bir odaklanma ve mola zamanlayıcısı",
+    "description": "iPhone ve Apple Watch için bir Pomodoro zamanlayıcısı: kendi kendine ilerleyen oturumlar, odaklanırken engellenen dikkat dağıtıcı uygulamalar, istatistikler, Sağlık ve Takvim. Ücretsiz ve reklamsız.",
+    "ogTitle": "Capsla — sakin bir odaklanma zamanlayıcısı",
+    "ogDescription": "iPhone ve Apple Watch için bir Pomodoro zamanlayıcısı. Ücretsiz ve reklamsız.",
+    "ogImage": "og-image.png"
+  },
+  "nav": {
+    "skip": "İçeriğe geç",
+    "label": "Tema ve dil",
+    "themeLight": "Açık",
+    "themeDark": "Koyu"
+  },
+  "cta": {
+    "download": "App Store’dan İndirin"
+  },
+  "hero": {
+    "title": "Odaklanma ve mola için sakin bir&nbsp;zamanlayıcı",
+    "lede": "Odaklanma, kısa bir mola ve birkaç turdan sonra uzun bir mola. Buradaki kapsül gerçek bir zamanlayıcı; etrafındaki halkalar da uygulamadakiyle aynı «Yörüngeler» arka planı. Oynat’a basın.",
+    "fine": "Ücretsiz ve reklamsız. iPhone ve Apple Watch için."
+  },
+  "timer": {
+    "label": "Zamanlayıcıyı deneyin",
+    "focusTime": "Odaklanma zamanı",
+    "focus": "Odaklanma",
+    "minutesLabel": "Dakika olarak odaklanma süresi",
+    "start": "Odaklanmayı başlat",
+    "pause": "Duraklat",
+    "resume": "Sürdür",
+    "reset": "Sıfırla",
+    "palette": "Arka plan paleti",
+    "shortBreak": "Kısa Mola",
+    "longBreak": "Uzun Mola",
+    "sessionDone": "Oturum tamamlandı",
+    "palettes": {
+      "monochrome": "Tek Renk",
+      "ocean": "Okyanus",
+      "sunset": "Gün Batımı",
+      "forest": "Orman",
+      "violet": "Menekşe"
+    }
+  },
+  "session": {
+    "title": "Kendi kendine ilerleyen bir oturum",
+    "body": "Otomatik başlatmayı açın; odaklanma, mola ve sonraki odaklanma uzun molaya kadar dokunmadan birbirini izler. Molalar ve odaklanma ayrı ayrı açılır; böylece sinyalle dinlenip işe istediğiniz zaman dönebilirsiniz.",
+    "body2": "Her geçiş önceden planlanır; bu yüzden uygulama kapalıyken de oturum sürer ve sonraki aşamanın sinyali zamanında gelir.",
+    "chainLabel": "Örnek bir oturum: kısa molalarla üç odaklanma, ardından uzun bir mola",
+    "chain": [
+      {
+        "kind": "focus",
+        "name": "Odaklanma",
+        "min": "25 dk"
+      },
+      {
+        "kind": "break",
+        "name": "Mola",
+        "min": "5 dk"
+      },
+      {
+        "kind": "focus",
+        "name": "Odaklanma",
+        "min": "25 dk"
+      },
+      {
+        "kind": "break",
+        "name": "Mola",
+        "min": "5 dk"
+      },
+      {
+        "kind": "focus",
+        "name": "Odaklanma",
+        "min": "25 dk"
+      },
+      {
+        "kind": "long",
+        "name": "Uzun mola",
+        "min": "15 dk"
+      }
+    ],
+    "toggleBreaks": "Molaları otomatik başlat",
+    "toggleFocus": "Odaklanmayı otomatik başlat"
+  },
+  "everywhere": {
+    "title": "Zamanlayıcı nereye bakarsanız orada",
+    "body": "Canlı Etkinlik ve Dynamic Island, Kilitli Ekran, widget’lar, Denetim Merkezi, Eylem düğmesi. Siri’den duraklatmasını isteyin; yanıt, sonraki adım için düğmeleri olan bir kartla gelir. Uygulamayı açmanız nadiren gerekir.",
+    "watch": "Capsla’nın kendi Apple Watch uygulaması var: iPhone’unuz yakında olmasa bile bileğinizden başlatın ve duraklatın, aşama bittiğinde bileğinizde bir dokunuş hissedin. Saatte tamamladığınız aşamalar iPhone’daki istatistiklerinize eklenir.",
+    "note": "Yukarıdaki kapsülle aynı geri sayım.",
+    "places": [
+      {
+        "title": "Kilitli Ekran ve Dynamic Island",
+        "body": "Canlı Etkinlik aşamayı ve süreyi gösterir: duraklatma ve sıfırlama, molada ise atlama da var."
+      },
+      {
+        "title": "Widget’lar",
+        "body": "Ana Ekran’da zamanlayıcı ve istatistikler, Kilitli Ekran’da başlatma düğmeli bir widget."
+      },
+      {
+        "title": "Denetim Merkezi ve Eylem düğmesi",
+        "body": "Uygulamayı açmadan odaklanmayı başlatın ya da durdurun."
+      },
+      {
+        "title": "Siri ve Kestirmeler",
+        "body": "Başlatma, duraklatma, sürdürme, molayı atlama ve bugün ne kadar odaklandığınızı sorma."
+      },
+      {
+        "title": "Apple Watch",
+        "body": "Komplikasyonlar, Akıllı Gruplama kartı ve saatin Denetim Merkezi’nde bir düğme."
+      }
+    ]
+  },
+  "block": {
+    "title": "Sosyal medya odaklanma bitene kadar bekleyebilir",
+    "body": "Dikkatinizi dağıtan uygulamaları seçin; Capsla onları odaklanma sırasında Ekran Süresi aracılığıyla engeller ve aşama biter bitmez engeli kaldırır. Engellenen bir uygulamayı açarsanız onun yerine bir Capsla ekranı görürsünüz."
+  },
+  "stats": {
+    "title": "Dikkatiniz nereye gitti",
+    "body": "Haftalık, aylık ve tüm zamanlar için net odaklanma süresi, günlük grafik, en iyi odaklandığınız saatler, art arda günler ve etikete göre süre.",
+    "body2": "Geçmiş, Capsla’yı yüklediğiniz gün başlar ve uygulama kaydetmediği sayıları asla kendisi doldurmaz. Tümünü istediğiniz zaman CSV dosyası olarak dışa aktarabilirsiniz.",
+    "items": [
+      {
+        "title": "Sağlık",
+        "body": "«Meditasyon», «Yürüyüş» ya da «Spor» etiketli odaklanma Sağlık’a kaydedilebilir. Capsla oraya yalnızca yazar, hiçbir şey okumaz."
+      },
+      {
+        "title": "Takvim",
+        "body": "Biten oturumlar seçtiğiniz bir takvime kaydedilir; odaklanmayı orada da planlayabilirsiniz."
+      },
+      {
+        "title": "Tam sayfa widget",
+        "body": "iOS 27’de istatistikler Ana Ekran’da bütün bir sayfayı kaplayabilir."
+      }
+    ],
+    "image": "/img/tr/statistics.webp",
+    "imageAlt": "Capsla’nın haftalık istatistik ekranı: net odaklanma süresi, günlere göre çubuklar ve haftanın saatlerine göre noktalar"
+  },
+  "signals": {
+    "title": "Sessiz ama kaçırması zor",
+    "body": "Odaklanma bitmeden birkaç dakika önce sessiz bir uyarı, aşama bittiğinde bir sinyal, molayı ya da sonraki odaklanmayı doğrudan bildirimden başlatan düğmeler ve moladan sonra dönmeyi unutursanız bir hatırlatma. Bildirimler Zamana Duyarlı olduğu için Rahatsız Etme açıkken de size ulaşır.",
+    "body2": "Aşama sonu sinyali sessiz modda bile çalar, çünkü kaçırılan bir geçiş işin amacını boşa çıkarır. 16 ses ve üç titreşim deseni var; her aşama için ayrı ayrı seçilir."
+  },
+  "more": {
+    "title": "Ayrıca",
+    "items": [
+      {
+        "text": "1 ile 999 dakika arasında odaklanma ve molalar, 1 ile 10 arasında döngü"
+      },
+      {
+        "text": "Odaklanmanın son dakikasında bir ya da beş dakika ekleme"
+      },
+      {
+        "text": "Simgeli ve renkli etiketler; Odak filtresi etiketi sizin yerinize seçebilir"
+      },
+      {
+        "text": "Yavaş «Nefes» modu dahil dört hareketli arka plan"
+      },
+      {
+        "text": "Uygulama simgesinde hızlı eylemler"
+      },
+      {
+        "text": "Koyu Mod, VoiceOver, Büyük Metin ve Kontrastı Artır"
+      },
+      {
+        "text": "17 dil"
+      }
+    ]
+  },
+  "privacy": {
+    "title": "Telefonunuzdan neyin çıktığını görebilirsiniz",
+    "body": "Capsla hesabı yok. Etiketler ve odaklanma geçmişi yalnızca kendi iCloud hesabınız üzerinden eşzamanlanır; ayarlar iPhone’unuzda kalır.",
+    "body2": "Gizlilik ekranı, Capsla’nın kendi gönderdiği son olayları listeler. Bu, aygıtınızdan gelen gerçek bir listedir ve iki anahtarla veri toplamayı kapatabilirsiniz.",
+    "link": "Gizlilik politikası (İngilizce)",
+    "href": "/en/privacy/"
+  },
+  "plus": {
+    "title": "Temel özellikler ücretsiz ve ücretsiz kalacak",
+    "body": "Capsla+ abonelik olmadan tek seferlik bir satın almadır ve ailenizle paylaşılır. Yalnızca görünüm ve ses ekler.",
+    "caption": "Ücretsiz Capsla’da ve Capsla+’ta neler var",
+    "colFeature": "Özellik",
+    "colFree": "Ücretsiz",
+    "included": "Dahil",
+    "notIncluded": "Dahil değil",
+    "free": [
+      {
+        "text": "Zamanlayıcı, otomatik başlatma ve bildirimler"
+      },
+      {
+        "text": "Apple Watch uygulaması"
+      },
+      {
+        "text": "Odaklanma sırasında uygulama engelleme"
+      },
+      {
+        "text": "İstatistikler, Sağlık ve Takvim"
+      },
+      {
+        "text": "Etiketler, widget’lar, Siri ve Kestirmeler"
+      },
+      {
+        "text": "Dört hareketli arka plan ve 16 ses"
+      }
+    ],
+    "paid": [
+      {
+        "title": "Yeni Arka Planlar",
+        "body": "Beş hareketli zamanlayıcı arka planı daha."
+      },
+      {
+        "title": "Vurgu ve Paletler",
+        "body": "Tüm uygulama için bir vurgu rengi ve arka planlar için yeni paletler."
+      },
+      {
+        "title": "Zamanlayıcı Rakamları",
+        "body": "iPhone ve Apple Watch’ta geri sayım için yeni yazı tipleri."
+      },
+      {
+        "title": "Kutlama Efektleri",
+        "body": "Döngü bittiğinde konfeti yerine başka efektler."
+      },
+      {
+        "title": "Odaklanma Sesleri",
+        "body": "Odaklanırken arka planda kahverengi, pembe ya da beyaz gürültü."
+      },
+      {
+        "title": "Saat ve Widget’lar",
+        "body": "Seçtiğiniz vurgu rengi ve rakamlar widget’larda, Canlı Etkinlik’te ve Apple Watch’ta da."
+      }
+    ],
+    "note": "Ücretsiz olan hiçbir şey Capsla+’ın arkasına taşınmadı ve satın almanızı isteyen açılır pencereler de yok."
+  },
+  "faq": {
+    "title": "Sorular",
+    "items": [
+      {
+        "q": "Capsla ücretsiz mi?",
+        "a": "Evet, reklam da yok. Zamanlayıcı, saat uygulaması, uygulama engelleme, istatistikler, etiketler, widget’lar ve Siri ücretsiz. Capsla+, görünüm ve ses için isteğe bağlı, tek seferlik bir satın almadır."
+      },
+      {
+        "q": "Hesap gerekiyor mu?",
+        "a": "Hayır. Geçmiş ve etiketler iCloud’unuz üzerinden eşzamanlanır; kaydolmanız gereken bir şey yok."
+      },
+      {
+        "q": "Uygulamayı kapatırsam zamanlayıcı çalışmaya devam eder mi?",
+        "a": "Evet. Uygulama kapalıyken de aşama saymaya devam eder: süre Kilitli Ekran’da ve Dynamic Island’da görünür, aşama bittiğinde bir bildirim gelir."
+      },
+      {
+        "q": "Sinyal neden sessiz modda da çalıyor?",
+        "a": "Bilerek böyle: aksi halde bir geçişi kaçırmak kolaydır, oysa zamanlayıcının bütün amacı ona bakmayı bırakabilmenizdir."
+      },
+      {
+        "q": "Saat için iPhone’un yakında olması gerekiyor mu?",
+        "a": "Hayır. iPhone’unuz yakında olmasa bile saatten odaklanmayı başlatabilir ve duraklatabilirsiniz."
+      },
+      {
+        "q": "Capsla hangi aygıtlarda çalışır?",
+        "a": "iOS 26 veya üstü yüklü iPhone ve watchOS 26 veya üstü yüklü Apple Watch. iPad sürümü yok."
+      }
+    ]
+  },
+  "final": {
+    "title": "iPhone’unuzda deneyin",
+    "body": "Ücretsiz; reklam yok, hesap yok."
+  },
+  "foot": {
+    "label": "Bağlantılar",
+    "support": "Destek",
+    "supportHref": "/en/support/",
+    "privacy": "Gizlilik"
+  }
+}

@@ -1,0 +1,271 @@
+{
+  "lang": "de",
+  "meta": {
+    "title": "Capsla — ein ruhiger Timer für Fokus und Pausen auf iPhone und Apple Watch",
+    "description": "Ein Pomodoro-Timer für iPhone und Apple Watch: Sitzungen, die von allein laufen, ablenkende Apps im Fokus gesperrt, Statistik, Health und Kalender. Kostenlos und ohne Werbung.",
+    "ogTitle": "Capsla — ein ruhiger Fokus-Timer",
+    "ogDescription": "Ein Pomodoro-Timer für iPhone und Apple Watch. Kostenlos und ohne Werbung.",
+    "ogImage": "og-image.png"
+  },
+  "nav": {
+    "skip": "Zum Inhalt springen",
+    "label": "Darstellung und Sprache",
+    "themeLight": "Hell",
+    "themeDark": "Dunkel"
+  },
+  "cta": {
+    "download": "Laden im App Store"
+  },
+  "hero": {
+    "title": "Ein ruhiger Timer für Fokus und&nbsp;Pausen",
+    "lede": "Fokus, eine kurze Pause und nach ein paar Runden eine lange. Die Kapsel hier ist ein echter Timer, und die Ringe darum sind derselbe Orbital-Hintergrund wie in der App. Drück auf Start.",
+    "fine": "Kostenlos und ohne Werbung. Für iPhone und Apple Watch."
+  },
+  "timer": {
+    "label": "Timer ausprobieren",
+    "focusTime": "Zeit für Fokus",
+    "focus": "Fokus",
+    "minutesLabel": "Fokusdauer in Minuten",
+    "start": "Fokus starten",
+    "pause": "Pausieren",
+    "resume": "Fortsetzen",
+    "reset": "Zurücksetzen",
+    "palette": "Hintergrundpalette",
+    "shortBreak": "Kurze Pause",
+    "longBreak": "Lange Pause",
+    "sessionDone": "Sitzung abgeschlossen",
+    "palettes": {
+      "monochrome": "Monochrom",
+      "ocean": "Ozean",
+      "sunset": "Abendrot",
+      "forest": "Wald",
+      "violet": "Violett"
+    }
+  },
+  "session": {
+    "title": "Eine Sitzung, die von allein läuft",
+    "body": "Schalte den automatischen Start ein, und Fokus, Pause und der nächste Fokus folgen ohne Tippen aufeinander bis zur langen Pause. Pausen und Fokus lassen sich getrennt einschalten: So beginnt die Pause pünktlich, und an die Arbeit gehst du zurück, wann du willst.",
+    "body2": "Jeder Übergang ist im Voraus geplant. Darum läuft die Sitzung auch bei geschlossener App weiter, und das Signal für die nächste Phase kommt pünktlich.",
+    "chainLabel": "Eine Beispielsitzung: drei Fokusphasen mit kurzen Pausen, danach eine lange Pause",
+    "chain": [
+      {
+        "kind": "focus",
+        "name": "Fokus",
+        "min": "25 Min."
+      },
+      {
+        "kind": "break",
+        "name": "Pause",
+        "min": "5 Min."
+      },
+      {
+        "kind": "focus",
+        "name": "Fokus",
+        "min": "25 Min."
+      },
+      {
+        "kind": "break",
+        "name": "Pause",
+        "min": "5 Min."
+      },
+      {
+        "kind": "focus",
+        "name": "Fokus",
+        "min": "25 Min."
+      },
+      {
+        "kind": "long",
+        "name": "Lange Pause",
+        "min": "15 Min."
+      }
+    ],
+    "toggleBreaks": "Pausen automatisch starten",
+    "toggleFocus": "Fokus automatisch starten"
+  },
+  "everywhere": {
+    "title": "Der Timer ist dort, wo du hinschaust",
+    "body": "Eine Live-Aktivität und die Dynamic Island, der Sperrbildschirm, Widgets, das Kontrollzentrum, die Aktionstaste. Bitte Siri, zu pausieren, und die Antwort kommt mit einer Karte und Tasten für den nächsten Schritt. Die App musst du selten öffnen.",
+    "watch": "Capsla hat eine eigene App für die Apple Watch: Starte und pausiere am Handgelenk, auch wenn dein iPhone nicht in der Nähe ist, und spüre ein Tippen, wenn eine Phase endet. Phasen, die du auf der Uhr abschließt, zählen in deiner Statistik auf dem iPhone.",
+    "note": "Derselbe Countdown wie in der Kapsel oben.",
+    "places": [
+      {
+        "title": "Sperrbildschirm und Dynamic Island",
+        "body": "Die Live-Aktivität zeigt Phase und Zeit, mit Pausieren und Zurücksetzen, in der Pause auch mit Überspringen."
+      },
+      {
+        "title": "Widgets",
+        "body": "Timer und Statistik auf dem Home-Bildschirm und ein Widget für den Sperrbildschirm mit Starttaste."
+      },
+      {
+        "title": "Kontrollzentrum und Aktionstaste",
+        "body": "Fokus starten oder beenden, ohne die App zu öffnen."
+      },
+      {
+        "title": "Siri und Kurzbefehle",
+        "body": "Starten, pausieren, fortsetzen, eine Pause überspringen und fragen, wie lange du heute fokussiert warst."
+      },
+      {
+        "title": "Apple Watch",
+        "body": "Komplikationen, eine Karte im Smart-Stapel und eine Taste im Kontrollzentrum der Uhr."
+      }
+    ]
+  },
+  "block": {
+    "title": "Soziale Netzwerke können warten, bis der Fokus endet",
+    "body": "Wähle die Apps, die dich ablenken, und Capsla sperrt sie während des Fokus über die Bildschirmzeit. Sobald die Phase endet, ist die Sperre aufgehoben. Öffnest du eine gesperrte App, siehst du stattdessen einen Bildschirm von Capsla."
+  },
+  "stats": {
+    "title": "Wohin deine Aufmerksamkeit ging",
+    "body": "Reine Fokuszeit nach Woche, Monat und gesamt, ein Diagramm nach Tagen, die Stunden, in denen du dich am besten konzentrierst, Tage in Folge und Zeit nach Tags.",
+    "body2": "Die Historie beginnt an dem Tag, an dem du Capsla installierst, und die App ergänzt keine Zahlen, die sie nicht aufgezeichnet hat. Exportiere alles jederzeit als CSV-Datei.",
+    "items": [
+      {
+        "title": "Health",
+        "body": "Fokus mit dem Tag „Meditation“, „Spaziergang“ oder „Sport“ lässt sich in Health speichern. Capsla schreibt dort nur und liest nie."
+      },
+      {
+        "title": "Kalender",
+        "body": "Abgeschlossene Sitzungen landen in einem Kalender deiner Wahl, und dort kannst du auch Fokus planen."
+      },
+      {
+        "title": "Ein Widget über die ganze Seite",
+        "body": "Unter iOS 27 kann die Statistik eine ganze Seite des Home-Bildschirms füllen."
+      }
+    ],
+    "image": "/img/de/statistics.webp",
+    "imageAlt": "Der Statistikbildschirm von Capsla für eine Woche: reine Fokuszeit, Balken nach Tagen und Punkte nach Stunden der Woche"
+  },
+  "signals": {
+    "title": "Leise, aber kaum zu überhören",
+    "body": "Ein leiser Hinweis einige Minuten vor dem Ende des Fokus, ein Signal, wenn eine Phase vorbei ist, Tasten, mit denen du die Pause oder den nächsten Fokus direkt aus dem Banner startest, und eine Erinnerung, falls du nach der Pause nicht zurückkommst. Die Mitteilungen sind dringlich und kommen daher auch bei „Nicht stören“ durch.",
+    "body2": "Das Signal am Ende einer Phase ertönt auch im Stummmodus, denn ein verpasster Übergang macht den Sinn zunichte. Es gibt 16 Sounds und drei Vibrationsmuster, für jede Phase einzeln wählbar."
+  },
+  "more": {
+    "title": "Außerdem",
+    "items": [
+      {
+        "text": "Fokus und Pausen von 1 bis 999 Minuten, 1 bis 10 Zyklen"
+      },
+      {
+        "text": "In der letzten Fokusminute eine oder fünf Minuten hinzufügen"
+      },
+      {
+        "text": "Tags mit Symbolen und Farben; ein Fokusfilter kann den Tag für dich wählen"
+      },
+      {
+        "text": "Vier animierte Hintergründe, darunter ein langsamer Modus „Atmen“"
+      },
+      {
+        "text": "Schnellaktionen auf dem App-Symbol"
+      },
+      {
+        "text": "Dunkelmodus, VoiceOver, größerer Text und erhöhter Kontrast"
+      },
+      {
+        "text": "17 Sprachen"
+      }
+    ]
+  },
+  "privacy": {
+    "title": "Du siehst, was dein iPhone verlässt",
+    "body": "Ein Capsla-Konto gibt es nicht. Tags und Fokusverlauf synchronisieren nur über deine eigene iCloud, die Einstellungen bleiben auf deinem iPhone.",
+    "body2": "Der Bildschirm „Datenschutz“ zeigt die letzten Ereignisse, die Capsla selbst gesendet hat. Das ist eine echte Liste von deinem Gerät, und zwei Schalter stellen die Erfassung ab.",
+    "link": "Datenschutzerklärung",
+    "href": "/de/privacy/"
+  },
+  "plus": {
+    "title": "Das Wesentliche ist kostenlos und bleibt es",
+    "body": "Capsla+ ist ein einmaliger Kauf ohne Abo, mit deiner Familie geteilt. Es ergänzt nur Aussehen und Klang.",
+    "caption": "Was in Capsla kostenlos ist und was Capsla+ bringt",
+    "colFeature": "Funktion",
+    "colFree": "Kostenlos",
+    "included": "Enthalten",
+    "notIncluded": "Nicht enthalten",
+    "free": [
+      {
+        "text": "Timer, automatischer Start und Mitteilungen"
+      },
+      {
+        "text": "Die App für die Apple Watch"
+      },
+      {
+        "text": "Apps während des Fokus sperren"
+      },
+      {
+        "text": "Statistik, Health und Kalender"
+      },
+      {
+        "text": "Tags, Widgets, Siri und Kurzbefehle"
+      },
+      {
+        "text": "Vier animierte Hintergründe und 16 Sounds"
+      }
+    ],
+    "paid": [
+      {
+        "title": "Neue Hintergründe",
+        "body": "Fünf weitere lebendige Timer-Hintergründe."
+      },
+      {
+        "title": "Akzent und Paletten",
+        "body": "Eine Akzentfarbe für die ganze App und neue Paletten für die Hintergründe."
+      },
+      {
+        "title": "Timer-Ziffern",
+        "body": "Neue Schriften für den Countdown auf iPhone und Apple Watch."
+      },
+      {
+        "title": "Feiereffekte",
+        "body": "Andere Effekte am Ende eines Zyklus statt Konfetti."
+      },
+      {
+        "title": "Fokusklänge",
+        "body": "Braunes, rosa oder weißes Rauschen im Hintergrund, solange du fokussiert arbeitest."
+      },
+      {
+        "title": "Watch und Widgets",
+        "body": "Dein Akzent und deine Ziffern in Widgets, der Live Activity und auf der Apple Watch."
+      }
+    ],
+    "note": "Nichts, was kostenlos war, wurde hinter Capsla+ verschoben, und es gibt keine Pop-ups, die zum Kauf auffordern."
+  },
+  "faq": {
+    "title": "Fragen",
+    "items": [
+      {
+        "q": "Ist Capsla kostenlos?",
+        "a": "Ja, und ohne Werbung. Timer, App für die Uhr, App-Sperre, Statistik, Tags, Widgets und Siri sind kostenlos. Capsla+ ist ein optionaler einmaliger Kauf für Aussehen und Klang."
+      },
+      {
+        "q": "Brauche ich ein Konto?",
+        "a": "Nein. Historie und Tags synchronisieren über deine iCloud; registrieren musst du dich nirgends."
+      },
+      {
+        "q": "Läuft der Timer weiter, wenn ich die App schließe?",
+        "a": "Ja. Die Phase zählt bei geschlossener App weiter: Die Zeit steht auf dem Sperrbildschirm und in der Dynamic Island, und am Ende der Phase kommt eine Mitteilung."
+      },
+      {
+        "q": "Warum ertönt das Signal im Stummmodus?",
+        "a": "Mit Absicht: Sonst verpasst man einen Übergang leicht, und der Sinn eines Timers ist ja, dass du nicht mehr auf ihn schauen musst."
+      },
+      {
+        "q": "Braucht die Uhr mein iPhone in der Nähe?",
+        "a": "Nein. Du kannst den Fokus auf der Uhr starten und pausieren, auch wenn dein iPhone nicht in der Nähe ist."
+      },
+      {
+        "q": "Auf welchen Geräten läuft Capsla?",
+        "a": "Auf dem iPhone mit iOS 26 oder neuer und auf der Apple Watch mit watchOS 26 oder neuer. Eine Version für das iPad gibt es nicht."
+      }
+    ]
+  },
+  "final": {
+    "title": "Probier es auf deinem iPhone aus",
+    "body": "Kostenlos, ohne Werbung und ohne Konto."
+  },
+  "foot": {
+    "label": "Links",
+    "support": "Support",
+    "supportHref": "/de/support/",
+    "privacy": "Datenschutz"
+  }
+}
