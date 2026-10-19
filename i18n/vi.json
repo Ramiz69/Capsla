@@ -146,7 +146,7 @@
     "title": "Và còn nữa",
     "items": [
       {
-        "text": "Tập trung và nghỉ từ 1 đến 999 phút, từ 1 đến 10 chu kỳ"
+        "text": "Tập trung từ 1 đến 999 phút, nghỉ từ 0 đến 999 phút, từ 1 đến 10 chu kỳ"
       },
       {
         "text": "Thêm một hoặc năm phút trong phút cuối của lượt tập trung"
@@ -256,7 +256,7 @@
       },
       {
         "q": "Capsla chạy trên những thiết bị nào?",
-        "a": "iPhone chạy iOS 26 trở lên và Apple Watch chạy watchOS 26 trở lên. Không có phiên bản cho iPad."
+        "a": "iPhone chạy iOS 26 trở lên và Apple Watch chạy watchOS 26 trở lên. Trên iPhone Duo, Capsla vừa với cả màn hình ngoài và màn hình trong; khi gập một nửa, bộ hẹn giờ nằm ở một bên, tránh nếp gập. Không có phiên bản cho iPad."
       }
     ]
   },

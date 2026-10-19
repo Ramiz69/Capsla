@@ -146,7 +146,7 @@
     "title": "Dan juga",
     "items": [
       {
-        "text": "Fokus dan istirahat dari 1 hingga 999 menit, 1 hingga 10 siklus"
+        "text": "Fokus dari 1 hingga 999 menit, istirahat dari 0 hingga 999, 1 hingga 10 siklus"
       },
       {
         "text": "Tambah satu atau lima menit di menit terakhir fokus"
@@ -256,7 +256,7 @@
       },
       {
         "q": "Capsla berjalan di perangkat apa saja?",
-        "a": "iPhone dengan iOS 26 atau lebih baru dan Apple Watch dengan watchOS 26 atau lebih baru. Tidak ada versi iPad."
+        "a": "iPhone dengan iOS 26 atau lebih baru dan Apple Watch dengan watchOS 26 atau lebih baru. Di iPhone Duo, Capsla menyesuaikan diri dengan layar luar dan layar dalam; saat setengah terlipat, timer berada di satu sisi, jauh dari lipatan. Tidak ada versi iPad."
       }
     ]
   },

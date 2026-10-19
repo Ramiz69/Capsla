@@ -146,7 +146,7 @@
     "title": "Außerdem",
     "items": [
       {
-        "text": "Fokus und Pausen von 1 bis 999 Minuten, 1 bis 10 Zyklen"
+        "text": "Fokus von 1 bis 999 Minuten, Pausen von 0 bis 999, 1 bis 10 Zyklen"
       },
       {
         "text": "In der letzten Fokusminute eine oder fünf Minuten hinzufügen"
@@ -256,7 +256,7 @@
       },
       {
         "q": "Auf welchen Geräten läuft Capsla?",
-        "a": "Auf dem iPhone mit iOS 26 oder neuer und auf der Apple Watch mit watchOS 26 oder neuer. Eine Version für das iPad gibt es nicht."
+        "a": "Auf dem iPhone mit iOS 26 oder neuer und auf der Apple Watch mit watchOS 26 oder neuer. Auf dem iPhone Duo passt sich Capsla dem äußeren und dem inneren Display an; halb aufgeklappt steht der Timer auf einer Hälfte, abseits des Falzes. Eine Version für das iPad gibt es nicht."
       }
     ]
   },

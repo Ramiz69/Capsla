@@ -321,6 +321,7 @@ h3 { margin: 28px 0 8px; font-size: 17px; font-weight: 600; }
 .gallery img { display: block; height: auto; border-radius: 18px; box-shadow: 0 0 0 1px var(--rule); }
 .gallery .shot-phone { width: min(200px, 42vw); }
 .gallery .shot-watch { width: min(220px, 46vw); border-radius: 28px; }
+.gallery .shot-duo { width: min(440px, 86vw); border-radius: 12px; }
 
 @media (max-width: 860px) {
   .facts-sheet div { grid-template-columns: 1fr; }

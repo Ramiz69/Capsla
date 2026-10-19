@@ -146,7 +146,7 @@
     "title": "Ayrıca",
     "items": [
       {
-        "text": "1 ile 999 dakika arasında odaklanma ve molalar, 1 ile 10 arasında döngü"
+        "text": "1 ile 999 dakika arasında odaklanma, 0 ile 999 dakika arasında molalar, 1 ile 10 arasında döngü"
       },
       {
         "text": "Odaklanmanın son dakikasında bir ya da beş dakika ekleme"
@@ -256,7 +256,7 @@
       },
       {
         "q": "Capsla hangi aygıtlarda çalışır?",
-        "a": "iOS 26 veya üstü yüklü iPhone ve watchOS 26 veya üstü yüklü Apple Watch. iPad sürümü yok."
+        "a": "iOS 26 veya üstü yüklü iPhone ve watchOS 26 veya üstü yüklü Apple Watch. iPhone Duo’da Capsla dış ve iç ekrana uyum sağlar; yarı katlıyken zamanlayıcı katlanma yerinden uzakta, bir yarıda durur. iPad sürümü yok."
       }
     ]
   },

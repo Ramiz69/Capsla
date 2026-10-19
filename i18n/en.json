@@ -146,7 +146,7 @@
     "title": "And also",
     "items": [
       {
-        "text": "Focus and breaks from 1 to 999 minutes, 1 to 10 cycles"
+        "text": "Focus from 1 to 999 minutes, breaks from 0 to 999, 1 to 10 cycles"
       },
       {
         "text": "Add one or five minutes in the last minute of focus"
@@ -256,7 +256,7 @@
       },
       {
         "q": "Which devices does Capsla run on?",
-        "a": "iPhone with iOS 26 or later and Apple Watch with watchOS 26 or later. There is no iPad version."
+        "a": "iPhone with iOS 26 or later and Apple Watch with watchOS 26 or later. On iPhone Duo, Capsla uses both the outer and the inner display; half-folded, the timer sits on one half, away from the fold. There is no iPad version."
       }
     ]
   },
@@ -279,8 +279,8 @@
     "title": "Press kit",
     "lede": "Capsla is a quiet Pomodoro timer for iPhone and Apple Watch, made by one independent developer. For promo codes, interviews or anything else, write to press@capsla.app.",
     "kitHref": "/press/capsla-press-kit-en.zip",
-    "kitLink": "Download the press kit (ZIP, 3.3 MB)",
-    "kitNote": "The app icon at 1024 px, 10 iPhone screenshots and 4 Apple Watch screenshots, as they appear on the App Store. Free to use in coverage of Capsla.",
+    "kitLink": "Download the press kit (ZIP, 4.4 MB)",
+    "kitNote": "The app icon at 1024 px, 10 iPhone screenshots and 4 Apple Watch screenshots, as they appear on the App Store, plus 5 screenshots of the unfolded iPhone Duo. Free to use in coverage of Capsla.",
     "factsTitle": "Fact sheet",
     "facts": [
       {
@@ -289,7 +289,7 @@
       },
       {
         "term": "Platforms",
-        "value": "iPhone with iOS 26 or later; Apple Watch with watchOS 26 or later"
+        "value": "iPhone with iOS 26 or later, including both displays of iPhone Duo; Apple Watch with watchOS 26 or later"
       },
       {
         "term": "First released",
@@ -297,7 +297,7 @@
       },
       {
         "term": "Current version",
-        "value": "1.5.0, October 2026"
+        "value": "1.6.0, October 2026"
       },
       {
         "term": "Price",
@@ -320,7 +320,7 @@
     "sentenceTitle": "In one sentence",
     "sentence": "Capsla is a Pomodoro timer for iPhone and Apple Watch that runs whole focus sessions on its own, shows the countdown wherever you look and keeps distracting apps closed until focus ends.",
     "paragraphTitle": "In a paragraph",
-    "paragraph": "Capsla turns the Pomodoro technique into a session that runs itself: focus, a short break and the next focus follow one another without a tap until the long break, and every transition is scheduled ahead, so it keeps going with the app closed. The countdown lives in a Live Activity and the Dynamic Island, on the Lock Screen, in widgets and on Apple Watch, where its own app starts and pauses focus even without the iPhone nearby. During focus, Screen Time keeps the apps you chose closed. Statistics count net focus time without pauses, and history starts the day you install the app, with nothing filled in after the fact. The core is free with no ads; Capsla+ is a one-time purchase that adds backgrounds, typefaces for the timer and focus sounds.",
+    "paragraph": "Capsla turns the Pomodoro technique into a session that runs itself: focus, a short break and the next focus follow one another without a tap until the long break, and every transition is scheduled ahead, so it keeps going with the app closed. The countdown lives in a Live Activity and the Dynamic Island, on the Lock Screen, in widgets and on Apple Watch, where its own app starts and pauses focus even without the iPhone nearby. On iPhone Duo it uses both the outer and the inner display, and half-folded it keeps the timer on one half, away from the fold. During focus, Screen Time keeps the apps you chose closed. Statistics count net focus time without pauses, and history starts the day you install the app, with nothing filled in after the fact. The core is free with no ads; Capsla+ is a one-time purchase that adds backgrounds, typefaces for the timer and focus sounds.",
     "diffTitle": "What makes it different",
     "diff": [
       {
@@ -344,22 +344,22 @@
         "body": "Everything released before Capsla+ stays free. Capsla+ adds looks and sound only, with no subscription and no pop-ups asking to buy."
       }
     ],
-    "newTitle": "New in 1.5.0",
+    "newTitle": "New in 1.6.0",
     "new": [
       {
-        "text": "Auto-start, with separate switches for breaks and for the next focus"
+        "text": "Focus, break and cycle settings can change mid-session: the running phase finishes as it was, and the new values apply from the next one"
       },
       {
-        "text": "Focus tagged Meditation, Walk or Sport saved to Health"
+        "text": "Breaks can be set to 0 minutes, so focus follows focus"
       },
       {
-        "text": "Finished sessions logged to a calendar of your choice, and focus scheduled from there"
+        "text": "The round Lock Screen widget starts the timer"
       },
       {
-        "text": "Capsla+: five new backgrounds, an accent color, timer typefaces, celebration effects and focus sounds"
+        "text": "iPhone Duo: Capsla fits both the outer and the inner display; half-folded, the timer sits on one half and moves to the other with a tap"
       },
       {
-        "text": "A tip jar in Settings"
+        "text": "The update notice appears within an hour of a release"
       }
     ],
     "assetsTitle": "Screenshots and icon",
@@ -393,6 +393,20 @@
         "kind": "shot-watch",
         "w": "600",
         "h": "731"
+      },
+      {
+        "src": "/img/press/en-duo-1.1f8b63e8e0.webp",
+        "alt": "Capsla on the unfolded iPhone Duo: the timer on the inner display",
+        "kind": "shot-duo",
+        "w": "960",
+        "h": "675"
+      },
+      {
+        "src": "/img/press/en-duo-2.712cb7a07c.webp",
+        "alt": "Weekly statistics on the inner display of iPhone Duo",
+        "kind": "shot-duo",
+        "w": "960",
+        "h": "675"
       }
     ],
     "footLabel": "Press",

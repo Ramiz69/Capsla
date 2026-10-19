@@ -146,7 +146,7 @@
     "title": "Et aussi",
     "items": [
       {
-        "text": "Focus et pauses de 1 à 999 minutes, de 1 à 10 cycles"
+        "text": "Focus de 1 à 999 minutes, pauses de 0 à 999, de 1 à 10 cycles"
       },
       {
         "text": "Une ou cinq minutes de plus pendant la dernière minute du focus"
@@ -256,7 +256,7 @@
       },
       {
         "q": "Sur quels appareils Capsla fonctionne-t-elle ?",
-        "a": "Sur iPhone avec iOS 26 ou ultérieur et sur Apple Watch avec watchOS 26 ou ultérieur. Il n’existe pas de version pour iPad."
+        "a": "Sur iPhone avec iOS 26 ou ultérieur et sur Apple Watch avec watchOS 26 ou ultérieur. Sur iPhone Duo, Capsla s’adapte à l’écran extérieur comme à l’écran intérieur ; à moitié plié, le minuteur se place sur une moitié, à l’écart du pli. Il n’existe pas de version pour iPad."
       }
     ]
   },

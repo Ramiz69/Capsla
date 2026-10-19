@@ -146,7 +146,7 @@
     "title": "Y además",
     "items": [
       {
-        "text": "Enfoque y descansos de 1 a 999 minutos, de 1 a 10 ciclos"
+        "text": "Enfoque de 1 a 999 minutos, descansos de 0 a 999, de 1 a 10 ciclos"
       },
       {
         "text": "Añade uno o cinco minutos en el último minuto del enfoque"
@@ -256,7 +256,7 @@
       },
       {
         "q": "¿En qué dispositivos funciona Capsla?",
-        "a": "En el iPhone con iOS 26 o posterior y en el Apple Watch con watchOS 26 o posterior. No hay versión para iPad."
+        "a": "En el iPhone con iOS 26 o posterior y en el Apple Watch con watchOS 26 o posterior. En el iPhone Duo, Capsla se adapta a la pantalla exterior y a la interior; medio plegado, el temporizador se coloca en una mitad, lejos del pliegue. No hay versión para iPad."
       }
     ]
   },
