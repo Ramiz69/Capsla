@@ -155,7 +155,10 @@
         "text": "Tag dengan ikon dan warna; filter Fokus bisa memilihkan tag untuk Anda"
       },
       {
-        "text": "Empat latar animasi, termasuk mode napas yang lambat"
+        "text": "“Sedang dikerjakan”: catatan singkat untuk fokus di timer, Layar Terkunci, Apple Watch, statistik, dan Kalender"
+      },
+      {
+        "text": "Enam latar tenang yang gratis, termasuk Malam dan Langit yang berubah mengikuti waktu"
       },
       {
         "text": "Tindakan cepat di ikon aplikasi"
@@ -200,13 +203,13 @@
         "text": "Tag, widget, Siri, dan Pintasan"
       },
       {
-        "text": "Empat latar animasi dan 16 suara"
+        "text": "Enam latar dan 16 suara"
       }
     ],
     "paid": [
       {
         "title": "Latar Baru",
-        "body": "Lima latar timer bergerak tambahan."
+        "body": "Tiga belas latar tambahan, termasuk Hujan salju dengan Embun beku yang menutupi timer dengan es selama fokus."
       },
       {
         "title": "Aksen dan Palet",
@@ -256,7 +259,7 @@
       },
       {
         "q": "Capsla berjalan di perangkat apa saja?",
-        "a": "iPhone dengan iOS 26 atau lebih baru dan Apple Watch dengan watchOS 26 atau lebih baru. Di iPhone Duo, Capsla menyesuaikan diri dengan layar luar dan layar dalam; saat setengah terlipat, timer berada di satu sisi, jauh dari lipatan. Tidak ada versi iPad."
+        "a": "iPhone dengan iOS 26 atau lebih baru dan Apple Watch dengan watchOS 26 atau lebih baru. Di iPhone Duo, Capsla menyesuaikan diri dengan layar luar dan layar dalam; saat setengah terlipat, timer berada di satu sisi, jauh dari lipatan. Saat berdiri di meja seperti laptop, waktu ada di bagian atas dan tombol di bagian bawah. Tidak ada versi iPad."
       }
     ]
   },

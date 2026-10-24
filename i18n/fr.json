@@ -155,7 +155,10 @@
         "text": "Des tags avec icônes et couleurs ; un filtre de concentration peut choisir le tag à votre place"
       },
       {
-        "text": "Quatre arrière-plans animés, dont un mode Respiration lent"
+        "text": "« Travail en cours » : une courte note pour le focus, sur le minuteur, l’écran verrouillé et l’Apple Watch, dans les statistiques et Calendrier"
+      },
+      {
+        "text": "Six arrière-plans apaisants et gratuits, dont Nuit et Ciel, qui suit l’heure de la journée"
       },
       {
         "text": "Des actions rapides sur l’icône de l’app"
@@ -200,13 +203,13 @@
         "text": "Tags, widgets, Siri et Raccourcis"
       },
       {
-        "text": "Quatre arrière-plans animés et 16 sons"
+        "text": "Six arrière-plans et 16 sons"
       }
     ],
     "paid": [
       {
         "title": "Nouveaux fonds",
-        "body": "Cinq fonds animés de plus pour le minuteur."
+        "body": "Treize arrière-plans de plus, dont Chute de neige avec Givre."
       },
       {
         "title": "Accent et palettes",
@@ -256,7 +259,7 @@
       },
       {
         "q": "Sur quels appareils Capsla fonctionne-t-elle ?",
-        "a": "Sur iPhone avec iOS 26 ou ultérieur et sur Apple Watch avec watchOS 26 ou ultérieur. Sur iPhone Duo, Capsla s’adapte à l’écran extérieur comme à l’écran intérieur ; à moitié plié, le minuteur se place sur une moitié, à l’écart du pli. Il n’existe pas de version pour iPad."
+        "a": "Sur iPhone avec iOS 26 ou ultérieur et sur Apple Watch avec watchOS 26 ou ultérieur. Sur iPhone Duo, Capsla s’adapte à l’écran extérieur comme à l’écran intérieur ; à moitié plié, le minuteur se place sur une moitié, à l’écart du pli. Posé sur la table comme un ordinateur portable, le décompte est en haut et les boutons en bas. Il n’existe pas de version pour iPad."
       }
     ]
   },

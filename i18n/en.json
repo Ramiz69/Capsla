@@ -155,7 +155,10 @@
         "text": "Tags with icons and colors; a Focus filter can pick the tag for you"
       },
       {
-        "text": "Four animated backgrounds, including a slow breathing mode"
+        "text": "“Working on”: a short note for your focus, shown on the timer, the Lock Screen and Apple Watch, in Statistics and in Calendar"
+      },
+      {
+        "text": "Six calm free backgrounds, including Night and Sky, which follows the time of day"
       },
       {
         "text": "Quick actions on the app icon"
@@ -200,13 +203,13 @@
         "text": "Tags, widgets, Siri and Shortcuts"
       },
       {
-        "text": "Four animated backgrounds and 16 sounds"
+        "text": "Six backgrounds and 16 sounds"
       }
     ],
     "paid": [
       {
         "title": "New backgrounds",
-        "body": "Five more live timer backgrounds."
+        "body": "Thirteen more backgrounds, including Snowfall with Frost, which slowly ices over the timer."
       },
       {
         "title": "Accent and palettes",
@@ -256,7 +259,7 @@
       },
       {
         "q": "Which devices does Capsla run on?",
-        "a": "iPhone with iOS 26 or later and Apple Watch with watchOS 26 or later. On iPhone Duo, Capsla uses both the outer and the inner display; half-folded, the timer sits on one half, away from the fold. There is no iPad version."
+        "a": "iPhone with iOS 26 or later and Apple Watch with watchOS 26 or later. On iPhone Duo, Capsla uses both the outer and the inner display; half-folded, the timer sits on one half, away from the fold. In tabletop position, like a laptop, the time is on the top half and the buttons on the bottom. There is no iPad version."
       }
     ]
   },
@@ -297,7 +300,7 @@
       },
       {
         "term": "Current version",
-        "value": "1.6.0, October 2026"
+        "value": "1.7.0, October 2026"
       },
       {
         "term": "Price",
@@ -320,7 +323,7 @@
     "sentenceTitle": "In one sentence",
     "sentence": "Capsla is a Pomodoro timer for iPhone and Apple Watch that runs whole focus sessions on its own, shows the countdown wherever you look and keeps distracting apps closed until focus ends.",
     "paragraphTitle": "In a paragraph",
-    "paragraph": "Capsla turns the Pomodoro technique into a session that runs itself: focus, a short break and the next focus follow one another without a tap until the long break, and every transition is scheduled ahead, so it keeps going with the app closed. The countdown lives in a Live Activity and the Dynamic Island, on the Lock Screen, in widgets and on Apple Watch, where its own app starts and pauses focus even without the iPhone nearby. On iPhone Duo it uses both the outer and the inner display, and half-folded it keeps the timer on one half, away from the fold. During focus, Screen Time keeps the apps you chose closed. Statistics count net focus time without pauses, and history starts the day you install the app, with nothing filled in after the fact. The core is free with no ads; Capsla+ is a one-time purchase that adds backgrounds, typefaces for the timer and focus sounds.",
+    "paragraph": "Capsla turns the Pomodoro technique into a session that runs itself: focus, a short break and the next focus follow one another without a tap until the long break, and every transition is scheduled ahead, so it keeps going with the app closed. The countdown lives in a Live Activity and the Dynamic Island, on the Lock Screen, in widgets and on Apple Watch, where its own app starts and pauses focus even without the iPhone nearby. On iPhone Duo it fits every position: the outer and the inner display, half-folded with the timer away from the fold, and tabletop, like a laptop, with the time on the top half and the buttons on the bottom. During focus, Screen Time keeps the apps you chose closed. Statistics count net focus time without pauses, and history starts the day you install the app, with nothing filled in after the fact. The core is free with no ads; Capsla+ is a one-time purchase that adds thirteen backgrounds, including Snowfall with Frost, typefaces for the timer and focus sounds.",
     "diffTitle": "What makes it different",
     "diff": [
       {
@@ -344,22 +347,22 @@
         "body": "Everything released before Capsla+ stays free. Capsla+ adds looks and sound only, with no subscription and no pop-ups asking to buy."
       }
     ],
-    "newTitle": "New in 1.6.0",
+    "newTitle": "What’s new in 1.7.0",
     "new": [
       {
-        "text": "Focus, break and cycle settings can change mid-session: the running phase finishes as it was, and the new values apply from the next one"
+        "text": "Ten new backgrounds. Free: Night, and Sky, which follows the time of day. In Capsla+: Candle, Northern Lights, Leaf Shadows, Starlight, Snowfall, Lava Lamp, Nebula and “Life”, where a tap seeds new cells. Snowfall comes with Frost: snow falls behind the glass while ice creeps over the timer capsule as you focus; wipe it clear with a finger, and it thaws on a break"
       },
       {
-        "text": "Breaks can be set to 0 minutes, so focus follows focus"
+        "text": "“Working on” (free): add a short note to your focus, like “chapter 3”. It shows on the timer, on the Lock Screen, in the Dynamic Island, on Apple Watch, in Statistics, in Calendar and in the CSV export, and you can set it from Shortcuts too"
       },
       {
-        "text": "The round Lock Screen widget starts the timer"
+        "text": "A new way to choose your look: background tiles and a full-screen editor on the real timer. Swipe through backgrounds and change the digits, accent color and celebration in one place; Capsla+ items can be tried before you buy"
       },
       {
-        "text": "iPhone Duo: Capsla fits both the outer and the inner display; half-folded, the timer sits on one half and moves to the other with a tap"
+        "text": "iPhone Duo: the timer and the editor fit every position, including tabletop, like a laptop: the time on the top half, the buttons on the bottom"
       },
       {
-        "text": "The update notice appears within an hour of a release"
+        "text": "Easier on the battery: Orbits, the default background, and Frost now ask far less of the graphics"
       }
     ],
     "assetsTitle": "Screenshots and icon",

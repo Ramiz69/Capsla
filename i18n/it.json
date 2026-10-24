@@ -155,7 +155,10 @@
         "text": "Tag con icone e colori; un filtro della full immersion può scegliere il tag per te"
       },
       {
-        "text": "Quattro sfondi animati, tra cui una lenta modalità Respiro"
+        "text": "«Su cosa lavoro»: una breve nota per il focus sul timer, nella schermata di blocco e su Apple Watch, nelle statistiche e in Calendario"
+      },
+      {
+        "text": "Sei sfondi rilassanti e gratuiti, tra cui Notte e Cielo, che cambia con l’ora del giorno"
       },
       {
         "text": "Azioni rapide sull’icona dell’app"
@@ -200,13 +203,13 @@
         "text": "Tag, widget, Siri e Comandi Rapidi"
       },
       {
-        "text": "Quattro sfondi animati e 16 suoni"
+        "text": "Sei sfondi e 16 suoni"
       }
     ],
     "paid": [
       {
         "title": "Nuovi sfondi",
-        "body": "Altri cinque sfondi animati per il timer."
+        "body": "Altri tredici sfondi, tra cui Nevicata con Brina."
       },
       {
         "title": "Accento e palette",
@@ -256,7 +259,7 @@
       },
       {
         "q": "Su quali dispositivi funziona Capsla?",
-        "a": "iPhone con iOS 26 o versioni successive e Apple Watch con watchOS 26 o versioni successive. Su iPhone Duo Capsla si adatta allo schermo esterno e a quello interno; mezzo piegato, il timer sta su una metà, lontano dalla piega. Non esiste una versione per iPad."
+        "a": "iPhone con iOS 26 o versioni successive e Apple Watch con watchOS 26 o versioni successive. Su iPhone Duo Capsla si adatta allo schermo esterno e a quello interno; mezzo piegato, il timer sta su una metà, lontano dalla piega. Appoggiato sul tavolo come un portatile, il tempo è nella metà superiore e i pulsanti in quella inferiore. Non esiste una versione per iPad."
       }
     ]
   },

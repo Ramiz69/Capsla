@@ -155,7 +155,10 @@
         "text": "Etiquetas con iconos y colores; un filtro de concentración puede elegir la etiqueta por ti"
       },
       {
-        "text": "Cuatro fondos animados, con un modo de respiración lenta"
+        "text": "«En qué trabajo»: una nota breve para el enfoque en el temporizador, la pantalla de bloqueo y el Apple Watch, en las estadísticas y en Calendario"
+      },
+      {
+        "text": "Seis fondos tranquilos y gratuitos, entre ellos Noche y Cielo, que cambia con la hora del día"
       },
       {
         "text": "Acciones rápidas en el icono de la app"
@@ -200,13 +203,13 @@
         "text": "Etiquetas, widgets, Siri y Atajos"
       },
       {
-        "text": "Cuatro fondos animados y 16 sonidos"
+        "text": "Seis fondos y 16 sonidos"
       }
     ],
     "paid": [
       {
         "title": "Nuevos fondos",
-        "body": "Cinco fondos animados más para el temporizador."
+        "body": "Trece fondos más, entre ellos Nevada con Escarcha."
       },
       {
         "title": "Acento y paletas",
@@ -256,7 +259,7 @@
       },
       {
         "q": "¿En qué dispositivos funciona Capsla?",
-        "a": "En el iPhone con iOS 26 o posterior y en el Apple Watch con watchOS 26 o posterior. En el iPhone Duo, Capsla se adapta a la pantalla exterior y a la interior; medio plegado, el temporizador se coloca en una mitad, lejos del pliegue. No hay versión para iPad."
+        "a": "En el iPhone con iOS 26 o posterior y en el Apple Watch con watchOS 26 o posterior. En el iPhone Duo, Capsla se adapta a la pantalla exterior y a la interior; medio plegado, el temporizador se coloca en una mitad, lejos del pliegue. Apoyado en la mesa como un portátil, el tiempo está en la mitad de arriba y los botones en la de abajo. No hay versión para iPad."
       }
     ]
   },

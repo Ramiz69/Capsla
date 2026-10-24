@@ -155,7 +155,10 @@
         "text": "Thẻ có biểu tượng và màu sắc; bộ lọc tập trung có thể chọn thẻ thay bạn"
       },
       {
-        "text": "Bốn nền động, gồm cả chế độ “Hơi thở” chậm rãi"
+        "text": "«Đang làm»: một dòng ngắn cho lượt tập trung, hiện trên bộ hẹn giờ, Màn hình khóa, Apple Watch, trong thống kê và Lịch"
+      },
+      {
+        "text": "Sáu nền êm dịu miễn phí, trong đó có Đêm và Bầu trời thay đổi theo giờ trong ngày"
       },
       {
         "text": "Tác vụ nhanh trên biểu tượng ứng dụng"
@@ -200,13 +203,13 @@
         "text": "Thẻ, tiện ích, Siri và Phím tắt"
       },
       {
-        "text": "Bốn nền động và 16 âm thanh"
+        "text": "Sáu nền và 16 âm thanh"
       }
     ],
     "paid": [
       {
         "title": "Hình nền mới",
-        "body": "Thêm năm hình nền động cho bộ hẹn giờ."
+        "body": "Thêm mười ba nền, trong đó có Tuyết rơi kèm Sương giá phủ băng lên bộ hẹn giờ khi tập trung."
       },
       {
         "title": "Màu nhấn và bảng màu",
@@ -256,7 +259,7 @@
       },
       {
         "q": "Capsla chạy trên những thiết bị nào?",
-        "a": "iPhone chạy iOS 26 trở lên và Apple Watch chạy watchOS 26 trở lên. Trên iPhone Duo, Capsla vừa với cả màn hình ngoài và màn hình trong; khi gập một nửa, bộ hẹn giờ nằm ở một bên, tránh nếp gập. Không có phiên bản cho iPad."
+        "a": "iPhone chạy iOS 26 trở lên và Apple Watch chạy watchOS 26 trở lên. Trên iPhone Duo, Capsla vừa với cả màn hình ngoài và màn hình trong; khi gập một nửa, bộ hẹn giờ nằm ở một bên, tránh nếp gập. Khi dựng trên bàn như laptop, thời gian ở nửa trên, các nút ở nửa dưới. Không có phiên bản cho iPad."
       }
     ]
   },

@@ -155,7 +155,10 @@
         "text": "Tags mit Symbolen und Farben; ein Fokusfilter kann den Tag für dich wählen"
       },
       {
-        "text": "Vier animierte Hintergründe, darunter ein langsamer Modus „Atmen“"
+        "text": "„Woran ich arbeite“: eine kurze Notiz zum Fokus auf Timer, Sperrbildschirm und Apple Watch, in Statistik und Kalender"
+      },
+      {
+        "text": "Sechs ruhige kostenlose Hintergründe, darunter Nacht und Himmel, der sich mit der Tageszeit ändert"
       },
       {
         "text": "Schnellaktionen auf dem App-Symbol"
@@ -200,13 +203,13 @@
         "text": "Tags, Widgets, Siri und Kurzbefehle"
       },
       {
-        "text": "Vier animierte Hintergründe und 16 Sounds"
+        "text": "Sechs Hintergründe und 16 Sounds"
       }
     ],
     "paid": [
       {
         "title": "Neue Hintergründe",
-        "body": "Fünf weitere lebendige Timer-Hintergründe."
+        "body": "Dreizehn weitere Hintergründe, darunter Schneefall mit Raureif."
       },
       {
         "title": "Akzent und Paletten",
@@ -256,7 +259,7 @@
       },
       {
         "q": "Auf welchen Geräten läuft Capsla?",
-        "a": "Auf dem iPhone mit iOS 26 oder neuer und auf der Apple Watch mit watchOS 26 oder neuer. Auf dem iPhone Duo passt sich Capsla dem äußeren und dem inneren Display an; halb aufgeklappt steht der Timer auf einer Hälfte, abseits des Falzes. Eine Version für das iPad gibt es nicht."
+        "a": "Auf dem iPhone mit iOS 26 oder neuer und auf der Apple Watch mit watchOS 26 oder neuer. Auf dem iPhone Duo passt sich Capsla dem äußeren und dem inneren Display an; halb aufgeklappt steht der Timer auf einer Hälfte, abseits des Falzes. Aufgestellt wie ein Laptop steht die Zeit auf der oberen Hälfte, die Tasten auf der unteren. Eine Version für das iPad gibt es nicht."
       }
     ]
   },

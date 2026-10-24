@@ -155,7 +155,10 @@
         "text": "Simgeli ve renkli etiketler; Odak filtresi etiketi sizin yerinize seçebilir"
       },
       {
-        "text": "Yavaş «Nefes» modu dahil dört hareketli arka plan"
+        "text": "«Üzerinde çalışılan»: odaklanmaya kısa bir not; zamanlayıcıda, Kilitli Ekran’da, Apple Watch’ta, istatistiklerde ve Takvim’de görünür"
+      },
+      {
+        "text": "Altı sakin ve ücretsiz arka plan; aralarında Gece ve günün saatine göre değişen Gökyüzü var"
       },
       {
         "text": "Uygulama simgesinde hızlı eylemler"
@@ -200,13 +203,13 @@
         "text": "Etiketler, widget’lar, Siri ve Kestirmeler"
       },
       {
-        "text": "Dört hareketli arka plan ve 16 ses"
+        "text": "Altı arka plan ve 16 ses"
       }
     ],
     "paid": [
       {
         "title": "Yeni Arka Planlar",
-        "body": "Beş hareketli zamanlayıcı arka planı daha."
+        "body": "Kırağı ile gelen Kar yağışı dahil on üç arka plan daha."
       },
       {
         "title": "Vurgu ve Paletler",
@@ -256,7 +259,7 @@
       },
       {
         "q": "Capsla hangi aygıtlarda çalışır?",
-        "a": "iOS 26 veya üstü yüklü iPhone ve watchOS 26 veya üstü yüklü Apple Watch. iPhone Duo’da Capsla dış ve iç ekrana uyum sağlar; yarı katlıyken zamanlayıcı katlanma yerinden uzakta, bir yarıda durur. iPad sürümü yok."
+        "a": "iOS 26 veya üstü yüklü iPhone ve watchOS 26 veya üstü yüklü Apple Watch. iPhone Duo’da Capsla dış ve iç ekrana uyum sağlar; yarı katlıyken zamanlayıcı katlanma yerinden uzakta, bir yarıda durur. Dizüstü bilgisayar gibi masaya yerleştirildiğinde süre üst yarıda, düğmeler alt yarıda durur. iPad sürümü yok."
       }
     ]
   },
