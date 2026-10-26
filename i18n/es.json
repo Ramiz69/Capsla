@@ -1,11 +1,12 @@
 {
   "lang": "es",
   "meta": {
-    "title": "Capsla: un temporizador tranquilo de enfoque y descansos para iPhone y Apple Watch",
-    "description": "Un temporizador Pomodoro para iPhone y Apple Watch: sesiones que avanzan solas, apps que distraen bloqueadas mientras te concentras, estadísticas, Salud y Calendario. Gratis y sin anuncios.",
+    "title": "Capsla: temporizador Pomodoro para iPhone y Apple Watch",
+    "description": "Temporizador Pomodoro para iPhone y Apple Watch: sesiones automáticas, apps que distraen bloqueadas, estadísticas, Salud y Calendario. Gratis, sin anuncios.",
     "ogTitle": "Capsla: un temporizador de enfoque tranquilo",
     "ogDescription": "Un temporizador Pomodoro para iPhone y Apple Watch. Gratis y sin anuncios.",
-    "ogImage": "og-image.png"
+    "ogImage": "og-image.png",
+    "ogImageAlt": "Icono de Capsla y el texto «Quiet focus timer» sobre fondo claro"
   },
   "nav": {
     "skip": "Ir al contenido",
@@ -18,7 +19,7 @@
   },
   "hero": {
     "title": "Un temporizador tranquilo para el enfoque y los&nbsp;descansos",
-    "lede": "Enfoque, un descanso corto y, tras unas cuantas rondas, uno largo. La cápsula de aquí es un temporizador de verdad, y los anillos que la rodean son el mismo fondo Órbitas que en la app. Pulsa para empezar.",
+    "lede": "El Pomodoro clásico: enfoque, un descanso corto y, tras unas cuantas rondas, uno largo. La cápsula de aquí es un temporizador de verdad, y los anillos que la rodean son el mismo fondo Órbitas que en la app. Pulsa para empezar.",
     "fine": "Gratis y sin anuncios. Para iPhone y Apple Watch."
   },
   "timer": {

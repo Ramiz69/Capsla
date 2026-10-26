@@ -1,11 +1,12 @@
 {
   "lang": "vi",
   "meta": {
-    "title": "Capsla — hẹn giờ tập trung và nghỉ ngơi yên tĩnh cho iPhone và Apple Watch",
-    "description": "Hẹn giờ Pomodoro cho iPhone và Apple Watch: phiên tự chạy, chặn ứng dụng gây xao nhãng khi tập trung, thống kê, Sức khỏe và Lịch. Miễn phí, không quảng cáo.",
+    "title": "Capsla — hẹn giờ Pomodoro cho iPhone và Apple Watch",
+    "description": "Hẹn giờ Pomodoro cho iPhone và Apple Watch: phiên tự chạy, chặn ứng dụng gây xao nhãng khi tập trung, thống kê, Sức khỏe, Lịch. Miễn phí, không quảng cáo.",
     "ogTitle": "Capsla — hẹn giờ tập trung yên tĩnh",
     "ogDescription": "Hẹn giờ Pomodoro cho iPhone và Apple Watch. Miễn phí, không quảng cáo.",
-    "ogImage": "og-image.png"
+    "ogImage": "og-image.png",
+    "ogImageAlt": "Biểu tượng Capsla và dòng chữ “Quiet focus timer” trên nền sáng"
   },
   "nav": {
     "skip": "Chuyển đến nội dung",
@@ -18,7 +19,7 @@
   },
   "hero": {
     "title": "Hẹn giờ yên tĩnh cho tập trung và nghỉ&nbsp;ngơi",
-    "lede": "Tập trung, nghỉ ngắn, và sau vài vòng là một lần nghỉ dài. Viên nang ở đây là một hẹn giờ thật, còn các vòng quanh nó chính là nền Quỹ đạo như trong ứng dụng. Hãy nhấn phát.",
+    "lede": "Pomodoro cổ điển: tập trung, nghỉ ngắn, và sau vài vòng là một lần nghỉ dài. Viên nang ở đây là một hẹn giờ thật, còn các vòng quanh nó chính là nền Quỹ đạo như trong ứng dụng. Hãy nhấn phát.",
     "fine": "Miễn phí, không quảng cáo. Cho iPhone và Apple Watch."
   },
   "timer": {

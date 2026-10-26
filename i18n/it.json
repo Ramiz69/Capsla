@@ -1,11 +1,12 @@
 {
   "lang": "it",
   "meta": {
-    "title": "Capsla — un timer tranquillo per focus e pause su iPhone e Apple Watch",
-    "description": "Un timer Pomodoro per iPhone e Apple Watch: sessioni che vanno avanti da sole, app che distraggono bloccate durante il focus, statistiche, Salute e Calendario. Gratis e senza pubblicità.",
+    "title": "Capsla — timer Pomodoro per iPhone e Apple Watch",
+    "description": "Timer Pomodoro per iPhone e Apple Watch: sessioni automatiche, app che distraggono bloccate, statistiche, Salute, Calendario. Gratis e senza pubblicità.",
     "ogTitle": "Capsla — un timer tranquillo per il focus",
     "ogDescription": "Un timer Pomodoro per iPhone e Apple Watch. Gratis e senza pubblicità.",
-    "ogImage": "og-image.png"
+    "ogImage": "og-image.png",
+    "ogImageAlt": "Icona di Capsla e la scritta “Quiet focus timer” su sfondo chiaro"
   },
   "nav": {
     "skip": "Vai al contenuto",
@@ -18,7 +19,7 @@
   },
   "hero": {
     "title": "Un timer tranquillo per focus e&nbsp;pause",
-    "lede": "Focus, una pausa breve e, dopo qualche giro, una lunga. La capsula qui è un vero timer, e gli anelli intorno sono lo stesso sfondo Orbital dell’app. Premi play.",
+    "lede": "Il Pomodoro classico: focus, una pausa breve e, dopo qualche giro, una lunga. La capsula qui è un vero timer, e gli anelli intorno sono lo stesso sfondo Orbital dell’app. Premi play.",
     "fine": "Gratis e senza pubblicità. Per iPhone e Apple Watch."
   },
   "timer": {

@@ -12,34 +12,39 @@
 // {{@файл}} — адрес файла из src/ с отпечатком содержимого.
 
 import { readFileSync, writeFileSync, mkdirSync, readdirSync, rmSync, existsSync } from 'node:fs';
+import { execFileSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
 import { dirname, extname, basename } from 'node:path';
 
 const ORIGIN = 'https://capsla.app';
 // Языки приложения. `site` — каталог на сайте и имя файла в i18n/,
-// `name` — название языка на нём самом, для меню.
+// `name` — название языка на нём самом, для меню, `og` — локаль для og:locale.
 const LANGS = [
-  { site: 'en', name: 'English' },
-  { site: 'ru', name: 'Русский' },
-  { site: 'de', name: 'Deutsch' },
-  { site: 'fr', name: 'Français' },
-  { site: 'it', name: 'Italiano' },
-  { site: 'es', name: 'Español' },
-  { site: 'pt-br', name: 'Português (Brasil)' },
-  { site: 'uk', name: 'Українська' },
-  { site: 'tr', name: 'Türkçe' },
-  { site: 'ar', name: 'العربية', rtl: true },
-  { site: 'hi', name: 'हिन्दी' },
-  { site: 'id', name: 'Bahasa Indonesia' },
-  { site: 'vi', name: 'Tiếng Việt' },
-  { site: 'ja', name: '日本語' },
-  { site: 'ko', name: '한국어' },
-  { site: 'zh-hans', name: '简体中文' },
-  { site: 'zh-hant', name: '繁體中文' },
+  { site: 'en', name: 'English', og: 'en_US' },
+  { site: 'ru', name: 'Русский', og: 'ru_RU' },
+  { site: 'de', name: 'Deutsch', og: 'de_DE' },
+  { site: 'fr', name: 'Français', og: 'fr_FR' },
+  { site: 'it', name: 'Italiano', og: 'it_IT' },
+  { site: 'es', name: 'Español', og: 'es_ES' },
+  { site: 'pt-br', name: 'Português (Brasil)', og: 'pt_BR' },
+  { site: 'uk', name: 'Українська', og: 'uk_UA' },
+  { site: 'tr', name: 'Türkçe', og: 'tr_TR' },
+  { site: 'ar', name: 'العربية', rtl: true, og: 'ar_AR' },
+  { site: 'hi', name: 'हिन्दी', og: 'hi_IN' },
+  { site: 'id', name: 'Bahasa Indonesia', og: 'id_ID' },
+  { site: 'vi', name: 'Tiếng Việt', og: 'vi_VN' },
+  { site: 'ja', name: '日本語', og: 'ja_JP' },
+  { site: 'ko', name: '한국어', og: 'ko_KR' },
+  { site: 'zh-hans', name: '简体中文', og: 'zh_CN' },
+  { site: 'zh-hant', name: '繁體中文', og: 'zh_TW' },
 ].filter((l) => existsSync(`i18n/${l.site}.json`));
 
+// Английская главная доступна и по /, и по /en/ (адреса языков указаны
+// в App Store Connect, поэтому без переадресации), каноническая — корень.
+const homeUrl = (site) => (site === 'en' ? `${ORIGIN}/` : `${ORIGIN}/${site}/`);
+
 const PAGES = [
-  ...LANGS.map((l) => ({ site: l.site, out: `${l.site}/index.html`, canonical: `${ORIGIN}/${l.site}/`, home: `/${l.site}/` })),
+  ...LANGS.map((l) => ({ site: l.site, out: `${l.site}/index.html`, canonical: homeUrl(l.site), home: `/${l.site}/` })),
   { site: 'en', out: 'index.html', canonical: `${ORIGIN}/`, home: '/' },
 ];
 
@@ -73,6 +78,19 @@ emit('home.js', home);
 // ——— Шаблон ———
 
 const templates = { home: readFileSync('src/home.html', 'utf8'), press: readFileSync('src/press.html', 'utf8') };
+
+// Разметка schema.org одна на главных и политике: сайт, издатель, приложение.
+function jsonld(lang, url) {
+  const org = `${ORIGIN}/#organization`;
+  return JSON.stringify({
+    '@context': 'https://schema.org',
+    '@graph': [
+      { '@type': 'WebSite', '@id': `${ORIGIN}/#website`, name: 'Capsla', url: `${ORIGIN}/`, publisher: { '@id': org } },
+      { '@type': 'Organization', '@id': org, name: 'Capsla', url: `${ORIGIN}/`, logo: `${ORIGIN}/press/capsla-icon-1024.png`, email: 'support@capsla.app', sameAs: ['https://apps.apple.com/app/id6760552635'] },
+      { '@type': 'MobileApplication', name: 'Capsla', operatingSystem: 'iOS 26, watchOS 26', applicationCategory: 'ProductivityApplication', url, downloadUrl: 'https://apps.apple.com/app/id6760552635', inLanguage: lang, publisher: { '@id': org }, offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' } },
+    ],
+  }).replace(/</g, '\\u003c');
+}
 
 function lookup(data, path) {
   return path.split('.').reduce((v, k) => (v == null ? undefined : v[k]), data);
@@ -110,13 +128,16 @@ for (const page of PAGES) {
     canonical: page.canonical,
     home: page.home,
     currentName: lang.name,
+    ogLocale: lang.og,
+    ogAlternates: LANGS.filter((l) => l.site !== page.site).map((l) => ({ locale: l.og })),
+    jsonld: jsonld(strings.lang, page.canonical),
     badgeWhite: assets[`badge-white-${page.site}.svg`],
     badgeBlack: assets[`badge-black-${page.site}.svg`],
     langs: LANGS.map((l) => ({
       code: JSON.parse(readFileSync(`i18n/${l.site}.json`, 'utf8')).lang,
       name: l.name,
-      href: `/${l.site}/`,
-      abs: `${ORIGIN}/${l.site}/`,
+      href: l.site === 'en' ? '/' : `/${l.site}/`,
+      abs: homeUrl(l.site),
       current: l.site === page.site ? ' aria-current="page"' : '',
     })),
   };
@@ -135,18 +156,35 @@ for (const page of PRESS) {
   const strings = JSON.parse(readFileSync(`i18n/${page.site}.json`, 'utf8'));
   if (!strings.press) continue;
   mkdirSync(dirname(page.out), { recursive: true });
-  const html = render({ ...strings, dir: 'ltr', canonical: page.canonical, home: page.home }, 'press');
+  const ogLocale = LANGS.find((l) => l.site === page.site).og;
+  const html = render({ ...strings, dir: 'ltr', canonical: page.canonical, home: page.home, ogLocale }, 'press');
   writeFileSync(page.out, html);
   console.log(`${page.out.padEnd(20)} ${(Buffer.byteLength(html) / 1024).toFixed(1)} КБ`);
 }
 
 // Карта сайта: главные на всех языках и рукописные страницы, какие есть.
-const urls = [`${ORIGIN}/`, ...LANGS.map((l) => `${ORIGIN}/${l.site}/`), ...PRESS.filter((p) => existsSync(p.out)).map((p) => p.canonical)];
-for (const l of LANGS) for (const sub of ['privacy', 'support']) {
-  if (existsSync(`${l.site}/${sub}/index.html`)) urls.push(`${ORIGIN}/${l.site}/${sub}/`);
+// /en/ в карте нет: его каноническая — корень.
+// lastmod — дата последнего коммита файла страницы, а если файл сейчас
+// отличается от закоммиченного, то сегодняшняя: изменение уйдёт этим коммитом.
+function lastmod(file) {
+  const git = (...args) => execFileSync('git', args, { encoding: 'utf8' }).trim();
+  const changed = git('status', '--porcelain', '--', file) !== '';
+  const date = changed ? '' : git('log', '-1', '--format=%cs', '--', file);
+  if (date) return date;
+  const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
 }
-writeFileSync('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((u) => `<url><loc>${u}</loc></url>`).join('\n')}\n</urlset>\n`);
-console.log(`sitemap.xml          ${urls.length} адресов`);
+const entries = [
+  [`${ORIGIN}/`, 'index.html'],
+  ...LANGS.filter((l) => l.site !== 'en').map((l) => [`${ORIGIN}/${l.site}/`, `${l.site}/index.html`]),
+  ...PRESS.filter((p) => existsSync(p.out)).map((p) => [p.canonical, p.out]),
+];
+for (const l of LANGS) for (const sub of ['privacy', 'support']) {
+  const file = `${l.site}/${sub}/index.html`;
+  if (existsSync(file)) entries.push([`${ORIGIN}/${l.site}/${sub}/`, file]);
+}
+writeFileSync('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${entries.map(([u, f]) => `<url><loc>${u}</loc><lastmod>${lastmod(f)}</lastmod></url>`).join('\n')}\n</urlset>\n`);
+console.log(`sitemap.xml          ${entries.length} адресов`);
 
 for (const [name, url] of Object.entries(assets)) {
   console.log(`${name.padEnd(16)} ${(readFileSync('.' + url).length / 1024).toFixed(1)} КБ  ${url}`);

@@ -1,11 +1,12 @@
 {
   "lang": "de",
   "meta": {
-    "title": "Capsla — ein ruhiger Timer für Fokus und Pausen auf iPhone und Apple Watch",
-    "description": "Ein Pomodoro-Timer für iPhone und Apple Watch: Sitzungen, die von allein laufen, ablenkende Apps im Fokus gesperrt, Statistik, Health und Kalender. Kostenlos und ohne Werbung.",
+    "title": "Capsla — Pomodoro-Fokustimer für iPhone und Apple Watch",
+    "description": "Pomodoro-Timer für iPhone und Apple Watch: Sitzungen laufen allein, ablenkende Apps im Fokus gesperrt, Statistik, Health, Kalender. Kostenlos, werbefrei.",
     "ogTitle": "Capsla — ein ruhiger Fokus-Timer",
     "ogDescription": "Ein Pomodoro-Timer für iPhone und Apple Watch. Kostenlos und ohne Werbung.",
-    "ogImage": "og-image.png"
+    "ogImage": "og-image-de.png",
+    "ogImageAlt": "Symbol von Capsla und der Text „Ruhiger Fokus-Timer“ auf hellem Hintergrund"
   },
   "nav": {
     "skip": "Zum Inhalt springen",
@@ -18,7 +19,7 @@
   },
   "hero": {
     "title": "Ein ruhiger Timer für Fokus und&nbsp;Pausen",
-    "lede": "Fokus, eine kurze Pause und nach ein paar Runden eine lange. Die Kapsel hier ist ein echter Timer, und die Ringe darum sind derselbe Orbital-Hintergrund wie in der App. Drück auf Start.",
+    "lede": "Klassisches Pomodoro: Fokus, eine kurze Pause und nach ein paar Runden eine lange. Die Kapsel hier ist ein echter Timer, und die Ringe darum sind derselbe Orbital-Hintergrund wie in der App. Drück auf Start.",
     "fine": "Kostenlos und ohne Werbung. Für iPhone und Apple Watch."
   },
   "timer": {

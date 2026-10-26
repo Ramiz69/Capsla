@@ -1,11 +1,12 @@
 {
   "lang": "ja",
   "meta": {
-    "title": "Capsla — iPhone と Apple Watch のための、集中と休憩の静かなタイマー",
+    "title": "Capsla — iPhone と Apple Watch のためのポモドーロ集中タイマー",
     "description": "iPhone と Apple Watch のためのポモドーロタイマー。セッションは自動で進み、集中中は気が散るアプリをブロック。統計、ヘルスケア、カレンダーにも対応。無料で、広告はありません。",
     "ogTitle": "Capsla — 静かな集中タイマー",
     "ogDescription": "iPhone と Apple Watch のためのポモドーロタイマー。無料で、広告はありません。",
-    "ogImage": "og-image.png"
+    "ogImage": "og-image.png",
+    "ogImageAlt": "明るい背景に Capsla のアイコンと「Quiet focus timer」の文字"
   },
   "nav": {
     "skip": "本文へスキップ",
@@ -18,7 +19,7 @@
   },
   "hero": {
     "title": "集中と休憩のための静かなタイマー",
-    "lede": "集中、短い休憩、そして何回か繰り返したら長い休憩。ここにあるカプセルは本物のタイマーで、周りのリングはアプリと同じ「オービット」の背景です。再生ボタンを押してみてください。",
+    "lede": "定番のポモドーロ。集中、短い休憩、そして何回か繰り返したら長い休憩。ここにあるカプセルは本物のタイマーで、周りのリングはアプリと同じ「オービット」の背景です。再生ボタンを押してみてください。",
     "fine": "無料で、広告はありません。iPhone と Apple Watch に対応。"
   },
   "timer": {

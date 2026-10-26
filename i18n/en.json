@@ -1,11 +1,12 @@
 {
   "lang": "en",
   "meta": {
-    "title": "Capsla — a quiet focus and break timer for iPhone and Apple Watch",
-    "description": "A Pomodoro timer for iPhone and Apple Watch: sessions that run on their own, distracting apps blocked while you focus, statistics, Health and Calendar. Free, with no ads.",
+    "title": "Capsla — Pomodoro focus timer for iPhone and Apple Watch",
+    "description": "Pomodoro timer for iPhone and Apple Watch: sessions run on their own, distracting apps blocked during focus, statistics, Health, Calendar. Free, no ads.",
     "ogTitle": "Capsla — a quiet focus timer",
     "ogDescription": "A Pomodoro timer for iPhone and Apple Watch. Free, with no ads.",
-    "ogImage": "og-image.png"
+    "ogImage": "og-image.png",
+    "ogImageAlt": "Capsla app icon and the line “Quiet focus timer” on a light background"
   },
   "nav": {
     "skip": "Skip to content",
@@ -18,7 +19,7 @@
   },
   "hero": {
     "title": "A quiet timer for focus and&nbsp;breaks",
-    "lede": "Focus, a short break, and after a few rounds a long one. The capsule here is a real timer, and the rings around it are the same Orbital background as in the app. Press play.",
+    "lede": "A classic Pomodoro: focus, a short break, and after a few rounds a long one. The capsule here is a real timer, and the rings around it are the same Orbital background as in the app. Press play.",
     "fine": "Free, with no ads. For iPhone and Apple Watch."
   },
   "timer": {

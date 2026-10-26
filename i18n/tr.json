@@ -1,11 +1,12 @@
 {
   "lang": "tr",
   "meta": {
-    "title": "Capsla — iPhone ve Apple Watch için sakin bir odaklanma ve mola zamanlayıcısı",
-    "description": "iPhone ve Apple Watch için bir Pomodoro zamanlayıcısı: kendi kendine ilerleyen oturumlar, odaklanırken engellenen dikkat dağıtıcı uygulamalar, istatistikler, Sağlık ve Takvim. Ücretsiz ve reklamsız.",
+    "title": "Capsla — iPhone ve Apple Watch için Pomodoro zamanlayıcısı",
+    "description": "iPhone ve Apple Watch için Pomodoro zamanlayıcısı: otomatik oturumlar, odakta engellenen uygulamalar, istatistikler, Sağlık ve Takvim. Ücretsiz, reklamsız.",
     "ogTitle": "Capsla — sakin bir odaklanma zamanlayıcısı",
     "ogDescription": "iPhone ve Apple Watch için bir Pomodoro zamanlayıcısı. Ücretsiz ve reklamsız.",
-    "ogImage": "og-image.png"
+    "ogImage": "og-image.png",
+    "ogImageAlt": "Capsla simgesi ve açık zemin üzerinde “Quiet focus timer” yazısı"
   },
   "nav": {
     "skip": "İçeriğe geç",
@@ -18,7 +19,7 @@
   },
   "hero": {
     "title": "Odaklanma ve mola için sakin bir&nbsp;zamanlayıcı",
-    "lede": "Odaklanma, kısa bir mola ve birkaç turdan sonra uzun bir mola. Buradaki kapsül gerçek bir zamanlayıcı; etrafındaki halkalar da uygulamadakiyle aynı «Yörüngeler» arka planı. Oynat’a basın.",
+    "lede": "Klasik Pomodoro: odaklanma, kısa bir mola ve birkaç turdan sonra uzun bir mola. Buradaki kapsül gerçek bir zamanlayıcı; etrafındaki halkalar da uygulamadakiyle aynı «Yörüngeler» arka planı. Oynat’a basın.",
     "fine": "Ücretsiz ve reklamsız. iPhone ve Apple Watch için."
   },
   "timer": {

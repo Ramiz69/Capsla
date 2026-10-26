@@ -1,11 +1,12 @@
 {
   "lang": "fr",
   "meta": {
-    "title": "Capsla — un minuteur discret pour le focus et les pauses, sur iPhone et Apple Watch",
-    "description": "Un minuteur Pomodoro pour iPhone et Apple Watch : des sessions qui se déroulent toutes seules, les apps qui distraient bloquées pendant le focus, des statistiques, Santé et Calendrier. Gratuit et sans publicité.",
+    "title": "Capsla — minuteur Pomodoro pour iPhone et Apple Watch",
+    "description": "Minuteur Pomodoro pour iPhone et Apple Watch : sessions automatiques, apps distrayantes bloquées, statistiques, Santé, Calendrier. Gratuit, sans publicité.",
     "ogTitle": "Capsla — un minuteur de focus discret",
     "ogDescription": "Un minuteur Pomodoro pour iPhone et Apple Watch. Gratuit et sans publicité.",
-    "ogImage": "og-image.png"
+    "ogImage": "og-image.png",
+    "ogImageAlt": "Icône de Capsla et la mention « Quiet focus timer » sur fond clair"
   },
   "nav": {
     "skip": "Aller au contenu",
@@ -18,7 +19,7 @@
   },
   "hero": {
     "title": "Un minuteur discret pour le focus et les&nbsp;pauses",
-    "lede": "Du focus, une pause courte et, après quelques tours, une pause longue. La capsule que vous voyez ici est un vrai minuteur, et les anneaux autour sont le même arrière-plan Orbital que dans l’app. Appuyez sur lecture.",
+    "lede": "Le Pomodoro classique : du focus, une pause courte et, après quelques tours, une pause longue. La capsule que vous voyez ici est un vrai minuteur, et les anneaux autour sont le même arrière-plan Orbital que dans l’app. Appuyez sur lecture.",
     "fine": "Gratuit et sans publicité. Pour iPhone et Apple Watch."
   },
   "timer": {

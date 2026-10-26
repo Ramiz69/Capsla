@@ -1,11 +1,12 @@
 {
   "lang": "zh-Hant",
   "meta": {
-    "title": "Capsla——適用於 iPhone 和 Apple Watch 的安靜專注與休息計時器",
+    "title": "Capsla——適用於 iPhone 和 Apple Watch 的番茄鐘專注計時器",
     "description": "適用於 iPhone 和 Apple Watch 的番茄鐘：時段自動進行，專注時封鎖讓人分心的 App，還有統計資料、「健康」和「行事曆」。免費，沒有廣告。",
     "ogTitle": "Capsla——安靜的專注計時器",
     "ogDescription": "適用於 iPhone 和 Apple Watch 的番茄鐘。免費，沒有廣告。",
-    "ogImage": "og-image.png"
+    "ogImage": "og-image.png",
+    "ogImageAlt": "淺色背景上的 Capsla 圖示和「Quiet focus timer」字樣"
   },
   "nav": {
     "skip": "跳至內容",
@@ -18,7 +19,7 @@
   },
   "hero": {
     "title": "安靜的專注與休息計時器",
-    "lede": "專注，短休息，幾輪之後是一次長休息。這裡的膠囊是一個真正的計時器，周圍的圓環就是 App 裡同樣的「星軌」背景。按下開始試試看。",
+    "lede": "經典番茄鐘：專注，短休息，幾輪之後是一次長休息。這裡的膠囊是一個真正的計時器，周圍的圓環就是 App 裡同樣的「星軌」背景。按下開始試試看。",
     "fine": "免費，沒有廣告。適用於 iPhone 和 Apple Watch。"
   },
   "timer": {

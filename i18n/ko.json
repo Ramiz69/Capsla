@@ -1,11 +1,12 @@
 {
   "lang": "ko",
   "meta": {
-    "title": "Capsla — iPhone과 Apple Watch를 위한 조용한 집중·휴식 타이머",
+    "title": "Capsla — iPhone과 Apple Watch를 위한 뽀모도로 집중 타이머",
     "description": "iPhone과 Apple Watch를 위한 뽀모도로 타이머: 알아서 진행되는 세션, 집중하는 동안 방해되는 앱 차단, 통계, 건강 앱과 캘린더. 무료이며 광고가 없습니다.",
     "ogTitle": "Capsla — 조용한 집중 타이머",
     "ogDescription": "iPhone과 Apple Watch를 위한 뽀모도로 타이머. 무료이며 광고가 없습니다.",
-    "ogImage": "og-image.png"
+    "ogImage": "og-image.png",
+    "ogImageAlt": "밝은 배경 위의 Capsla 아이콘과 ‘Quiet focus timer’ 문구"
   },
   "nav": {
     "skip": "본문으로 건너뛰기",
@@ -18,7 +19,7 @@
   },
   "hero": {
     "title": "집중과 휴식을 위한 조용한&nbsp;타이머",
-    "lede": "집중, 짧은 휴식, 그리고 몇 번 반복한 뒤에는 긴 휴식. 여기 있는 캡슐은 실제 타이머이고, 주위의 고리는 앱과 같은 ‘궤도’ 배경입니다. 재생 버튼을 눌러 보세요.",
+    "lede": "기본에 충실한 뽀모도로: 집중, 짧은 휴식, 그리고 몇 번 반복한 뒤에는 긴 휴식. 여기 있는 캡슐은 실제 타이머이고, 주위의 고리는 앱과 같은 ‘궤도’ 배경입니다. 재생 버튼을 눌러 보세요.",
     "fine": "무료이며 광고가 없습니다. iPhone 및 Apple Watch용."
   },
   "timer": {
