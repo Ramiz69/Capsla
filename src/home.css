@@ -329,8 +329,13 @@ h3 { margin: 28px 0 8px; font-size: 17px; font-weight: 600; }
   .hero-copy { display: flex; flex-direction: column; align-items: center; }
   .capsule { --h: min(620px, 150vw, 82svh); }
   .palettes-label { display: none; }
-  .split { grid-template-columns: 1fr; }
+  /* minmax(0, …): иначе колонка не уже min-content цепочки фаз и раздвигает страницу */
+  .split { grid-template-columns: minmax(0, 1fr); }
   .split-reverse .text { order: 0; }
+  .link-name { hyphens: auto; overflow-wrap: break-word; }
+  /* подпись последнего звена шире полоски: выравнивание по концу уводит излишек внутрь, а не за экран */
+  .link-long { align-items: flex-end; text-align: end; }
+  .link-long::before { align-self: stretch; }
   .compare td, .compare thead th:not(:first-child) { width: 76px; }
 }
 @media (max-width: 420px) {
