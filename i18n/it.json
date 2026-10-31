@@ -165,6 +165,9 @@
         "text": "Azioni rapide sull’icona dell’app"
       },
       {
+        "text": "Il widget «Frase del giorno»: ogni giorno una nuova frase nella schermata Home e nella schermata di blocco"
+      },
+      {
         "text": "Modalità scura, VoiceOver, testo più grande e contrasto aumentato"
       },
       {
@@ -173,9 +176,9 @@
     ]
   },
   "privacy": {
-    "title": "Puoi vedere cosa esce dal tuo iPhone",
+    "title": "Capsla non raccoglie nulla",
     "body": "Non esiste un account Capsla. I tag e lo storico del focus si sincronizzano solo tramite il tuo iCloud, e le impostazioni restano sul tuo iPhone.",
-    "body2": "La schermata Privacy elenca gli ultimi eventi inviati da Capsla stessa. È un elenco reale dal tuo dispositivo, e due interruttori disattivano la raccolta.",
+    "body2": "Niente analisi, nessuna raccolta propria dei rapporti sugli arresti anomali, nessun identificatore pubblicitario. Se qualcosa si rompe, puoi allegare tu il rapporto a un’email. Le funzioni di Apple Intelligence girano sul dispositivo stesso.",
     "link": "Informativa sulla privacy (in inglese)",
     "href": "/en/privacy/"
   },
@@ -210,7 +213,7 @@
     "paid": [
       {
         "title": "Nuovi sfondi",
-        "body": "Altri tredici sfondi, tra cui Nevicata con Brina."
+        "body": "Altri quattordici sfondi, tra cui Sistema solare con la vera Terra e Nevicata con Brina."
       },
       {
         "title": "Accento e palette",

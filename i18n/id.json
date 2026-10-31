@@ -165,6 +165,9 @@
         "text": "Tindakan cepat di ikon aplikasi"
       },
       {
+        "text": "Widget “Kalimat hari ini”: kalimat baru setiap hari di Layar Utama dan Layar Terkunci"
+      },
+      {
         "text": "Mode Gelap, VoiceOver, Teks yang Lebih Besar, dan Tambah Kontras"
       },
       {
@@ -173,9 +176,9 @@
     ]
   },
   "privacy": {
-    "title": "Anda bisa melihat apa yang keluar dari ponsel",
+    "title": "Capsla tidak mengumpulkan apa pun",
     "body": "Tidak ada akun Capsla. Tag dan riwayat fokus hanya disinkronkan melalui iCloud Anda sendiri, dan pengaturan tetap di iPhone Anda.",
-    "body2": "Layar Privasi menampilkan peristiwa terbaru yang dikirim Capsla sendiri. Ini daftar nyata dari perangkat Anda, dan dua sakelar mematikan pengumpulan data.",
+    "body2": "Tanpa analitik, tanpa pengumpulan laporan crash sendiri, tanpa pengenal iklan. Jika ada yang rusak, Anda sendiri bisa melampirkan laporan crash ke email untuk pengembang.",
     "link": "Kebijakan privasi (dalam bahasa Inggris)",
     "href": "/en/privacy/"
   },
@@ -210,7 +213,7 @@
     "paid": [
       {
         "title": "Latar Baru",
-        "body": "Tiga belas latar tambahan, termasuk Hujan salju dengan Embun beku yang menutupi timer dengan es selama fokus."
+        "body": "Empat belas latar tambahan, termasuk Tata Surya dengan Bumi sungguhan dan Hujan salju dengan Embun beku yang menutupi timer dengan es selama fokus."
       },
       {
         "title": "Aksen dan Palet",
