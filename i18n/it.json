@@ -83,6 +83,11 @@
     "toggleBreaks": "Avvia le pause automaticamente",
     "toggleFocus": "Avvia il focus automaticamente"
   },
+  "solar": {
+    "title": "La vera Terra sotto il tuo timer",
+    "body": "Sistema solare in Capsla+: la vista da un oblò. Sotto la capsula c’è la vera Terra dalle mappe della NASA, con le luci delle città sul lato notturno. Durante il focus il pianeta si allontana piano; in pausa il Sole sorge dal suo bordo. Dieci corpi celesti a scelta, da Mercurio a Nettuno, la Luna e il Sole stesso, ognuno con il proprio «Evento celeste» all’inizio della pausa lunga. Con «Ora del dispositivo», luce e ombre sono quelle reali di questo momento.",
+    "note": "Video accelerato 30 volte, fasi da un minuto."
+  },
   "everywhere": {
     "title": "Il timer è ovunque guardi",
     "body": "Un’attività in tempo reale e la Dynamic Island, la schermata di blocco, i widget, il Centro di Controllo, il tasto Azione. Chiedi a Siri di mettere in pausa e la risposta arriva con una scheda e i pulsanti per il passo successivo. Raramente ti servirà aprire l’app.",

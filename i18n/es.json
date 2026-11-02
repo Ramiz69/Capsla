@@ -83,6 +83,11 @@
     "toggleBreaks": "Iniciar descansos automáticamente",
     "toggleFocus": "Iniciar enfoque automáticamente"
   },
+  "solar": {
+    "title": "La Tierra real bajo tu temporizador",
+    "body": "Sistema solar en Capsla+: la vista desde un ojo de buey. Bajo la cápsula está la Tierra real, hecha con mapas de la NASA, con las luces de las ciudades en el lado nocturno. Durante el enfoque, el planeta se aleja despacio; en el descanso, el Sol sale por su borde. Diez cuerpos para elegir, de Mercurio a Neptuno, la Luna y el propio Sol, cada uno con su «Evento celeste» al empezar el descanso largo. Con «Hora del dispositivo», la luz y las sombras son como ahora mismo en la realidad.",
+    "note": "Vídeo acelerado 30 veces, con fases de un minuto."
+  },
   "everywhere": {
     "title": "El temporizador está donde mires",
     "body": "Una Actividad en directo y la Dynamic Island, la pantalla de bloqueo, los widgets, el Centro de control, el botón de acción. Pide a Siri que pause y la respuesta llega con una tarjeta y botones para el siguiente paso. Casi nunca hace falta abrir la app.",

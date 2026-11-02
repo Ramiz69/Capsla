@@ -92,6 +92,15 @@ function updateRunning() {
   if (!orbital) return;
   if (heroVisible && !document.hidden) orbital.start(); else orbital.stop();
 }
+// Видео играет, только пока видно, и не играет при «Уменьшении движения»:
+// тогда остаётся постер.
+document.querySelectorAll('video[data-autoplay]').forEach((video) => {
+  new IntersectionObserver(([e]) => {
+    if (e.isIntersecting && !reduceMotion.matches) video.play().catch(() => {});
+    else video.pause();
+  }).observe(video);
+});
+
 new IntersectionObserver(([e]) => { heroVisible = e.isIntersecting; updateRunning(); }).observe(canvas);
 document.addEventListener('visibilitychange', updateRunning);
 

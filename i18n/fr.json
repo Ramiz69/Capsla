@@ -83,6 +83,11 @@
     "toggleBreaks": "Lancer les pauses automatiquement",
     "toggleFocus": "Lancer le focus automatiquement"
   },
+  "solar": {
+    "title": "La vraie Terre sous votre minuteur",
+    "body": "Système solaire dans Capsla+ : la vue depuis un hublot. Sous la capsule, la vraie Terre d’après les cartes de la NASA, avec les lumières des villes sur la face nocturne. Pendant le focus, la planète s’éloigne lentement ; pendant la pause, le Soleil se lève derrière son bord. Dix astres au choix, de Mercure à Neptune, la Lune et le Soleil lui-même, chacun avec son « Événement céleste » au début de la longue pause. Avec « Heure de l’appareil », la lumière et les ombres sont celles du moment présent.",
+    "note": "Vidéo accélérée 30 fois, phases d’une minute."
+  },
   "everywhere": {
     "title": "Le minuteur est là où vous regardez",
     "body": "Une activité en direct et la Dynamic Island, l’écran verrouillé, les widgets, le centre de contrôle, le bouton Action. Demandez à Siri de mettre en pause, et la réponse arrive avec une carte et des boutons pour l’étape suivante. Vous avez rarement besoin d’ouvrir l’app.",

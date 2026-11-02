@@ -83,6 +83,11 @@
     "toggleBreaks": "Molaları otomatik başlat",
     "toggleFocus": "Odaklanmayı otomatik başlat"
   },
+  "solar": {
+    "title": "Zamanlayıcınızın altında gerçek Dünya",
+    "body": "Capsla+’ta Güneş Sistemi: bir lombozdan bakış. Kapsülün altında NASA haritalarından gerçek Dünya, gece tarafında şehir ışıklarıyla. Odaklandıkça gezegen yavaşça uzaklaşır; molada Güneş onun kenarından doğar. Merkür’den Neptün’e, Ay ve Güneş’in kendisi dahil on gök cismi arasından seçim yapabilirsiniz; her birinin uzun molanın başında kendine ait bir «Gökyüzü Olayı» var. «Cihaz saati» açıkken ışık ve gölgeler tam şu anki gibidir.",
+    "note": "Video 30 kat hızlandırıldı, aşamalar birer dakika."
+  },
   "everywhere": {
     "title": "Zamanlayıcı nereye bakarsanız orada",
     "body": "Canlı Etkinlik ve Dynamic Island, Kilitli Ekran, widget’lar, Denetim Merkezi, Eylem düğmesi. Siri’den duraklatmasını isteyin; yanıt, sonraki adım için düğmeleri olan bir kartla gelir. Uygulamayı açmanız nadiren gerekir.",

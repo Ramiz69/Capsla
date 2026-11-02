@@ -83,6 +83,11 @@
     "toggleBreaks": "Tự động bắt đầu giờ nghỉ",
     "toggleFocus": "Tự động bắt đầu tập trung"
   },
+  "solar": {
+    "title": "Trái Đất thật bên dưới đồng hồ của bạn",
+    "body": "Hệ Mặt Trời trong Capsla+: khung cảnh nhìn qua ô cửa tàu. Bên dưới viên nang là Trái Đất thật dựng từ bản đồ của NASA, với ánh đèn thành phố ở phía ban đêm. Khi bạn tập trung, hành tinh từ từ lùi xa; lúc nghỉ, Mặt Trời mọc lên từ mép của nó. Có mười thiên thể để chọn, từ Sao Thủy đến Sao Hải Vương, Mặt Trăng và chính Mặt Trời, mỗi thiên thể có «Sự kiện trên bầu trời» riêng khi bắt đầu lượt nghỉ dài. Khi bật «Giờ trên thiết bị», ánh sáng và bóng tối đúng như bầu trời thật lúc này.",
+    "note": "Video tua nhanh 30 lần, mỗi giai đoạn một phút."
+  },
   "everywhere": {
     "title": "Hẹn giờ ở mọi nơi bạn nhìn",
     "body": "Hoạt động trực tiếp và Dynamic Island, Màn hình khóa, tiện ích, Trung tâm điều khiển, nút Tác vụ. Nhờ Siri tạm dừng, câu trả lời sẽ kèm một khung hiển thị có nút cho bước tiếp theo. Bạn hiếm khi phải mở ứng dụng.",

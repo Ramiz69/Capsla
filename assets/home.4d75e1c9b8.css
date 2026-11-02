@@ -226,6 +226,8 @@ h2 {
 /* Снимок экрана целиком, в портретной ориентации, как экран устройства. */
 .shot { margin: 0; justify-self: center; }
 .shot img { display: block; width: min(280px, 72vw); height: auto; border-radius: 36px; box-shadow: 0 0 0 1px var(--rule), 0 30px 60px rgba(0, 0, 0, .35); }
+.shot video { display: block; width: min(280px, 72vw); height: auto; border-radius: 36px; background: #000; box-shadow: 0 0 0 1px var(--rule), 0 30px 60px rgba(0, 0, 0, .35); }
+.shot-note { width: min(280px, 72vw); margin-top: 14px; font-size: 14px; line-height: 1.35; color: var(--text-3); text-align: center; }
 .split:has(> .text:only-child) { grid-template-columns: minmax(0, var(--measure)); }
 
 /* Где виден таймер: остров и часы всегда чёрные, как настоящее железо. */

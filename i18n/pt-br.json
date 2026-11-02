@@ -83,6 +83,11 @@
     "toggleBreaks": "Iniciar pausas automaticamente",
     "toggleFocus": "Iniciar foco automaticamente"
   },
+  "solar": {
+    "title": "A Terra de verdade sob o seu timer",
+    "body": "Sistema Solar no Capsla+: a vista de uma escotilha. Sob a cápsula está a Terra de verdade, feita com mapas da NASA, com as luzes das cidades no lado noturno. Durante o foco, o planeta se afasta devagar; na pausa, o Sol nasce atrás da borda dele. Dez corpos para escolher, de Mercúrio a Netuno, a Lua e o próprio Sol, cada um com seu “Evento no céu” no início da pausa longa. Com “Hora do dispositivo”, a luz e as sombras ficam como estão agora de verdade.",
+    "note": "Vídeo acelerado 30 vezes, com fases de um minuto."
+  },
   "everywhere": {
     "title": "O timer está onde você olhar",
     "body": "Uma Atividade ao Vivo e a Dynamic Island, a Tela Bloqueada, widgets, a Central de Controle, o botão de Ação. Peça à Siri para pausar e a resposta vem com um cartão e botões para o próximo passo. Quase nunca é preciso abrir o app.",

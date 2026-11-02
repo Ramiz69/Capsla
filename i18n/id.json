@@ -83,6 +83,11 @@
     "toggleBreaks": "Mulai istirahat otomatis",
     "toggleFocus": "Mulai fokus otomatis"
   },
+  "solar": {
+    "title": "Bumi sungguhan di bawah timer Anda",
+    "body": "Tata Surya di Capsla+: pemandangan dari jendela kapal. Di bawah kapsul ada Bumi sungguhan dari peta NASA, dengan lampu kota di sisi malamnya. Selama fokus, planet perlahan menjauh; saat istirahat, Matahari terbit dari balik tepinya. Ada sepuluh benda langit untuk dipilih, dari Merkurius sampai Neptunus, Bulan, dan Matahari itu sendiri, masing-masing dengan “Peristiwa Langit” sendiri di awal istirahat panjang. Dengan “Waktu perangkat”, cahaya dan bayangan sama seperti langit sebenarnya saat ini.",
+    "note": "Video dipercepat 30 kali, dengan fase satu menit."
+  },
   "everywhere": {
     "title": "Timer ada di mana pun Anda melihat",
     "body": "Aktivitas Langsung dan Dynamic Island, Layar Terkunci, widget, Pusat Kontrol, tombol Tindakan. Minta Siri menjeda, dan jawabannya datang dengan kartu berisi tombol untuk langkah berikutnya. Anda jarang perlu membuka aplikasinya.",
