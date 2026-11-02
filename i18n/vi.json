@@ -140,7 +140,7 @@
   },
   "signals": {
     "title": "Yên tĩnh nhưng khó bỏ lỡ",
-    "body": "Một cảnh báo không kèm âm thanh vài phút trước khi hết thời gian tập trung, một tín hiệu khi giai đoạn kết thúc, nút bắt đầu giờ nghỉ hoặc lượt tập trung tiếp theo ngay từ biểu ngữ, và lời nhắc nếu bạn quên quay lại sau giờ nghỉ. Thông báo được đánh dấu là Gấp nên vẫn đến cả khi bật Không làm phiền.",
+    "body": "Một cảnh báo không kèm âm thanh vài phút trước khi hết thời gian tập trung, một tín hiệu khi giai đoạn kết thúc, nút bắt đầu giờ nghỉ hoặc lượt tập trung tiếp theo ngay từ biểu ngữ, và, nếu bật, lời nhắc quay lại sau giờ nghỉ. Thông báo được đánh dấu là Gấp nên vẫn đến cả khi bật Không làm phiền.",
     "body2": "Tín hiệu kết thúc giai đoạn vẫn phát cả ở chế độ im lặng, vì bỏ lỡ lần chuyển thì hẹn giờ mất ý nghĩa. Có 16 âm thanh và ba kiểu phản hồi cảm ứng, chọn riêng cho từng giai đoạn."
   },
   "more": {
@@ -165,6 +165,9 @@
         "text": "Tác vụ nhanh trên biểu tượng ứng dụng"
       },
       {
+        "text": "Tiện ích «Câu nói hôm nay»: mỗi ngày một câu mới trên Màn hình chính và Màn hình khóa"
+      },
+      {
         "text": "Chế độ tối, VoiceOver, văn bản lớn hơn và tăng độ tương phản"
       },
       {
@@ -173,9 +176,9 @@
     ]
   },
   "privacy": {
-    "title": "Bạn thấy được những gì rời khỏi điện thoại",
+    "title": "Capsla không thu thập gì cả",
     "body": "Không có tài khoản Capsla. Thẻ và lịch sử tập trung chỉ đồng bộ qua iCloud của riêng bạn, còn cài đặt vẫn nằm trên iPhone.",
-    "body2": "Màn hình Quyền riêng tư liệt kê các sự kiện gần đây do chính Capsla gửi. Đó là danh sách thật từ thiết bị của bạn, và hai công tắc giúp tắt việc thu thập dữ liệu.",
+    "body2": "Không có phân tích, không tự thu thập báo cáo sự cố, không có mã định danh quảng cáo. Nếu có gì trục trặc, bạn có thể tự đính kèm báo cáo sự cố vào email. Các tính năng Apple Intelligence chạy ngay trên thiết bị.",
     "link": "Chính sách quyền riêng tư (bằng tiếng Anh)",
     "href": "/en/privacy/"
   },
@@ -210,7 +213,7 @@
     "paid": [
       {
         "title": "Hình nền mới",
-        "body": "Thêm mười ba nền, trong đó có Tuyết rơi kèm Sương giá phủ băng lên bộ hẹn giờ khi tập trung."
+        "body": "Thêm mười bốn nền, trong đó có Hệ Mặt Trời với Trái Đất thật và Tuyết rơi kèm Sương giá phủ băng lên bộ hẹn giờ khi tập trung."
       },
       {
         "title": "Màu nhấn và bảng màu",

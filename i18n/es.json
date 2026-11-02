@@ -140,7 +140,7 @@
   },
   "signals": {
     "title": "Discreto, pero difícil de pasar por alto",
-    "body": "Un aviso discreto unos minutos antes de que acabe el enfoque, una señal cuando termina una fase, botones para empezar el descanso o el siguiente enfoque desde la propia notificación y un recordatorio si se te olvida volver después de un descanso. Son notificaciones importantes, así que llegan aunque tengas activado No molestar.",
+    "body": "Un aviso discreto unos minutos antes de que acabe el enfoque, una señal cuando termina una fase, botones para empezar el descanso o el siguiente enfoque desde la propia notificación y, si lo activas, un recordatorio para volver después de un descanso. Son notificaciones importantes, así que llegan aunque tengas activado No molestar.",
     "body2": "La señal de fin de fase suena incluso en modo silencio, porque una transición perdida le quita el sentido al temporizador. Hay 16 sonidos y tres patrones de vibración, elegidos por separado para cada fase."
   },
   "more": {
@@ -165,6 +165,9 @@
         "text": "Acciones rápidas en el icono de la app"
       },
       {
+        "text": "El widget «Frase del día»: una frase nueva cada día en la pantalla de inicio y en la pantalla bloqueada"
+      },
+      {
         "text": "Modo oscuro, VoiceOver, texto más grande y aumento de contraste"
       },
       {
@@ -173,9 +176,9 @@
     ]
   },
   "privacy": {
-    "title": "Puedes ver qué sale de tu iPhone",
+    "title": "Capsla no recopila nada",
     "body": "No hay cuenta de Capsla. Las etiquetas y el historial de enfoque se sincronizan solo a través de tu propio iCloud, y los ajustes se quedan en tu iPhone.",
-    "body2": "La pantalla Privacidad muestra los últimos eventos que ha enviado la propia Capsla. Es una lista real de tu dispositivo, y dos interruptores desactivan la recopilación.",
+    "body2": "Ni analítica, ni recopilación propia de informes de fallos, ni identificadores publicitarios. Si algo falla, puedes adjuntar tú el informe a un correo. Las funciones de Apple Intelligence se ejecutan en el propio dispositivo.",
     "link": "Política de privacidad (en inglés)",
     "href": "/en/privacy/"
   },
@@ -210,7 +213,7 @@
     "paid": [
       {
         "title": "Nuevos fondos",
-        "body": "Trece fondos más, entre ellos Nevada con Escarcha."
+        "body": "Catorce fondos más, entre ellos Sistema solar con la Tierra real y Nevada con Escarcha."
       },
       {
         "title": "Acento y paletas",

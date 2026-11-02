@@ -140,7 +140,7 @@
   },
   "signals": {
     "title": "Sessiz ama kaçırması zor",
-    "body": "Odaklanma bitmeden birkaç dakika önce sessiz bir uyarı, aşama bittiğinde bir sinyal, molayı ya da sonraki odaklanmayı doğrudan bildirimden başlatan düğmeler ve moladan sonra dönmeyi unutursanız bir hatırlatma. Bildirimler Zamana Duyarlı olduğu için Rahatsız Etme açıkken de size ulaşır.",
+    "body": "Odaklanma bitmeden birkaç dakika önce sessiz bir uyarı, aşama bittiğinde bir sinyal, molayı ya da sonraki odaklanmayı doğrudan bildirimden başlatan düğmeler ve açarsanız moladan sonra dönmeniz için bir hatırlatma. Bildirimler Zamana Duyarlı olduğu için Rahatsız Etme açıkken de size ulaşır.",
     "body2": "Aşama sonu sinyali sessiz modda bile çalar, çünkü kaçırılan bir geçiş işin amacını boşa çıkarır. 16 ses ve üç titreşim deseni var; her aşama için ayrı ayrı seçilir."
   },
   "more": {
@@ -165,6 +165,9 @@
         "text": "Uygulama simgesinde hızlı eylemler"
       },
       {
+        "text": "«Günün sözü» widget’ı: her gün Ana Ekran’da ve Kilitli Ekran’da yeni bir söz"
+      },
+      {
         "text": "Koyu Mod, VoiceOver, Büyük Metin ve Kontrastı Artır"
       },
       {
@@ -173,9 +176,9 @@
     ]
   },
   "privacy": {
-    "title": "Telefonunuzdan neyin çıktığını görebilirsiniz",
+    "title": "Capsla hiçbir şey toplamaz",
     "body": "Capsla hesabı yok. Etiketler ve odaklanma geçmişi yalnızca kendi iCloud hesabınız üzerinden eşzamanlanır; ayarlar iPhone’unuzda kalır.",
-    "body2": "Gizlilik ekranı, Capsla’nın kendi gönderdiği son olayları listeler. Bu, aygıtınızdan gelen gerçek bir listedir ve iki anahtarla veri toplamayı kapatabilirsiniz.",
+    "body2": "Analiz yok, kendi çökme raporu toplama sistemi yok, reklam tanımlayıcısı yok. Bir şey bozulursa çökme raporunu bir e-postaya kendiniz ekleyebilirsiniz. Apple Intelligence özellikleri cihazın kendisinde çalışır.",
     "link": "Gizlilik politikası (İngilizce)",
     "href": "/en/privacy/"
   },
@@ -210,7 +213,7 @@
     "paid": [
       {
         "title": "Yeni Arka Planlar",
-        "body": "Kırağı ile gelen Kar yağışı dahil on üç arka plan daha."
+        "body": "Gerçek Dünya’yı gösteren Güneş Sistemi ve Kırağı ile gelen Kar yağışı dahil on dört arka plan daha."
       },
       {
         "title": "Vurgu ve Paletler",

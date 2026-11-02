@@ -140,7 +140,7 @@
   },
   "signals": {
     "title": "Quiet, but hard to miss",
-    "body": "A quiet heads-up a few minutes before focus ends, a signal when a phase is over, buttons to start the break or the next focus right from the banner, and a reminder if you forget to come back after a break. Notifications are Time Sensitive, so they come through Do Not Disturb.",
+    "body": "A quiet heads-up a few minutes before focus ends, a signal when a phase is over, buttons to start the break or the next focus right from the banner, and, if you turn it on, a reminder to come back after a break. Notifications are Time Sensitive, so they come through Do Not Disturb.",
     "body2": "The end-of-phase signal plays even in silent mode, because a missed transition defeats the point. There are 16 sounds and three vibration patterns, chosen separately for each phase."
   },
   "more": {
@@ -165,6 +165,9 @@
         "text": "Quick actions on the app icon"
       },
       {
+        "text": "The Phrase of the Day widget: a new line every day on the Home Screen and the Lock Screen"
+      },
+      {
         "text": "Dark Mode, VoiceOver, larger text and increased contrast"
       },
       {
@@ -173,9 +176,9 @@
     ]
   },
   "privacy": {
-    "title": "You can see what leaves your phone",
+    "title": "Capsla collects nothing",
     "body": "There is no Capsla account. Tags and focus history sync only through your own iCloud, and settings stay on your iPhone.",
-    "body2": "The Privacy screen lists the recent events Capsla itself has sent. It’s a real list from your device, and two switches turn collection off.",
+    "body2": "No analytics, no crash reporting of its own, no advertising identifiers. If something breaks, you can attach a crash report to an email yourself. Apple Intelligence features run on the device itself.",
     "link": "Privacy policy",
     "href": "/en/privacy/"
   },
@@ -210,7 +213,7 @@
     "paid": [
       {
         "title": "New backgrounds",
-        "body": "Thirteen more backgrounds, including Snowfall with Frost, which slowly ices over the timer."
+        "body": "Fourteen more backgrounds, including Solar System with the real Earth and Snowfall with Frost, which slowly ices over the timer."
       },
       {
         "title": "Accent and palettes",
@@ -301,7 +304,7 @@
       },
       {
         "term": "Current version",
-        "value": "1.7.0, October 2026"
+        "value": "1.8.0, November 2026"
       },
       {
         "term": "Price",
@@ -313,7 +316,7 @@
       },
       {
         "term": "Privacy",
-        "value": "No account. Focus history and tags sync only through the user’s own iCloud. Usage analytics and crash reports can be switched off with two toggles, and the Privacy screen lists the recent events the app has sent."
+        "value": "No account. Focus history and tags sync only through the user’s own iCloud. Capsla collects nothing: no analytics, no crash reporting of its own, no advertising identifiers. If something breaks, users can attach a crash report to an email themselves. Apple Intelligence features run on the device."
       },
       {
         "term": "Links",
@@ -324,7 +327,7 @@
     "sentenceTitle": "In one sentence",
     "sentence": "Capsla is a Pomodoro timer for iPhone and Apple Watch that runs whole focus sessions on its own, shows the countdown wherever you look and keeps distracting apps closed until focus ends.",
     "paragraphTitle": "In a paragraph",
-    "paragraph": "Capsla turns the Pomodoro technique into a session that runs itself: focus, a short break and the next focus follow one another without a tap until the long break, and every transition is scheduled ahead, so it keeps going with the app closed. The countdown lives in a Live Activity and the Dynamic Island, on the Lock Screen, in widgets and on Apple Watch, where its own app starts and pauses focus even without the iPhone nearby. On iPhone Duo it fits every position: the outer and the inner display, half-folded with the timer away from the fold, and tabletop, like a laptop, with the time on the top half and the buttons on the bottom. During focus, Screen Time keeps the apps you chose closed. Statistics count net focus time without pauses, and history starts the day you install the app, with nothing filled in after the fact. The core is free with no ads; Capsla+ is a one-time purchase that adds thirteen backgrounds, including Snowfall with Frost, typefaces for the timer and focus sounds.",
+    "paragraph": "Capsla turns the Pomodoro technique into a session that runs itself: focus, a short break and the next focus follow one another without a tap until the long break, and every transition is scheduled ahead, so it keeps going with the app closed. The countdown lives in a Live Activity and the Dynamic Island, on the Lock Screen, in widgets and on Apple Watch, where its own app starts and pauses focus even without the iPhone nearby. On iPhone Duo it fits every position: the outer and the inner display, half-folded with the timer away from the fold, and tabletop, like a laptop, with the time on the top half and the buttons on the bottom. During focus, Screen Time keeps the apps you chose closed. Statistics count net focus time without pauses, and history starts the day you install the app, with nothing filled in after the fact. The core is free with no ads; Capsla+ is a one-time purchase that adds fourteen backgrounds, including Solar System with the real Earth and Snowfall with Frost, typefaces for the timer and focus sounds.",
     "diffTitle": "What makes it different",
     "diff": [
       {
@@ -340,30 +343,36 @@
         "body": "Net minutes without pauses, the hours you focus best, days in a row. History starts at install and the app never fills in numbers it did not record."
       },
       {
-        "title": "Privacy you can check",
-        "body": "There is no account. The Privacy screen shows the actual events Capsla has sent from the device, and two switches turn collection off."
+        "title": "Collects nothing",
+        "body": "There is no account, no analytics and no crash reporting of its own. Focus history stays in the user’s own iCloud."
       },
       {
         "title": "Free core, one-time extras",
         "body": "Everything released before Capsla+ stays free. Capsla+ adds looks and sound only, with no subscription and no pop-ups asking to buy."
       }
     ],
-    "newTitle": "What’s new in 1.7.0",
+    "newTitle": "What’s new in 1.8.0",
     "new": [
       {
-        "text": "Ten new backgrounds. Free: Night, and Sky, which follows the time of day. In Capsla+: Candle, Northern Lights, Leaf Shadows, Starlight, Snowfall, Lava Lamp, Nebula and “Life”, where a tap seeds new cells. Snowfall comes with Frost: snow falls behind the glass while ice creeps over the timer capsule as you focus; wipe it clear with a finger, and it thaws on a break"
+        "text": "Solar System in Capsla+: the view from a porthole. Under the capsule is the real Earth from NASA maps, with city lights on the night side. As you focus, the planet slowly drifts away; on a break the Sun rises over its edge. Choose from ten bodies, from Mercury to Neptune, the Moon and the Sun itself, each with its own Sky Event at the start of a long break. With Device time, light and shadow match the real sky right now"
       },
       {
-        "text": "“Working on” (free): add a short note to your focus, like “chapter 3”. It shows on the timer, on the Lock Screen, in the Dynamic Island, on Apple Watch, in Statistics, in Calendar and in the CSV export, and you can set it from Shortcuts too"
+        "text": "Two new celebrations in Capsla+: Fireflies and Ripples"
       },
       {
-        "text": "A new way to choose your look: background tiles and a full-screen editor on the real timer. Swipe through backgrounds and change the digits, accent color and celebration in one place; Capsla+ items can be tried before you buy"
+        "text": "A new line under the timer every launch, without repeating recent ones. The Phrase of the Day widget (free) brings a new line every day to the Home Screen and the Lock Screen"
       },
       {
-        "text": "iPhone Duo: the timer and the editor fit every position, including tabletop, like a laptop: the time on the top half, the buttons on the bottom"
+        "text": "Apple Intelligence, on device, where it’s available: Capsla suggests a tag from what you’re working on, groups similar notes in Statistics, and writes a short review of your week"
       },
       {
-        "text": "Easier on the battery: Orbits, the default background, and Frost now ask far less of the graphics"
+        "text": "Capsla no longer collects anything: analytics and crash reporting are gone. If something breaks, you can attach a crash report to an email yourself"
+      },
+      {
+        "text": "iPhone Duo: Settings and Statistics in two columns, reset and skip in the side bar, and Solar System adapts to the screen and the fold"
+      },
+      {
+        "text": "Starlight and Northern Lights are now much easier on the graphics"
       }
     ],
     "assetsTitle": "Screenshots and icon",

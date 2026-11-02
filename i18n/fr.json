@@ -140,7 +140,7 @@
   },
   "signals": {
     "title": "Discret, mais difficile à manquer",
-    "body": "Un avertissement discret quelques minutes avant la fin du focus, un signal quand une phase est terminée, des boutons pour lancer la pause ou le focus suivant directement depuis la bannière, et un rappel si vous oubliez de revenir après une pause. Les notifications sont urgentes ; elles passent donc même en mode Ne pas déranger.",
+    "body": "Un avertissement discret quelques minutes avant la fin du focus, un signal quand une phase est terminée, des boutons pour lancer la pause ou le focus suivant directement depuis la bannière, et, si vous l’activez, un rappel pour revenir après une pause. Les notifications sont urgentes ; elles passent donc même en mode Ne pas déranger.",
     "body2": "Le signal de fin de phase retentit même en mode silencieux, car une transition manquée ôte tout son sens au minuteur. Il y a 16 sons et trois motifs de vibration, choisis séparément pour chaque phase."
   },
   "more": {
@@ -165,6 +165,9 @@
         "text": "Des actions rapides sur l’icône de l’app"
       },
       {
+        "text": "Le widget « Phrase du jour » : une nouvelle phrase chaque jour sur l’écran d’accueil et l’écran verrouillé"
+      },
+      {
         "text": "Mode sombre, VoiceOver, police plus grande et contraste augmenté"
       },
       {
@@ -173,9 +176,9 @@
     ]
   },
   "privacy": {
-    "title": "Vous voyez ce qui quitte votre iPhone",
+    "title": "Capsla ne collecte rien",
     "body": "Il n’existe pas de compte Capsla. Les tags et l’historique de focus se synchronisent uniquement via votre propre iCloud, et les réglages restent sur votre iPhone.",
-    "body2": "L’écran Confidentialité liste les derniers événements envoyés par Capsla elle-même. C’est une vraie liste issue de votre appareil, et deux interrupteurs coupent la collecte.",
+    "body2": "Ni analyse d’audience, ni collecte propre des rapports de plantage, ni identifiants publicitaires. En cas de problème, vous pouvez joindre vous-même un rapport à un e-mail. Les fonctions Apple Intelligence s’exécutent sur l’appareil lui-même.",
     "link": "Politique de confidentialité (en anglais)",
     "href": "/en/privacy/"
   },
@@ -210,7 +213,7 @@
     "paid": [
       {
         "title": "Nouveaux fonds",
-        "body": "Treize arrière-plans de plus, dont Chute de neige avec Givre."
+        "body": "Quatorze arrière-plans de plus, dont Système solaire avec la vraie Terre et Chute de neige avec Givre."
       },
       {
         "title": "Accent et palettes",

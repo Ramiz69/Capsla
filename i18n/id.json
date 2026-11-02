@@ -140,7 +140,7 @@
   },
   "signals": {
     "title": "Tenang, tapi sulit terlewat",
-    "body": "Peringatan lembut beberapa menit sebelum fokus berakhir, sinyal saat fase selesai, tombol untuk memulai istirahat atau fokus berikutnya langsung dari banner, dan pengingat jika Anda lupa kembali setelah istirahat. Notifikasi bersifat Sensitif Waktu, sehingga tetap sampai meski Jangan Ganggu aktif.",
+    "body": "Peringatan lembut beberapa menit sebelum fokus berakhir, sinyal saat fase selesai, tombol untuk memulai istirahat atau fokus berikutnya langsung dari banner, dan pengingat kembali setelah istirahat jika diaktifkan. Notifikasi bersifat Sensitif Waktu, sehingga tetap sampai meski Jangan Ganggu aktif.",
     "body2": "Sinyal akhir fase tetap berbunyi dalam mode senyap, karena pergantian yang terlewat membuat timer kehilangan tujuannya. Ada 16 suara dan tiga pola getar, dipilih terpisah untuk setiap fase."
   },
   "more": {
@@ -165,6 +165,9 @@
         "text": "Tindakan cepat di ikon aplikasi"
       },
       {
+        "text": "Widget “Kalimat hari ini”: kalimat baru setiap hari di Layar Utama dan Layar Terkunci"
+      },
+      {
         "text": "Mode Gelap, VoiceOver, Teks yang Lebih Besar, dan Tambah Kontras"
       },
       {
@@ -173,9 +176,9 @@
     ]
   },
   "privacy": {
-    "title": "Anda bisa melihat apa yang keluar dari ponsel",
+    "title": "Capsla tidak mengumpulkan apa pun",
     "body": "Tidak ada akun Capsla. Tag dan riwayat fokus hanya disinkronkan melalui iCloud Anda sendiri, dan pengaturan tetap di iPhone Anda.",
-    "body2": "Layar Privasi menampilkan peristiwa terbaru yang dikirim Capsla sendiri. Ini daftar nyata dari perangkat Anda, dan dua sakelar mematikan pengumpulan data.",
+    "body2": "Tanpa analitik, tanpa pengumpulan laporan crash sendiri, tanpa pengenal iklan. Jika ada yang rusak, Anda sendiri bisa melampirkan laporan crash ke email untuk pengembang.",
     "link": "Kebijakan privasi (dalam bahasa Inggris)",
     "href": "/en/privacy/"
   },
@@ -210,7 +213,7 @@
     "paid": [
       {
         "title": "Latar Baru",
-        "body": "Tiga belas latar tambahan, termasuk Hujan salju dengan Embun beku yang menutupi timer dengan es selama fokus."
+        "body": "Empat belas latar tambahan, termasuk Tata Surya dengan Bumi sungguhan dan Hujan salju dengan Embun beku yang menutupi timer dengan es selama fokus."
       },
       {
         "title": "Aksen dan Palet",

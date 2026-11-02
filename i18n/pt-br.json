@@ -140,7 +140,7 @@
   },
   "signals": {
     "title": "Discreto, mas difícil de perder",
-    "body": "Um aviso discreto alguns minutos antes de o foco terminar, um sinal quando uma fase acaba, botões para iniciar a pausa ou o próximo foco direto da notificação e um lembrete se você esquecer de voltar depois de uma pausa. As notificações são marcadas como Relevantes, então chegam mesmo com o Não Perturbe ativado.",
+    "body": "Um aviso discreto alguns minutos antes de o foco terminar, um sinal quando uma fase acaba, botões para iniciar a pausa ou o próximo foco direto da notificação e, se você ativar, um lembrete para voltar depois de uma pausa. As notificações são marcadas como Relevantes, então chegam mesmo com o Não Perturbe ativado.",
     "body2": "O sinal de fim de fase toca mesmo no modo silencioso, porque perder uma transição tira o sentido do timer. São 16 sons e três padrões de vibração, escolhidos separadamente para cada fase."
   },
   "more": {
@@ -165,6 +165,9 @@
         "text": "Ações rápidas no ícone do app"
       },
       {
+        "text": "O widget “Frase do dia”: uma frase nova todo dia na Tela de Início e na Tela Bloqueada"
+      },
+      {
         "text": "Modo Escuro, VoiceOver, texto maior e aumento de contraste"
       },
       {
@@ -173,9 +176,9 @@
     ]
   },
   "privacy": {
-    "title": "Você vê o que sai do seu iPhone",
+    "title": "O Capsla não coleta nada",
     "body": "Não existe conta Capsla. As etiquetas e o histórico de foco sincronizam apenas pelo seu próprio iCloud, e os ajustes ficam no seu iPhone.",
-    "body2": "A tela Privacidade lista os eventos recentes que o próprio Capsla enviou. É uma lista real do seu dispositivo, e duas opções desligam a coleta.",
+    "body2": "Nem análises, nem coleta própria de relatórios de falhas, nem identificadores de publicidade. Se algo der errado, você mesmo pode anexar o relatório a um e-mail. Os recursos do Apple Intelligence funcionam no próprio dispositivo.",
     "link": "Política de Privacidade (em inglês)",
     "href": "/en/privacy/"
   },
@@ -210,7 +213,7 @@
     "paid": [
       {
         "title": "Novos fundos",
-        "body": "Mais treze fundos, entre eles Neve com Geada."
+        "body": "Mais catorze fundos, entre eles Sistema Solar com a Terra de verdade e Neve com Geada."
       },
       {
         "title": "Destaque e paletas",

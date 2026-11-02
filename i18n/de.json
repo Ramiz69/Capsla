@@ -140,7 +140,7 @@
   },
   "signals": {
     "title": "Leise, aber kaum zu überhören",
-    "body": "Ein leiser Hinweis einige Minuten vor dem Ende des Fokus, ein Signal, wenn eine Phase vorbei ist, Tasten, mit denen du die Pause oder den nächsten Fokus direkt aus dem Banner startest, und eine Erinnerung, falls du nach der Pause nicht zurückkommst. Die Mitteilungen sind dringlich und kommen daher auch bei „Nicht stören“ durch.",
+    "body": "Ein leiser Hinweis einige Minuten vor dem Ende des Fokus, ein Signal, wenn eine Phase vorbei ist, Tasten, mit denen du die Pause oder den nächsten Fokus direkt aus dem Banner startest, und, wenn du sie einschaltest, eine Erinnerung, nach der Pause zurückzukommen. Die Mitteilungen sind dringlich und kommen daher auch bei „Nicht stören“ durch.",
     "body2": "Das Signal am Ende einer Phase ertönt auch im Stummmodus, denn ein verpasster Übergang macht den Sinn zunichte. Es gibt 16 Sounds und drei Vibrationsmuster, für jede Phase einzeln wählbar."
   },
   "more": {
@@ -165,6 +165,9 @@
         "text": "Schnellaktionen auf dem App-Symbol"
       },
       {
+        "text": "Das Widget „Spruch des Tages“: jeden Tag ein neuer Spruch auf dem Home-Bildschirm und dem Sperrbildschirm"
+      },
+      {
         "text": "Dunkelmodus, VoiceOver, größerer Text und erhöhter Kontrast"
       },
       {
@@ -173,9 +176,9 @@
     ]
   },
   "privacy": {
-    "title": "Du siehst, was dein iPhone verlässt",
+    "title": "Capsla erfasst nichts",
     "body": "Ein Capsla-Konto gibt es nicht. Tags und Fokusverlauf synchronisieren nur über deine eigene iCloud, die Einstellungen bleiben auf deinem iPhone.",
-    "body2": "Der Bildschirm „Datenschutz“ zeigt die letzten Ereignisse, die Capsla selbst gesendet hat. Das ist eine echte Liste von deinem Gerät, und zwei Schalter stellen die Erfassung ab.",
+    "body2": "Keine Analysen, keine eigene Erfassung von Absturzberichten, keine Werbe-IDs. Geht etwas kaputt, kannst du selbst einen Absturzbericht an eine E-Mail hängen. Die Funktionen von Apple Intelligence laufen auf dem Gerät selbst.",
     "link": "Datenschutzerklärung",
     "href": "/de/privacy/"
   },
@@ -210,7 +213,7 @@
     "paid": [
       {
         "title": "Neue Hintergründe",
-        "body": "Dreizehn weitere Hintergründe, darunter Schneefall mit Raureif."
+        "body": "Vierzehn weitere Hintergründe, darunter Sonnensystem mit der echten Erde und Schneefall mit Raureif."
       },
       {
         "title": "Akzent und Paletten",
