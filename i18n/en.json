@@ -356,8 +356,66 @@
         "body": "Everything released before Capsla+ stays free. Capsla+ adds looks and sound only, with no subscription and no pop-ups asking to buy."
       }
     ],
-    "newTitle": "What’s new in 1.8.0",
+    "newTitle": "What’s new in 1.8.1",
     "new": [
+      {
+        "text": "If you allow notifications on the screen that appears when focus starts, the end-of-phase notification now arrives for that same focus"
+      },
+      {
+        "text": "A reminder to come back: it arrives once, five minutes after a short break ends, if the next focus hasn’t started. The permission screen offers it when you first allow notifications; if they’re already allowed, turn it on in notification settings"
+      }
+    ],
+    "assetsTitle": "Screenshots and icon",
+    "assetsBody": "A few of the screenshots in the kit. Each one in full resolution is inside the ZIP.",
+    "iconLink": "App icon only (PNG, 1024 px)",
+    "shots": [
+      {
+        "src": "/img/press/en-iphone-10.8c400e613e.webp",
+        "alt": "Solar System in Capsla+: the real Earth under the timer",
+        "kind": "shot-phone",
+        "w": "600",
+        "h": "1299"
+      },
+      {
+        "src": "/img/press/en-iphone-06.ec70d209b1.webp",
+        "alt": "Appearance settings with the timer preview and the background gallery",
+        "kind": "shot-phone",
+        "w": "600",
+        "h": "1299"
+      },
+      {
+        "src": "/img/press/en-iphone-05.4164381513.webp",
+        "alt": "Choosing the apps to block during focus",
+        "kind": "shot-phone",
+        "w": "600",
+        "h": "1299"
+      },
+      {
+        "src": "/img/press/en-watch-1.webp",
+        "alt": "Capsla on Apple Watch: a focus phase with the tag Work",
+        "kind": "shot-watch",
+        "w": "600",
+        "h": "731"
+      },
+      {
+        "src": "/img/press/en-duo-05.18a3f3202c.webp",
+        "alt": "Solar System on the unfolded iPhone Duo",
+        "kind": "shot-duo",
+        "w": "960",
+        "h": "675"
+      },
+      {
+        "src": "/img/press/en-duo-03.b794019add.webp",
+        "alt": "Appearance settings on the inner display of iPhone Duo",
+        "kind": "shot-duo",
+        "w": "960",
+        "h": "675"
+      }
+    ],
+    "footLabel": "Press",
+    "pageHref": "/press/",
+    "prevTitle": "Also new in 1.8.0",
+    "prev": [
       {
         "text": "Solar System in Capsla+: the view from a porthole. Under the capsule is the real Earth from NASA maps, with city lights on the night side. As you focus, the planet slowly drifts away; on a break the Sun rises over its edge. Choose from ten bodies, from Mercury to Neptune, the Moon and the Sun itself, each with its own Sky Event at the start of a long break. With Device time, light and shadow match the real sky right now"
       },
@@ -379,55 +437,6 @@
       {
         "text": "Starlight and Northern Lights are now much easier on the graphics"
       }
-    ],
-    "assetsTitle": "Screenshots and icon",
-    "assetsBody": "A few of the screenshots in the kit. Each one in full resolution is inside the ZIP.",
-    "iconLink": "App icon only (PNG, 1024 px)",
-    "shots": [
-      {
-        "src": "/img/press/en-iphone-1.webp",
-        "alt": "Capsla on iPhone: a focus phase counting down in the capsule",
-        "kind": "shot-phone",
-        "w": "600",
-        "h": "1299"
-      },
-      {
-        "src": "/img/press/en-iphone-2.webp",
-        "alt": "Settings with the two auto-start switches",
-        "kind": "shot-phone",
-        "w": "600",
-        "h": "1299"
-      },
-      {
-        "src": "/img/press/en-iphone-3.webp",
-        "alt": "A Capsla+ background behind the timer",
-        "kind": "shot-phone",
-        "w": "600",
-        "h": "1299"
-      },
-      {
-        "src": "/img/press/en-watch-1.webp",
-        "alt": "Capsla on Apple Watch: a focus phase with the tag Work",
-        "kind": "shot-watch",
-        "w": "600",
-        "h": "731"
-      },
-      {
-        "src": "/img/press/en-duo-1.1f8b63e8e0.webp",
-        "alt": "Capsla on the unfolded iPhone Duo: the timer on the inner display",
-        "kind": "shot-duo",
-        "w": "960",
-        "h": "675"
-      },
-      {
-        "src": "/img/press/en-duo-2.712cb7a07c.webp",
-        "alt": "Weekly statistics on the inner display of iPhone Duo",
-        "kind": "shot-duo",
-        "w": "960",
-        "h": "675"
-      }
-    ],
-    "footLabel": "Press",
-    "pageHref": "/press/"
+    ]
   }
 }
