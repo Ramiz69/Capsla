@@ -145,7 +145,7 @@
   },
   "signals": {
     "title": "Quiet, but hard to miss",
-    "body": "A quiet heads-up a few minutes before focus ends, a signal when a phase is over, buttons to start the break or the next focus right from the banner, and, if you turn it on, a reminder to come back after a break. Notifications are Time Sensitive, so they come through Do Not Disturb.",
+    "body": "A quiet heads-up shortly before focus ends, a signal when a phase is over, buttons to start the break or the next focus right from the banner, and an optional reminder to come back after a break. Notifications are Time Sensitive, so they come through Do Not Disturb.",
     "body2": "The end-of-phase signal plays even in silent mode, because a missed transition defeats the point. There are 16 sounds and three vibration patterns, chosen separately for each phase."
   },
   "more": {

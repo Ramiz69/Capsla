@@ -145,7 +145,7 @@
   },
   "signals": {
     "title": "Discreto, pero difícil de pasar por alto",
-    "body": "Un aviso discreto unos minutos antes de que acabe el enfoque, una señal cuando termina una fase, botones para empezar el descanso o el siguiente enfoque desde la propia notificación y, si lo activas, un recordatorio para volver después de un descanso. Son notificaciones importantes, así que llegan aunque tengas activado No molestar.",
+    "body": "Un aviso discreto poco antes de que acabe el enfoque, una señal cuando termina una fase, botones para empezar el descanso o el siguiente enfoque desde la propia notificación y, si quieres, un recordatorio para volver después de un descanso. Son notificaciones importantes, así que llegan aunque tengas activado No molestar.",
     "body2": "La señal de fin de fase suena incluso en modo silencio, porque una transición perdida le quita el sentido al temporizador. Hay 16 sonidos y tres patrones de vibración, elegidos por separado para cada fase."
   },
   "more": {

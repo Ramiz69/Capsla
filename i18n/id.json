@@ -145,7 +145,7 @@
   },
   "signals": {
     "title": "Tenang, tapi sulit terlewat",
-    "body": "Peringatan lembut beberapa menit sebelum fokus berakhir, sinyal saat fase selesai, tombol untuk memulai istirahat atau fokus berikutnya langsung dari banner, dan pengingat kembali setelah istirahat jika diaktifkan. Notifikasi bersifat Sensitif Waktu, sehingga tetap sampai meski Jangan Ganggu aktif.",
+    "body": "Peringatan lembut tak lama sebelum fokus berakhir, sinyal saat fase selesai, tombol untuk memulai istirahat atau fokus berikutnya langsung dari banner, dan, jika mau, pengingat kembali setelah istirahat. Notifikasi bersifat Sensitif Waktu, sehingga tetap sampai meski Jangan Ganggu aktif.",
     "body2": "Sinyal akhir fase tetap berbunyi dalam mode senyap, karena pergantian yang terlewat membuat timer kehilangan tujuannya. Ada 16 suara dan tiga pola getar, dipilih terpisah untuk setiap fase."
   },
   "more": {

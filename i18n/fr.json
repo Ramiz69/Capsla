@@ -145,7 +145,7 @@
   },
   "signals": {
     "title": "Discret, mais difficile à manquer",
-    "body": "Un avertissement discret quelques minutes avant la fin du focus, un signal quand une phase est terminée, des boutons pour lancer la pause ou le focus suivant directement depuis la bannière, et, si vous l’activez, un rappel pour revenir après une pause. Les notifications sont urgentes ; elles passent donc même en mode Ne pas déranger.",
+    "body": "Un avertissement discret peu avant la fin du focus, un signal quand une phase est terminée, des boutons pour lancer la pause ou le focus suivant directement depuis la bannière, et, si vous le souhaitez, un rappel pour revenir après une pause. Les notifications sont urgentes ; elles passent donc même en mode Ne pas déranger.",
     "body2": "Le signal de fin de phase retentit même en mode silencieux, car une transition manquée ôte tout son sens au minuteur. Il y a 16 sons et trois motifs de vibration, choisis séparément pour chaque phase."
   },
   "more": {
