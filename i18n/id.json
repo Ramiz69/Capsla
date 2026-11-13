@@ -85,7 +85,7 @@
   },
   "solar": {
     "title": "Bumi sungguhan di bawah timer Anda",
-    "body": "Tata Surya di Capsla+: pemandangan dari jendela kapal. Di bawah kapsul ada Bumi sungguhan dari peta NASA, dengan lampu kota di sisi malamnya. Selama fokus, planet perlahan menjauh; saat istirahat, Matahari terbit dari balik tepinya. Ada sepuluh benda langit untuk dipilih, dari Merkurius sampai Neptunus, Bulan, dan Matahari itu sendiri, masing-masing dengan “Peristiwa Langit” sendiri di awal istirahat panjang. Dengan “Waktu perangkat”, cahaya dan bayangan sama seperti langit sebenarnya saat ini.",
+    "body": "Tata Surya di Capsla+: pemandangan dari jendela kapal. Di bawah kapsul ada Bumi sungguhan dari peta NASA, dengan lampu kota di sisi malamnya. Selama fokus, planet perlahan menjauh; saat istirahat, Matahari terbit dari balik tepinya. Ada sebelas benda langit untuk dipilih, dari Merkurius sampai Pluto, Bulan, dan Matahari itu sendiri, masing-masing dengan “Peristiwa Langit” sendiri di awal istirahat panjang. Dengan “Waktu perangkat”, cahaya dan bayangan sama seperti langit sebenarnya saat ini.",
     "note": "Video dipercepat 30 kali, dengan fase satu menit."
   },
   "everywhere": {
@@ -124,8 +124,8 @@
   },
   "stats": {
     "title": "Ke mana perhatian Anda tercurah",
-    "body": "Waktu fokus bersih per minggu, per bulan, dan sepanjang waktu, grafik per hari, jam saat Anda paling fokus, hari berturut-turut, serta waktu menurut tag.",
-    "body2": "Riwayat dimulai pada hari Anda memasang Capsla, dan aplikasi tidak pernah mengisi angka yang tidak dicatatnya. Ekspor semuanya sebagai file CSV kapan saja.",
+    "body": "Waktu fokus bersih per minggu, per bulan, dan sepanjang waktu, grafik per hari, jam saat Anda paling fokus, hari dengan fokus, serta waktu menurut tag.",
+    "body2": "Riwayat dimulai pada hari Anda memasang Capsla, aplikasi tidak menambahkan apa pun sendiri, dan Anda bisa menambah fokus secara manual. Ekspor semuanya sebagai file CSV kapan saja.",
     "items": [
       {
         "title": "Kesehatan",
@@ -218,7 +218,7 @@
     "paid": [
       {
         "title": "Latar Baru",
-        "body": "Empat belas latar tambahan, termasuk Tata Surya dengan Bumi sungguhan dan Hujan salju dengan Embun beku yang menutupi timer dengan es selama fokus."
+        "body": "Tujuh belas latar tambahan, termasuk Tata Surya dengan Bumi sungguhan, Lubang Hitam, Kedalaman, Perapian, dan Hujan salju dengan Embun beku yang menutupi timer dengan es selama fokus."
       },
       {
         "title": "Aksen dan Palet",

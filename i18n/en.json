@@ -85,7 +85,7 @@
   },
   "solar": {
     "title": "The real Earth under your timer",
-    "body": "Solar System in Capsla+: the view from a porthole. Under the capsule is the real Earth from NASA maps, with city lights on the night side. As you focus, the planet slowly drifts away; on a break the Sun rises over its edge. Choose from ten bodies, from Mercury to Neptune, the Moon and the Sun itself, each with its own Sky Event at the start of a long break. With Device time, light and shadow match the real sky right now.",
+    "body": "Solar System in Capsla+: the view from a porthole. Under the capsule is the real Earth from NASA maps, with city lights on the night side. As you focus, the planet slowly drifts away; on a break the Sun rises over its edge. Choose from eleven bodies, from Mercury to Pluto, the Moon and the Sun itself, each with its own Sky Event at the start of a long break. With Device time, light and shadow match the real sky right now.",
     "note": "Video sped up 30 times, with one-minute phases."
   },
   "everywhere": {
@@ -124,8 +124,8 @@
   },
   "stats": {
     "title": "Where your attention went",
-    "body": "Net focus time by week, month and all time, a chart by day, the hours you focus best, days in a row and time by tag.",
-    "body2": "History starts the day you install Capsla, and the app never fills in numbers it did not record. Export all of it as a CSV file whenever you like.",
+    "body": "Net focus time by week, month and all time, a chart by day, the hours you focus best, days with focus and time by tag.",
+    "body2": "History starts the day you install Capsla, the app adds nothing on its own, and you can add a missed focus by hand. Export all of it as a CSV file whenever you like.",
     "items": [
       {
         "title": "Health",
@@ -218,7 +218,7 @@
     "paid": [
       {
         "title": "New backgrounds",
-        "body": "Fourteen more backgrounds, including Solar System with the real Earth and Snowfall with Frost, which slowly ices over the timer."
+        "body": "Seventeen more backgrounds, including Solar System with the real Earth, Black Hole, Depths, Fireplace and Snowfall with Frost, which slowly ices over the timer."
       },
       {
         "title": "Accent and palettes",
@@ -309,7 +309,7 @@
       },
       {
         "term": "Current version",
-        "value": "1.8.1, November 2026"
+        "value": "1.9.0, November 2026"
       },
       {
         "term": "Price",
@@ -345,7 +345,7 @@
       },
       {
         "title": "Statistics that don’t flatter",
-        "body": "Net minutes without pauses, the hours you focus best, days in a row. History starts at install and the app never fills in numbers it did not record."
+        "body": "Net minutes without pauses, the hours you focus best, days with focus. History starts at install, the app adds nothing on its own, and a missed focus can be added by hand."
       },
       {
         "title": "Collects nothing",
@@ -356,13 +356,43 @@
         "body": "Everything released before Capsla+ stays free. Capsla+ adds looks and sound only, with no subscription and no pop-ups asking to buy."
       }
     ],
-    "newTitle": "What’s new in 1.8.1",
+    "newTitle": "What’s new in 1.9.0",
     "new": [
       {
-        "text": "If you allow notifications on the screen that appears when focus starts, the end-of-phase notification now arrives for that same focus"
+        "text": "Depths: the camera sinks as you focus and rises on a break. Touch the dark and the water lights up"
       },
       {
-        "text": "A reminder to come back: it arrives once, five minutes after a short break ends, if the next focus hasn’t started. The permission screen offers it when you first allow notifications; if they’re already allowed, turn it on in notification settings"
+        "text": "Black Hole: light follows computed rays, and when a session’s last focus ends, the black hole tears apart a passing star"
+      },
+      {
+        "text": "Fireplace: the fire burns to embers as you focus and flares up on a break. Touch it to send up sparks"
+      },
+      {
+        "text": "Pluto with Charon in Solar System"
+      },
+      {
+        "text": "Focus without a timer: time counts up, to 4 hours"
+      },
+      {
+        "text": "Add Focus in Statistics, for a focus you did away from the timer"
+      },
+      {
+        "text": "A quick row under the digits: focus without a timer, 25 and 45 minutes by default, and you can change it"
+      },
+      {
+        "text": "“Ends at 14:25” under the digits while the countdown runs"
+      },
+      {
+        "text": "On the timer, Reset no longer fires on a single tap: it opens a menu first"
+      },
+      {
+        "text": "Keep Blocking While Paused: apps stay blocked during a pause, and Reset lifts the block"
+      },
+      {
+        "text": "Apple Intelligence, where available: a review of the month and all time as well as the week"
+      },
+      {
+        "text": "Statistics now shows days with focus instead of days in a row"
       }
     ],
     "assetsTitle": "Screenshots and icon",
@@ -414,8 +444,14 @@
     ],
     "footLabel": "Press",
     "pageHref": "/press/",
-    "prevTitle": "Also new in 1.8.0",
+    "prevTitle": "Also new in 1.8",
     "prev": [
+      {
+        "text": "If you allow notifications on the screen that appears when focus starts, the end-of-phase notification now arrives for that same focus"
+      },
+      {
+        "text": "A reminder to come back: it arrives once, five minutes after a short break ends, if the next focus hasn’t started. The permission screen offers it when you first allow notifications; if they’re already allowed, turn it on in notification settings"
+      },
       {
         "text": "Solar System in Capsla+: the view from a porthole. Under the capsule is the real Earth from NASA maps, with city lights on the night side. As you focus, the planet slowly drifts away; on a break the Sun rises over its edge. Choose from ten bodies, from Mercury to Neptune, the Moon and the Sun itself, each with its own Sky Event at the start of a long break. With Device time, light and shadow match the real sky right now"
       },

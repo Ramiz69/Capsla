@@ -85,7 +85,7 @@
   },
   "solar": {
     "title": "La vera Terra sotto il tuo timer",
-    "body": "Sistema solare in Capsla+: la vista da un oblò. Sotto la capsula c’è la vera Terra dalle mappe della NASA, con le luci delle città sul lato notturno. Durante il focus il pianeta si allontana piano; in pausa il Sole sorge dal suo bordo. Dieci corpi celesti a scelta, da Mercurio a Nettuno, la Luna e il Sole stesso, ognuno con il proprio «Evento celeste» all’inizio della pausa lunga. Con «Ora del dispositivo», luce e ombre sono quelle reali di questo momento.",
+    "body": "Sistema solare in Capsla+: la vista da un oblò. Sotto la capsula c’è la vera Terra dalle mappe della NASA, con le luci delle città sul lato notturno. Durante il focus il pianeta si allontana piano; in pausa il Sole sorge dal suo bordo. Undici corpi celesti a scelta, da Mercurio a Plutone, la Luna e il Sole stesso, ognuno con il proprio «Evento celeste» all’inizio della pausa lunga. Con «Ora del dispositivo», luce e ombre sono quelle reali di questo momento.",
     "note": "Video accelerato 30 volte, fasi da un minuto."
   },
   "everywhere": {
@@ -124,8 +124,8 @@
   },
   "stats": {
     "title": "Dove è andata la tua attenzione",
-    "body": "Tempo di focus netto per settimana, per mese e da sempre, un grafico per giorno, le ore in cui ti concentri meglio, i giorni di fila e il tempo per tag.",
-    "body2": "Lo storico parte dal giorno in cui installi Capsla, e l’app non aggiunge mai numeri che non ha registrato. Esporta tutto in un file CSV quando vuoi.",
+    "body": "Tempo di focus netto per settimana, per mese e da sempre, un grafico per giorno, le ore in cui ti concentri meglio, i giorni con focus e il tempo per tag.",
+    "body2": "Lo storico parte dal giorno in cui installi Capsla, l’app non aggiunge nulla da sola e puoi aggiungere un focus a mano. Esporta tutto in un file CSV quando vuoi.",
     "items": [
       {
         "title": "Salute",
@@ -218,7 +218,7 @@
     "paid": [
       {
         "title": "Nuovi sfondi",
-        "body": "Altri quattordici sfondi, tra cui Sistema solare con la vera Terra e Nevicata con Brina."
+        "body": "Altri diciassette sfondi, tra cui Sistema solare con la vera Terra, Buco nero, Abisso, Camino e Nevicata con Brina."
       },
       {
         "title": "Accento e palette",

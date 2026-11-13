@@ -85,7 +85,7 @@
   },
   "solar": {
     "title": "La Tierra real bajo tu temporizador",
-    "body": "Sistema solar en Capsla+: la vista desde un ojo de buey. Bajo la cápsula está la Tierra real, hecha con mapas de la NASA, con las luces de las ciudades en el lado nocturno. Durante el enfoque, el planeta se aleja despacio; en el descanso, el Sol sale por su borde. Diez cuerpos para elegir, de Mercurio a Neptuno, la Luna y el propio Sol, cada uno con su «Evento celeste» al empezar el descanso largo. Con «Hora del dispositivo», la luz y las sombras son como ahora mismo en la realidad.",
+    "body": "Sistema solar en Capsla+: la vista desde un ojo de buey. Bajo la cápsula está la Tierra real, hecha con mapas de la NASA, con las luces de las ciudades en el lado nocturno. Durante el enfoque, el planeta se aleja despacio; en el descanso, el Sol sale por su borde. Once cuerpos para elegir, de Mercurio a Plutón, la Luna y el propio Sol, cada uno con su «Evento celeste» al empezar el descanso largo. Con «Hora del dispositivo», la luz y las sombras son como ahora mismo en la realidad.",
     "note": "Vídeo acelerado 30 veces, con fases de un minuto."
   },
   "everywhere": {
@@ -124,8 +124,8 @@
   },
   "stats": {
     "title": "Adónde fue tu atención",
-    "body": "Tiempo de enfoque neto por semana, por mes y total, un gráfico por día, las horas en las que mejor te concentras, días seguidos y tiempo por etiqueta.",
-    "body2": "El historial empieza el día que instalas Capsla, y la app nunca rellena cifras que no ha registrado. Expórtalo todo como archivo CSV cuando quieras.",
+    "body": "Tiempo de enfoque neto por semana, por mes y total, un gráfico por día, las horas en las que mejor te concentras, días con enfoque y tiempo por etiqueta.",
+    "body2": "El historial empieza el día que instalas Capsla, la app no añade nada por su cuenta y tú puedes añadir un enfoque a mano. Expórtalo todo como archivo CSV cuando quieras.",
     "items": [
       {
         "title": "Salud",
@@ -218,7 +218,7 @@
     "paid": [
       {
         "title": "Nuevos fondos",
-        "body": "Catorce fondos más, entre ellos Sistema solar con la Tierra real y Nevada con Escarcha."
+        "body": "Diecisiete fondos más, entre ellos Sistema solar con la Tierra real, Agujero negro, Profundidad, Chimenea y Nevada con Escarcha."
       },
       {
         "title": "Acento y paletas",

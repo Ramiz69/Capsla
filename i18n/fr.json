@@ -85,7 +85,7 @@
   },
   "solar": {
     "title": "La vraie Terre sous votre minuteur",
-    "body": "Système solaire dans Capsla+ : la vue depuis un hublot. Sous la capsule, la vraie Terre d’après les cartes de la NASA, avec les lumières des villes sur la face nocturne. Pendant le focus, la planète s’éloigne lentement ; pendant la pause, le Soleil se lève derrière son bord. Dix astres au choix, de Mercure à Neptune, la Lune et le Soleil lui-même, chacun avec son « Événement céleste » au début de la longue pause. Avec « Heure de l’appareil », la lumière et les ombres sont celles du moment présent.",
+    "body": "Système solaire dans Capsla+ : la vue depuis un hublot. Sous la capsule, la vraie Terre d’après les cartes de la NASA, avec les lumières des villes sur la face nocturne. Pendant le focus, la planète s’éloigne lentement ; pendant la pause, le Soleil se lève derrière son bord. Onze astres au choix, de Mercure à Pluton, la Lune et le Soleil lui-même, chacun avec son « Événement céleste » au début de la longue pause. Avec « Heure de l’appareil », la lumière et les ombres sont celles du moment présent.",
     "note": "Vidéo accélérée 30 fois, phases d’une minute."
   },
   "everywhere": {
@@ -124,8 +124,8 @@
   },
   "stats": {
     "title": "Où est allée votre attention",
-    "body": "Le temps de focus net par semaine, par mois et depuis le début, un graphique par jour, les heures où vous vous concentrez le mieux, les jours d’affilée et le temps par tag.",
-    "body2": "L’historique commence le jour où vous installez Capsla, et l’app n’ajoute jamais de chiffres qu’elle n’a pas enregistrés. Exportez le tout en fichier CSV quand vous le souhaitez.",
+    "body": "Le temps de focus net par semaine, par mois et depuis le début, un graphique par jour, les heures où vous vous concentrez le mieux, les jours avec focus et le temps par tag.",
+    "body2": "L’historique commence le jour où vous installez Capsla, l’app n’ajoute rien d’elle-même et vous pouvez ajouter un focus à la main. Exportez le tout en fichier CSV quand vous le souhaitez.",
     "items": [
       {
         "title": "Santé",
@@ -218,7 +218,7 @@
     "paid": [
       {
         "title": "Nouveaux fonds",
-        "body": "Quatorze arrière-plans de plus, dont Système solaire avec la vraie Terre et Chute de neige avec Givre."
+        "body": "Dix-sept arrière-plans de plus, dont Système solaire avec la vraie Terre, Trou noir, Profondeurs, Cheminée et Chute de neige avec Givre."
       },
       {
         "title": "Accent et palettes",
